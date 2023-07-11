@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: bebasNeue;
+  src: url("../fonts/bebasNeue.otf") format("opentype");
+}
+
+@font-face {
+  font-family: foregen;
+  src: url("../fonts/foregen.otf") format("opentype");
+}

@@ -8,16 +8,16 @@
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-  <header class="h-14 bg-slate-800">
-    <p class="text-center text-white">Navbar</p>
+  <header class="h-14 bg-white">
+    <p class="text-center text-black">Navbar</p>
   </header>
-  <main>
-    <div class="mb-32 pb-20 bg-slate-400 rounded-b-full">
+  <main class="bg-primary-dark">
+    <div class="mb-3 pb-20 bg-background rounded-b-full shadow-gray-800 shadow-md">
       <section class="relative">
         <div class="h-40 overflow-hidden">
-          <div class="relative top-[-190px] left-[-5%] w-[110%] h-[300px] bg-red-700 rounded-b-[50%]"></div>
+          <div class="relative top-[-190px] left-[-5%] w-[110%] h-[300px] bg-secondary rounded-b-[50%]"></div>
         </div>
-        <div class="absolute h-40 w-40 top-[100px] left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white border-4 border-black rounded-full shadow-md shadow-zinc-900"></div>
+        <img class="absolute h-40 w-40 top-[100px] left-1/2 -translate-x-1/2 -translate-y-1/2" src="./images/asia-logo.svg" alt="Logo de Asia Acuacultura">
       </section>
       <section class="px-5">
         <div class="w-full pb-5 flex gap-5 overflow-scroll snap-mandatory snap-x border-0">
@@ -25,8 +25,8 @@
             <picture>
               <img src="./images/motor.png" alt="Motor">
             </picture>
-            <p class="mt-5 text-center text-xl">
-              Equipos de aireación
+            <p class="mt-5 text-center text-xl font-bebasNeue">
+              EQUIPOS
             </p>
           </div>
           <div class="w-[90%] max-w-[300px] py-7 px-8 bg-blue-200 rounded-xl shrink-0 snap-center">
@@ -48,30 +48,39 @@
         </div>
       </section>
       <section class="mt-5 px-5">
-        <ul class="flex flex-col items-center gap-2">
-          <li class="py-1 w-full max-w-xs text-center text-white bg-red-700 rounded-full">
+        <ul class="flex flex-col items-center gap-2 font-foregen text-xl tracking-wide">
+          <li class="py-0.5 w-full max-w-xs text-center text-white bg-terciary rounded-full shadow-gray-500 shadow-md">
             <a href="#">Asesorías y Proyectos</a>
           </li>
-          <li class="py-1 w-full max-w-xs text-center text-white bg-red-700 rounded-full">
+          <li class="py-0.5 w-full max-w-xs text-center text-white bg-terciary rounded-full shadow-gray-500 shadow-md">
             <a href="#">Equipos y accesorios</a>
           </li>
-          <li class="py-1 w-full max-w-xs text-center text-white bg-red-700 rounded-full">
+          <li class="py-0.5 w-full max-w-xs text-center text-white bg-terciary rounded-full shadow-gray-500 shadow-md">
             <a href="#">Insumos</a>
           </li>
         </ul>
       </section>
-      <section class="w-full flex flex-col items-center gap-3 mt-8 px-5">
-        <div class="relative p-7 w-64 h-64 flex flex-col justify-center gap-2 bg-green-400 text-white rounded-full">
-          <p class="absolute top-9 left-6 text-6xl font-semibold">¿</p>
-          <p class="relative w-36 mx-auto text-xl text-justify font-medium leading-5 tracking-tight">
-            DESEA CREAR O MEJORAR SU 
-            <strong class="left-4 text-3xl leading-8">PROYECTO ACUÍCOLA</strong>
-          </p>
-          <div class="w-full h-0.5 bg-black"></div>
-          <p class="text-center font-medium text-sm">ESTÁ EN EL LUGAR CORRECTO</p>
-          <p class="absolute bottom-24 right-5 text-6xl font-semibold">?</p>
-        </div>
-        <button class="relative -top-12 w-full max-w-xs py-1 px-10 text-left text-white bg-red-700 rounded-full">¡HABLEMOS!</button>
+      <section class="relative w-full flex flex-col items-center gap-3 mt-8 px-5">
+        <img class="h-52" src="./images/pregunta-mejorar.svg" alt="¿Desea crear o mejorar su proyecto acuicola?">
+        <img class="absolute -bottom-24 left-8 h-52" src="./images/pez.svg" alt="Pez">
+      </section>
+    </div>
+    <div class="py-10 bg-gradient-to-b from-primary-dark to-primary -z-20">
+      <section class="mb-10">
+        <p class="font-bebasNeue text-[1.7rem] leading-8 tracking-wide text-white text-center font-light">Nuestra amplia línea de productos<br> y servicios le ayudarán a <br><strong class="text-[2.1rem] text-brown leading-9">mejorar la productividad<br></strong> sin importar en qué<br> etapa se encuentre:</p>
+      </section>
+      <section>
+        <ul class="flex flex-col items-center gap-2 font-foregen text-xl tracking-wide">
+          <li class="py-0.5 w-full max-w-xs text-center text-white bg-terciary rounded-full shadow-gray-500 shadow-md">
+            <a href="#">Asesorías y Proyectos</a>
+          </li>
+          <li class="py-0.5 w-full max-w-xs text-center text-white bg-terciary rounded-full shadow-gray-500 shadow-md">
+            <a href="#">Equipos y accesorios</a>
+          </li>
+          <li class="py-0.5 w-full max-w-xs text-center text-white bg-terciary rounded-full shadow-gray-500 shadow-md">
+            <a href="#">Insumos</a>
+          </li>
+        </ul>
       </section>
     </div>
   </main>
