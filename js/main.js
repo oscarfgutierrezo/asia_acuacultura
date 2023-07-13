@@ -11,7 +11,6 @@ hamburgerMenuBtn.addEventListener('click', () => {
 
 document.addEventListener('click', (event) => {
   const isMenuClicked = hamburgerMenu.contains(event.target) || hamburgerMenuBtn.contains(event.target);
-  console.log(isMenuClicked);
   if (!isMenuClicked) {
     hamburgerMenu.classList.add('hidden');
   }
@@ -31,3 +30,34 @@ hamburgerMenuItems.forEach((item) => {
     item.classList.remove('text-white', 'bg-secondary');
   }
 });
+
+
+// Función para manejar el evento de desplazamiento
+function handleScroll() {
+
+  // Obtener la posición actual del desplazamiento vertical
+  const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+
+  // 
+  const navbar = document.querySelector('#navbar');
+  const navbarLogo = document.querySelector('#logo-navbar');
+
+  // Si el desplazamiento es mayor o igual a 20px
+  if (scrollTop >= 64) {
+    navbar.classList.add('rounded-none', 'top-0', 'h-14');
+    navbar.classList.remove('rounded-[50%]', '-top-44', 'h-72')
+    navbarLogo.classList.add('h-24', 'w-24', 'top-[60px]', 'left-16');
+    navbarLogo.classList.remove('h-40', 'w-40', 'top-[100px]', 'left-1/2')
+  } else {
+    navbar.classList.add('rounded-[50%]', '-top-44', 'h-72');
+    navbar.classList.remove('rounded-none', 'top-0', 'h-14');
+    navbarLogo.classList.add('h-40', 'w-40', 'top-[100px]', 'left-1/2')
+    navbarLogo.classList.remove('h-24', 'w-24', 'top-[60px]', 'left-16');
+  }
+}
+
+// Agregar el event listener al evento scroll
+window.addEventListener("scroll", handleScroll);
+
+
+/* absolute h-40 w-40 top-[100px] left-1/2 -translate-x-1/2 -translate-y-1/2 */

@@ -10,48 +10,37 @@
 </head>
 <body class="max-w-md">
   <header>
-    <nav class="bg-white fixed w-full max-w-md z-40 top-0 left-0 border-b border-gray-200">
-      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-5 py-3">
-        <a href="/" class="flex items-center">
-            <img src="./images/asia-nombre.svg" class="h-10" alt="Asia Acuacultura">
-        </a>
-        <div class="flex md:order-2">
-            <button id="hamburger-menu-btn" data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-grey/10 focus:outline-none focus:ring-2 focus:ring-grey/30" aria-controls="navbar-sticky" aria-expanded="false">
-              <span class="sr-only">Open main menu</span>
-              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-              </svg>
-          </button>
-        </div>
-        <div class="hidden items-center justify-between w-full md:flex md:w-auto md:order-1" id="hamburguer-menu">
-          <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
-            <li>
-              <a href="/" class="hamburger-menu-item block py-2 pl-3 pr-4 text-white bg-secondary rounded md:bg-transparent md:text-secondary md:p-0">Home</a>
-            </li>
-            <li>
-              <a href="/asesorias.html" class="hamburger-menu-item block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-grey/10 md:hover:bg-transparent md:hover:text-blue-700 md:p-0" aria-current="page">Asesorías y Proyectos</a>
-            </li>
-            <li>
-              <a href="/equipos.html" class="hamburger-menu-item block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-grey/10 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Equipos, Accesorios e Insumos</a>
-            </li>
-          </ul>
-        </div>
+    <nav class="fixed top-0 w-full px-5 h-14 flex justify-end bg-none z-40">
+      <button id="hamburger-menu-btn">
+        <img class="h-10" src="./images/hamburger.svg" alt="icono hamburger menu">
+      </button>
+      <div class="absolute left-0 top-10 hidden items-center justify-between w-full md:flex md:w-auto md:order-1" id="hamburguer-menu">
+        <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
+          <li>
+            <a href="/" class="hamburger-menu-item block py-2 pl-3 pr-4 text-white bg-secondary rounded md:bg-transparent md:text-secondary md:p-0">Home</a>
+          </li>
+          <li>
+            <a href="/asesorias.html" class="hamburger-menu-item block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-grey/10 md:hover:bg-transparent md:hover:text-blue-700 md:p-0" aria-current="page">Asesorías y Proyectos</a>
+          </li>
+          <li>
+            <a href="/equipos.html" class="hamburger-menu-item block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-grey/10 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Equipos, Accesorios e Insumos</a>
+          </li>
+        </ul>
       </div>
     </nav>
   </header>
-  <main class="pt-16">
+  <main class="bg-background">
+    
+    <!-- LOGO Y SEMICIRCULO NARANJA -->
+    <section class="sticky top-0 z-30">
+      <div class="h-40 overflow-hidden">
+        <div id="navbar" class="relative top-[-190px] left-[-5%] w-[110%] h-[300px] bg-secondary rounded-b-[50%] transition-all duration-300"></div>
+      </div>
+      <img id="logo-navbar" class="absolute h-40 w-40 top-[100px] left-1/2 -translate-x-1/2 -translate-y-1/2 transition-all duration-300" src="./images/asia-logo.svg" alt="Logo de Asia Acuacultura">
+    </section>
+
     <div class="bg-primary-dark">
       <div class="mb-3 pb-20 bg-background rounded-b-full shadow-gray-800 shadow-md">
-        <section class="relative z-30">
-          <div class="h-40 overflow-hidden">
-            <div class="relative top-[-190px] left-[-5%] w-[110%] h-[300px] bg-secondary rounded-b-[50%]"></div>
-          </div>
-          <img class="absolute h-40 w-40 top-[100px] left-1/2 -translate-x-1/2 -translate-y-1/2" src="./images/asia-logo.svg" alt="Logo de Asia Acuacultura">
-        </section>
-        
-        <img class="object-cover" src="" alt="">
-
-        
         <section id="default-carousel" class="relative w-full px-5" data-carousel="slide">
           <!-- Carousel wrapper -->
           <div class="relative h-64 overflow-hidden rounded-lg md:h-96">
