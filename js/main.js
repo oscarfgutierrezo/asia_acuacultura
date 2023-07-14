@@ -4,7 +4,7 @@ const hamburgerMenuBtn = document.querySelector('#hamburger-menu-btn');
 const hamburgerMenu = document.querySelector('#hamburguer-menu');
 
 hamburgerMenuBtn.addEventListener('click', () => {
-  hamburgerMenu.classList.toggle('hidden');
+  hamburgerMenu.classList.toggle('active');
 });
 
 /* OCULTAR HAMBURGER MENU AL CLIC POR FUERA DE ÉL */
@@ -12,7 +12,7 @@ hamburgerMenuBtn.addEventListener('click', () => {
 document.addEventListener('click', (event) => {
   const isMenuClicked = hamburgerMenu.contains(event.target) || hamburgerMenuBtn.contains(event.target);
   if (!isMenuClicked) {
-    hamburgerMenu.classList.add('hidden');
+    hamburgerMenu.classList.remove('active');
   }
 });
 
@@ -32,7 +32,7 @@ hamburgerMenuItems.forEach((item) => {
 });
 
 
-// Función para manejar el evento de desplazamiento
+// Función para manejar el evento de desplazamiento y la animación del navbar
 function handleScroll() {
 
   // Obtener la posición actual del desplazamiento vertical
@@ -44,12 +44,13 @@ function handleScroll() {
 
   // Si el desplazamiento es mayor o igual a 20px
   if (scrollTop >= 64) {
+    navbar.classList.remove('rounded-[50%]', '-top-48', 'h-80')
     navbar.classList.add('rounded-none', 'top-0', 'h-14');
-    navbar.classList.remove('rounded-[50%]', '-top-44', 'h-72')
     navbarLogo.classList.add('h-24', 'w-24', 'top-[60px]', 'left-16');
     navbarLogo.classList.remove('h-40', 'w-40', 'top-[100px]', 'left-1/2')
   } else {
-    navbar.classList.add('rounded-[50%]', '-top-44', 'h-72');
+    console.log("hola");
+    navbar.classList.add('rounded-[50%]', '-top-48', 'h-80');
     navbar.classList.remove('rounded-none', 'top-0', 'h-14');
     navbarLogo.classList.add('h-40', 'w-40', 'top-[100px]', 'left-1/2')
     navbarLogo.classList.remove('h-24', 'w-24', 'top-[60px]', 'left-16');
@@ -61,3 +62,42 @@ window.addEventListener("scroll", handleScroll);
 
 
 /* absolute h-40 w-40 top-[100px] left-1/2 -translate-x-1/2 -translate-y-1/2 */
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const carouselItems = Array.from(document.querySelectorAll(".carousel-item"));
+  const carouselIndicators = Array.from(document.querySelectorAll(".carousel-indicator"));
+  const prevBtn = document.getElementById("prevBtn");
+  const nextBtn = document.getElementById("nextBtn");
+  let currentSlide = 0;
+
+  function showSlide(index) {
+    carouselItems.forEach(item => item.classList.remove("active"));
+    carouselIndicators.forEach(indicator => indicator.classList.remove("active"));
+
+    carouselItems[index].classList.add("active");
+    carouselIndicators[index].classList.add("active");
+
+    
+    prevBtn.disabled = index === 0;
+    nextBtn.disabled = index === carouselItems.length - 1;
+  }
+
+  function prevSlide() {
+    if (currentSlide > 0) {
+      currentSlide--;
+      showSlide(currentSlide);
+    }
+  }
+
+  function nextSlide() {
+    if (currentSlide < carouselItems.length - 1) {
+      currentSlide++;
+      showSlide(currentSlide);
+    }
+  }
+
+  prevBtn.addEventListener("click", prevSlide);
+  nextBtn.addEventListener("click", nextSlide);
+  carouselIndicators.forEach((indicator, index) => indicator.addEventListener("click", () => showSlide(index)));
+});

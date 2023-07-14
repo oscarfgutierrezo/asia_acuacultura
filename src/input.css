@@ -11,3 +11,15 @@
   font-family: foregen;
   src: url("../fonts/foregen.otf") format("opentype");
 }
+
+.carousel-item.active {
+  opacity: 1;
+}
+
+.carousel-indicator.active {
+  background-color: #AD3405;
+}
+
+#hamburguer-menu.active {
+  height: 200px;
+}
