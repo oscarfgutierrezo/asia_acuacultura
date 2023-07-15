@@ -11,7 +11,7 @@
   <header>
     <nav class="fixed top-0 w-full px-5 h-14 flex justify-end bg-none z-40">
       <button id="hamburger-menu-btn">
-        <img class="h-10" src="./images/hamburger.svg" alt="icono hamburger menu">
+        <img class="h-10" src="./public/images/hamburger.svg" alt="icono hamburger menu">
       </button>
       <div class="absolute left-0 top-10 w-full h-0 items-center justify-between overflow-hidden transition-all duration-300 md:flex md:w-auto md:order-1" id="hamburguer-menu">
         <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
@@ -28,130 +28,157 @@
       </div>
     </nav>
   </header>
-  <main class="bg-background">
-    
-    <!-- LOGO Y SEMICIRCULO NARANJA -->
-    <section class="sticky top-0 z-30">
-      <div class="h-40 overflow-hidden">
-        <div id="navbar" class="relative -top-48 -left-[5%] w-[110%] h-80 bg-secondary rounded-[50%] transition-all duration-300"></div>
+
+  <main>
+    <div class="mb-10 pb-10 bg-background rounded-b-full shadow-gray-800 shadow-md">
+      <!-- LOGO Y SEMICIRCULO NARANJA -->
+      <section class="sticky top-0 z-30">
+        <div id="navbar-container" class="h-40 overflow-hidden bg-transparent">
+          <div id="navbar" class="relative -top-48 -left-[5%] w-[110%] h-80 bg-secondary rounded-[50%] transition-all duration-300"></div>
+        </div>
+        <img id="logo-navbar" class="absolute h-40 w-40 top-[100px] left-1/2 -translate-x-1/2 -translate-y-1/2 transition-all duration-300" src="./public/images/asia-logo.svg" alt="Logo de Asia Acuacultura">
+      </section>
+  
+      <div class="bg-primary-dark">
+        <div class="mb-3 pb-20 bg-background rounded-b-full shadow-gray-800 shadow-md">
+          
+          <!-- CARRUSEL -->
+          <section class="px-5 w-full flex justify-center">
+            <div class="carousel relative w-full h-60">
+              <!-- IMÁGENES -->
+              <div class=" w-full">
+                <img class="carousel-item absolute opacity-0 h-full w-full object-cover rounded-xl transition-all duration-700 active" src="./public/images/carrusel_movil_01.jpg" alt="Imagen 1">
+                <img class="carousel-item absolute opacity-0 h-full w-full object-cover rounded-xl transition-all duration-700" src="./public/images/carrusel_movil_02.jpg" alt="Imagen 2">
+                <img class="carousel-item absolute opacity-0 h-full w-full object-cover rounded-xl transition-all duration-700" src="./public/images/carrusel_movil_03.jpg" alt="Imagen 3">
+                <img class="carousel-item absolute opacity-0 h-full w-full object-cover rounded-xl transition-all duration-700" src="./public/images/carrusel_movil_04.jpg" alt="Imagen 3">
+                <img class="carousel-item absolute opacity-0 h-full w-full object-cover rounded-xl transition-all duration-700" src="./public/images/carrusel_movil_05.jpg" alt="Imagen 3">
+              </div>
+              <!-- BOTONES -->
+              <div class="absolute top-1/2 -translate-y-1/2 px-1 w-full flex justify-between">
+                <button id="prevBtn" class="w-9 disabled:opacity-50" disabled>
+                  <img src="./public/images/prev-btn.svg" alt="">
+                </button>
+                <button id="nextBtn" class="w-9 disabled:opacity-50">
+                  <img src="./public/images/next-btn.svg" alt="">
+                </button>
+              </div>
+              <!-- INDICADORES -->
+              <div class="absolute bottom-2 right-1/2 translate-x-1/2 flex justify-center gap-2">
+                <button class="carousel-indicator h-3 w-3 rounded-[50%] bg-white/70 active"></button>
+                <button class="carousel-indicator h-3 w-3 rounded-[50%] bg-white/70"></button>
+                <button class="carousel-indicator h-3 w-3 rounded-[50%] bg-white/70"></button>
+                <button class="carousel-indicator h-3 w-3 rounded-[50%] bg-white/70"></button>
+                <button class="carousel-indicator h-3 w-3 rounded-[50%] bg-white/70"></button>
+              </div>
+            </div>
+          </section>
+  
+          <section class="mt-10 px-5">
+            <ul class="flex flex-col items-center gap-2 font-foregen text-xl tracking-wide">
+              <li class="py-0.5 w-full max-w-xs text-center text-white bg-secondary-soft rounded-full shadow-gray-500 shadow-md transition-all duration-300 hover:bg-secondary hover:shadow-none focus-within:bg-secondary focus-within:shadow-none">
+                <a href="./asesorias.html">Asesorías y Proyectos</a>
+              </li>
+              <li class="py-0.5 w-full max-w-xs text-center text-white bg-secondary-soft rounded-full shadow-gray-500 shadow-md transition-all duration-300 hover:bg-secondary hover:shadow-none focus-within:bg-secondary focus-within:shadow-none">
+                <a href="./equipos.html">Equipos y accesorios</a>
+              </li>
+              <li class="py-0.5 w-full max-w-xs text-center text-white bg-secondary-soft rounded-full shadow-gray-500 shadow-md transition-all duration-300 hover:bg-secondary hover:shadow-none focus-within:bg-secondary focus-within:shadow-none">
+                <a href="./equipos.html">Insumos</a>
+              </li>
+            </ul>
+          </section>
+  
+          <section class="relative w-full mt-10 px-5 flex flex-col items-center gap-3">
+            <img class="h-52" src="./public/images/pregunta-mejorar.png" alt="¿Desea crear o mejorar su proyecto acuicola?">
+            <img class="absolute -bottom-24 left-8 h-52" src="./public/images/pez.svg" alt="Pez">
+          </section>
+        </div>
+  
+        <section class="px-5 py-10 bg-gradient-to-b from-primary-dark from-20% to-primary to-80% -z-20">
+          <p class="font-bebasNeue text-[1.4rem] leading-7 tracking-wide text-white text-center font-light">Nuestra amplia línea de productos<br> y servicios le ayudarán a <br><strong class="text-[1.9rem] text-brown leading-8">mejorar la productividad<br></strong> sin importar en qué<br> etapa se encuentre:</p>
+        </section> 
       </div>
-      <img id="logo-navbar" class="absolute h-40 w-40 top-[100px] left-1/2 -translate-x-1/2 -translate-y-1/2 transition-all duration-300" src="./images/asia-logo.svg" alt="Logo de Asia Acuacultura">
-    </section>
-
-    <div class="bg-primary-dark">
-      <div class="mb-3 pb-20 bg-background rounded-b-full shadow-gray-800 shadow-md">
+      <div>
         
-        <!-- CARRUSEL -->
-        <section class="px-5 w-full flex justify-center">
-          <div class="carousel relative w-full h-60">
-            <!-- IMÁGENES -->
-            <div class=" w-full">
-              <img class="carousel-item absolute opacity-0 h-full w-full object-cover rounded-xl transition-all duration-700 active" src="./images/carrusel_movil_01.jpg" alt="Imagen 1">
-              <img class="carousel-item absolute opacity-0 h-full w-full object-cover rounded-xl transition-all duration-700" src="./images/carrusel_movil_02.jpg" alt="Imagen 2">
-              <img class="carousel-item absolute opacity-0 h-full w-full object-cover rounded-xl transition-all duration-700" src="./images/carrusel_movil_03.jpg" alt="Imagen 3">
-              <img class="carousel-item absolute opacity-0 h-full w-full object-cover rounded-xl transition-all duration-700" src="./images/carrusel_movil_04.jpg" alt="Imagen 3">
-              <img class="carousel-item absolute opacity-0 h-full w-full object-cover rounded-xl transition-all duration-700" src="./images/carrusel_movil_05.jpg" alt="Imagen 3">
-            </div>
-            <!-- BOTONES -->
-            <div class="absolute top-1/2 -translate-y-1/2 px-1 w-full flex justify-between">
-              <button id="prevBtn" class="w-9 disabled:opacity-50" disabled>
-                <img src="./images/prev-btn.svg" alt="">
-              </button>
-              <button id="nextBtn" class="w-9 disabled:opacity-50">
-                <img src="./images/next-btn.svg" alt="">
-              </button>
-            </div>
-            <!-- INDICADORES -->
-            <div class="absolute bottom-2 right-1/2 translate-x-1/2 flex justify-center gap-2">
-              <button class="carousel-indicator h-3 w-3 rounded-[50%] bg-white/70 active"></button>
-              <button class="carousel-indicator h-3 w-3 rounded-[50%] bg-white/70"></button>
-              <button class="carousel-indicator h-3 w-3 rounded-[50%] bg-white/70"></button>
-              <button class="carousel-indicator h-3 w-3 rounded-[50%] bg-white/70"></button>
-              <button class="carousel-indicator h-3 w-3 rounded-[50%] bg-white/70"></button>
-            </div>
-          </div>
-        </section>
-
-        <section class="mt-10 px-5">
-          <ul class="flex flex-col items-center gap-2 font-foregen text-xl tracking-wide">
-            <li class="py-0.5 w-full max-w-xs text-center text-white bg-secondary-soft rounded-full shadow-gray-500 shadow-md transition-all duration-300 hover:bg-secondary hover:shadow-none focus-within:bg-secondary focus-within:shadow-none">
-              <a href="./asesorias.html">Asesorías y Proyectos</a>
+        <section class="mb-10">
+          <ul class="flex flex-col gap-0.5 font-bebasNeue text-lg leading-5">
+            <li class="h-14 px-5 flex items-center justify-center text-center text-white bg-secondary shadow-gray-500 shadow-md">
+              <a href="#">Hasta ahora tengo la idea y no sé por dónde empezar.</a>
             </li>
-            <li class="py-0.5 w-full max-w-xs text-center text-white bg-secondary-soft rounded-full shadow-gray-500 shadow-md transition-all duration-300 hover:bg-secondary hover:shadow-none focus-within:bg-secondary focus-within:shadow-none">
-              <a href="./equipos.html">Equipos y accesorios</a>
+            <li class="h-14 px-5 flex items-center justify-center text-center text-white bg-secondary shadow-gray-500 shadow-md">
+              <a href="#">Mi proyecto está en construcción y necesito equiparlo.</a>
             </li>
-            <li class="py-0.5 w-full max-w-xs text-center text-white bg-secondary-soft rounded-full shadow-gray-500 shadow-md transition-all duration-300 hover:bg-secondary hover:shadow-none focus-within:bg-secondary focus-within:shadow-none">
-              <a href="./equipos.html">Insumos</a>
+            <li class="h-14 px-5 flex items-center justify-center text-center text-white bg-secondary shadow-gray-500 shadow-md">
+              <a href="#">Ya tengo todo, tan solo necesito insumos.</a>
             </li>
           </ul>
         </section>
-
-        <section class="relative w-full mt-10 px-5 flex flex-col items-center gap-3">
-          <img class="h-52" src="./images/pregunta-mejorar.png" alt="¿Desea crear o mejorar su proyecto acuicola?">
-          <img class="absolute -bottom-24 left-8 h-52" src="./images/pez.svg" alt="Pez">
+  
+        <section class="relative px-5">
+          <img class="absolute w-1/2 left-0 top-0" src="./public/images/catalogo.png" alt="Libro con titulo Todo Asia Acuacultura">
+          <p class="w-1/2 ml-auto pl-2 font-bebasNeue text-2xl leading-6">También puede encontrar todo lo que necesita en nuestro <a class="text-3xl text-secondary leading-7" href="./public/CatalogoAsia2023.pdf" download>Portafolio completo <br>en PDF</a></p>
         </section>
       </div>
-
-      <section class="mt-10 px-5 py-10 bg-gradient-to-b from-primary-dark from-20% to-primary to-80% -z-20">
-        <p class="font-bebasNeue text-[1.4rem] leading-7 tracking-wide text-white text-center font-light">Nuestra amplia línea de productos<br> y servicios le ayudarán a <br><strong class="text-[1.9rem] text-brown leading-8">mejorar la productividad<br></strong> sin importar en qué<br> etapa se encuentre:</p>
-      </section> 
     </div>
-    <div class="mb-10 pb-10 bg-background rounded-b-full shadow-gray-800 shadow-md">
-      
-      <section class="mb-10">
-        <ul class="flex flex-col gap-0.5 font-bebasNeue text-lg leading-5">
-          <li class="h-14 px-5 flex items-center justify-center text-center text-white bg-secondary shadow-gray-500 shadow-md">
-            <a href="#">Hasta ahora tengo la idea y no sé por dónde empezar.</a>
-          </li>
-          <li class="h-14 px-5 flex items-center justify-center text-center text-white bg-secondary shadow-gray-500 shadow-md">
-            <a href="#">Mi proyecto está en construcción y necesito equiparlo.</a>
-          </li>
-          <li class="h-14 px-5 flex items-center justify-center text-center text-white bg-secondary shadow-gray-500 shadow-md">
-            <a href="#">Ya tengo todo, tan solo necesito insumos.</a>
-          </li>
-        </ul>
-      </section>
+  </main>
 
-      <section class="relative px-5">
-        <img class="absolute w-1/2 left-0 top-0" src="./images/manual.svg" alt="Libro con titulo Todo Asia Acuacultura">
-        <p class="w-1/2 ml-auto pl-2 font-bebasNeue text-2xl leading-6">También puede encontrar todo lo que necesita en nuestro <a class="text-3xl text-secondary leading-7">Portafolio completo <br>en PDF</a></p>
-      </section>
-    </div>
-
-    <section class="mb-5 px-5">
+  <footer class="mb-10 px-5 flex flex-col gap-5">
+    <section>
       <div class="mb-5 flex items-center gap-4">
         <div class="h-1 w-full border-2 border-grey"></div>
         <p class="shrink-0 font-bebasNeue text-secondary text-2xl">Síganos y conozca más:</p>
         <div class="h-1 w-full border-2 border-grey"></div>
       </div>
       <div class="flex flex-wrap justify-center gap-x-5 gap-y-2 font-bebasNeue text-xl">
-        <a href="#">
-          <img class="mx-auto h-12" src="./images/youtube.svg" alt="Logo de Youtube">Asia_Acuacultura
+        <a class="group" href="#" target="_blank">
+          <div class="h-12 flex items-center">
+            <img class="mx-auto h-10 group-hover:h-12 transition-all duration-300" src="./public/images/youtube.svg" alt="Logo de Youtube">
+          </div>
+          <p>Asia_Acuacultura</p>
         </a>
-        <a href="#">
-          <img class="mx-auto h-12" src="./images/instagram.svg" alt="Logo de Instagram">Asia_Acuacultura
+        <a class="group" href="https://instagram.com/asiaacuacultura?igshid=YzcxN2Q2NzY0OA==" target="_blank">
+          <div class="h-12 flex items-center">
+            <img class="mx-auto h-10 group-hover:h-12 transition-all duration-300" src="./public/images/instagram.svg" alt="Logo de Instagram">
+          </div>
+          <p>Asia_Acuacultura</p>
         </a>
-        <a href="#">
-          <img class="mx-auto h-12" src="./images/facebook.svg" alt="Logo de Facebook">Asia_Acuacultura
+        <a class="group" href="#" target="_blank">
+          <div class="h-12 flex items-center">
+            <img class="mx-auto h-10 group-hover:h-12 transition-all duration-300" src="./public/images/facebook.svg" alt="Logo de Facebook">
+          </div>
+          <p>Asia_Acuacultura</p>
         </a>
       </div>
     </section>
-  </main>
+    <section>
+      <div class="mb-5 flex items-center gap-4">
+        <div class="h-1 w-full border-2 border-grey"></div>
+        <p class="shrink-0 font-bebasNeue text-secondary text-2xl">O contáctenos:</p>
+        <div class="h-1 w-full border-2 border-grey"></div>
+      </div>
+      <div class="flex flex-wrap justify-center gap-x-5 gap-y-2 font-bebasNeue text-xl">
 
-  <footer class="mb-10 px-5">
-    <div class="mb-5 flex items-center gap-4">
-      <div class="h-1 w-full border-2 border-grey"></div>
-      <p class="shrink-0 font-bebasNeue text-secondary text-2xl">O contáctenos:</p>
-      <div class="h-1 w-full border-2 border-grey"></div>
-    </div>
-    <div class="flex flex-wrap justify-center gap-x-5 gap-y-2 font-bebasNeue text-xl">
-      <a href="#">
-        <img class="mx-auto h-12" src="./images/whatsapp.svg" alt="Logo de Youtube">317-043-9632
-      </a>
-      <a href="#">
-        <img class="mx-auto h-12" src="./images/mail.svg" alt="Logo de Instagram">ventas@asiaacuacultura.com
-      </a>
-    </div>
+        <!-- href whatsapp segun dispositivo -->
+        <a class="group md:hidden" href="whatsapp://send?phone=+573170439632&abid=+573170439632" target="_blank">
+          <div class="h-12 flex items-center">
+            <img class="mx-auto h-10 group-hover:h-12 transition-all duration-300" src="./public/images/whatsapp.svg" alt="Logo de Whatsapp">
+          </div>
+          <p>317-043-9632</p>
+        </a>
+        <a class="group hidden md:inline" href="http://web.whatsapp.com/send?phone=+573170439632&abid=+573170439632" target="_blank">
+          <div class="h-12 flex items-center">
+            <img class="mx-auto h-10 group-hover:h-12 transition-all duration-300" src="./public/images/whatsapp.svg" alt="Logo de Whatsapp">
+          </div>
+          <p>317-043-9632</p>
+        </a>
+
+        <a class="group" href="mailto:ventas@asiaacuacultura.com" target="_blank">
+          <div class="h-12 flex items-center">
+            <img class="mx-auto h-10 group-hover:h-12 transition-all duration-300" src="./public/images/mail.svg" alt="Icono de email">
+          </div>
+          <p>ventas@asiaacuacultura.com</p>
+        </a>
+      </div>
+    </section>
   </footer>
 
   <script src="./js/main.js"></script>

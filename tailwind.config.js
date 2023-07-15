@@ -12,7 +12,7 @@ module.exports = {
         "brown": "#443F35",
       },
       backgroundImage: {
-        'background': 'url("../images/background.jpg")',
+        'background': 'url("../public/images/background.jpg")',
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
       },
       fontFamily: {

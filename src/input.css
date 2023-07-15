@@ -4,12 +4,12 @@
 
 @font-face {
   font-family: bebasNeue;
-  src: url("../fonts/BebasNeue-Regular.ttf") format("opentype");
+  src: url("../public/fonts/BebasNeue-Regular.ttf") format("opentype");
 }
 
 @font-face {
   font-family: foregen;
-  src: url("../fonts/foregen.otf") format("opentype");
+  src: url("../public/fonts/foregen.otf") format("opentype");
 }
 
 .carousel-item.active {
