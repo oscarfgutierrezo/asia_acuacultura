@@ -7,23 +7,174 @@
   <title>Asia - Acuacultura</title>
   <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body>
-  <header></header>
-  <main></main>
-  <footer class="mb-10 px-5">
-    <div class="mb-5 flex items-center gap-4">
-      <div class="h-1 w-full border-2 border-grey"></div>
-      <p class="shrink-0 font-bebasNeue text-secondary text-2xl">O contáctenos:</p>
-      <div class="h-1 w-full border-2 border-grey"></div>
-    </div>
-    <div class="flex flex-wrap justify-center gap-x-5 gap-y-2 font-bebasNeue text-xl">
-      <a href="#">
-        <img class="mx-auto h-12" src="./public/images/whatsapp.svg" alt="Logo de Youtube">317-043-9632
-      </a>
-      <a href="#">
-        <img class="mx-auto h-12" src="./public/images/mail.svg" alt="Logo de Instagram">ventas@asiaacuacultura.com
-      </a>
-    </div>
+<body class="max-w-md">
+  <header>
+    <nav class="max-w-md fixed top-0 w-full px-5 h-14 flex justify-end bg-none z-40">
+      <button id="hamburger-menu-btn">
+        <img class="h-10" src="./public/images/hamburger.svg" alt="icono hamburger menu">
+      </button>
+      <div class="absolute left-0 top-10 w-full h-0 items-center justify-between overflow-hidden transition-all duration-300 md:flex md:w-auto md:order-1" id="hamburguer-menu">
+        <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
+          <li>
+            <a href="./" class="hamburger-menu-item block py-2 pl-3 pr-4 text-white bg-secondary rounded md:bg-transparent md:text-secondary md:p-0">Home</a>
+          </li>
+          <li>
+            <a href="./asesorias.html" class="hamburger-menu-item block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-grey/10 md:hover:bg-transparent md:hover:text-blue-700 md:p-0" aria-current="page">Asesorías y Proyectos</a>
+          </li>
+          <li>
+            <a href="./equipos.html" class="hamburger-menu-item block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-grey/10 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Equipos, Accesorios e Insumos</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- LOGO Y SEMICIRCULO NARANJA -->
+    <section class="max-w-md fixed top-0 w-full z-30">
+      <div id="navbar-container" class="h-40 overflow-hidden bg-transparent">
+        <div id="navbar" class="relative -top-48 -left-[5%] w-[110%] h-80 bg-secondary rounded-[50%] transition-all duration-300"></div>
+      </div>
+      <img id="logo-navbar" class="absolute h-40 w-40 top-[100px] left-1/2 -translate-x-1/2 -translate-y-1/2 transition-all duration-300" src="./public/images/asia-logo.svg" alt="Logo de Asia Acuacultura">
+    </section>
+  </header>
+  <main class="font-bebasNeue">
+    <section class="relative pt-48 pb-7 bg-background border-b-2 border-brown z-10">
+      <h2 class="pl-5 text-6xl text-brown">Asesoría</h2>
+      <p class="pl-5 font-foregen text-2xl text-white bg-secondary">En proyectos</p>
+      <p class="w-[55%] pt-2 pl-5 text-lg leading-5">Desde la planeación, hasta la operación pasando por fases de diseño, construcción, supervisión e interventoría.</p>
+      <img class="absolute bottom-0 w-[45%] max-w-[170px] right-0" src="./public/images/trabajador-movil.png" alt="Hombre con casco y ropa de trabajo">
+      <p class="absolute translate-x-1/2 right-1/2 -bottom-4 w-max px-5 pt-0.5 text-lg text-white bg-brown rounded-full">Las modalidades más asesoradas:</p>
+    </section>
+    <section class="relative mb-5 overflow-hidden">
+      <div class="absolute -top-36 w-full h-[380px] bg-secondary-soft rounded-b-[50%] -z-10"></div>
+      <div class="px-10 pt-8 flex justify-center gap-2">
+        <div class="max-w-[116px]">
+          <p class="pb-2 text-xl text-center text-white leading-5">Sistemas<br>para<br>producción</p>
+          <p class="text-lg text-center text-brown leading-4">Semilla de peces y camarones.</p>
+        </div>
+        <div class="border border-brown"></div>
+        <div class="max-w-[200px]">
+          <p class="pb-2 text-xl text-center text-white leading-5">Granjas convencionales, semi-intensivas<br>y super-intensivas</p>
+          <p class="text-lg text-center text-brown leading-4">Para cultivos en tierra, geomembrana e iprs.</p>
+        </div>
+      </div>
+      <div class="max-w-sm mx-auto px-5 pt-3 flex justify-center items-end">
+        <a class="group flex items-center" href="">
+          <img class="mx-auto group-hover:w-full transition-all duration-300" src="./public/images/pregunta-equipos.png" alt="Imagen con pregunta sobre asesoria en equipos">
+        </a>
+        <a class="group w-[60%] flex items-center" href="">
+          <img class="mx-auto group-hover:w-full transition-all duration-300" src="./public/images/pregunta-asesoria.png" alt="Imagen con logo de whatsapp">
+        </a>
+        <a class="group flex items-center" href="">
+          <img class="mx-auto group-hover:w-full transition-all duration-300" src="./public/images/pregunta-equipos.png" alt="Imagen con pregunta sobre asesoria en equipos">
+        </a>
+      </div>
+    </section>
+    <section class="mb-5 px-5">
+      <p class="w-max mx-auto px-7 pb-0.5 font-foregen text-2xl text-white bg-secondary rounded-full">Diseño y produccion de</p>
+      <p class="pt-1 text-center text-4xl text-primary">Proyectos Acuícolas</p>
+      <p class="pt-1 text-xl text-center text-brown leading-6">Construímos tanques en geomembrana que se ajustan a las necesidades propias del proyecto, aumentando las probabilidades de éxito.</p>
+      <p class="w-max mx-auto px-3 my-3 font-foregen text-lg text-white bg-brown rounded-full">Una imagen vale más que mil palabras</p>
+      <div class="flex flex-wrap gap-1">
+        <img class="w-[49%] h-40 object-cover" src="./public/images/carrusel_movil_01.jpg" alt="">
+        <img class="w-[49%] h-40 object-cover" src="./public/images/carrusel_movil_02.jpg" alt="">
+        <img class="w-[49%] h-40 object-cover" src="./public/images/carrusel_movil_03.jpg" alt="">
+        <img class="w-[49%] h-40 object-cover" src="./public/images/carrusel_movil_04.jpg" alt="">
+        <img class="w-[49%] h-40 object-cover" src="./public/images/carrusel_movil_05.jpg" alt="">
+        <img class="w-[49%] h-40 object-cover" src="./public/images/carrusel_movil_01.jpg" alt="">
+      </div>
+    </section>
+    <section class="mb-5 px-5">
+      <img class="mb-5 mx-auto" src="./public/images/experiencia.png" alt="30 años de experiencia">
+      <!-- CARRUSEL -->
+      <div class="carousel relative mx-auto max-w-xs h-48 flex justify-center">
+        <!-- IMÁGENES -->
+        <img class="carousel-item absolute h-48 opacity-0 transition-all duration-700 active" src="./public/images/testimonial_001.png" alt="Imagen 1">
+        <img class="carousel-item absolute h-48 opacity-0 transition-all duration-700" src="./public/images/testimonial_002.png" alt="Imagen 2">
+        <img class="carousel-item absolute h-48 opacity-0 transition-all duration-700" src="./public/images/testimonial_003.png" alt="Imagen 3">
+        <img class="carousel-item absolute h-48 opacity-0 transition-all duration-700" src="./public/images/testimonial_004.png" alt="Imagen 3">
+        <img class="carousel-item absolute h-48 opacity-0 transition-all duration-700" src="./public/images/testimonial_005.png" alt="Imagen 3">
+        <img class="carousel-item absolute h-48 opacity-0 transition-all duration-700" src="./public/images/testimonial_006.png" alt="Imagen 3">
+        <!-- BOTONES -->
+        <div class="absolute top-1/2 -translate-y-1/2 w-full flex justify-between">
+          <button id="prevBtn" class="w-9 disabled:opacity-50" disabled>
+            <img src="./public/images/prev-btn.svg" alt="">
+          </button>
+          <button id="nextBtn" class="w-9 disabled:opacity-50">
+            <img src="./public/images/next-btn.svg" alt="">
+          </button>
+        </div>
+        <!-- INDICADORES -->
+        <div class="absolute bottom-2 right-1/2 translate-x-1/2 flex justify-center gap-2">
+          <button class="carousel-indicator h-3 w-3 rounded-[50%] bg-secondary-soft/50 active"></button>
+          <button class="carousel-indicator h-3 w-3 rounded-[50%] bg-secondary-soft/50"></button>
+          <button class="carousel-indicator h-3 w-3 rounded-[50%] bg-secondary-soft/50"></button>
+          <button class="carousel-indicator h-3 w-3 rounded-[50%] bg-secondary-soft/50"></button>
+          <button class="carousel-indicator h-3 w-3 rounded-[50%] bg-secondary-soft/50"></button>
+          <button class="carousel-indicator h-3 w-3 rounded-[50%] bg-secondary-soft/50"></button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="mb-10 px-5 flex flex-col gap-5">
+    <section>
+      <div class="mb-5 flex items-center gap-4">
+        <div class="h-1 w-full border-2 border-grey"></div>
+        <p class="shrink-0 font-bebasNeue text-secondary text-2xl">Síganos y conozca más:</p>
+        <div class="h-1 w-full border-2 border-grey"></div>
+      </div>
+      <div class="flex flex-wrap justify-center gap-x-5 gap-y-2 font-bebasNeue text-xl">
+        <a class="group" href="#" target="_blank">
+          <div class="h-12 flex items-center">
+            <img class="mx-auto h-10 group-hover:h-12 transition-all duration-300" src="./public/images/youtube.svg" alt="Logo de Youtube">
+          </div>
+          <p>Asia_Acuacultura</p>
+        </a>
+        <a class="group" href="https://instagram.com/asiaacuacultura?igshid=YzcxN2Q2NzY0OA==" target="_blank">
+          <div class="h-12 flex items-center">
+            <img class="mx-auto h-10 group-hover:h-12 transition-all duration-300" src="./public/images/instagram.svg" alt="Logo de Instagram">
+          </div>
+          <p>Asia_Acuacultura</p>
+        </a>
+        <a class="group" href="#" target="_blank">
+          <div class="h-12 flex items-center">
+            <img class="mx-auto h-10 group-hover:h-12 transition-all duration-300" src="./public/images/facebook.svg" alt="Logo de Facebook">
+          </div>
+          <p>Asia_Acuacultura</p>
+        </a>
+      </div>
+    </section>
+    <section>
+      <div class="mb-5 flex items-center gap-4">
+        <div class="h-1 w-full border-2 border-grey"></div>
+        <p class="shrink-0 font-bebasNeue text-secondary text-2xl">O contáctenos:</p>
+        <div class="h-1 w-full border-2 border-grey"></div>
+      </div>
+      <div class="flex flex-wrap justify-center gap-x-5 gap-y-2 font-bebasNeue text-xl">
+
+        <!-- href whatsapp segun dispositivo -->
+        <a class="group md:hidden" href="whatsapp://send?phone=+573170439632&abid=+573170439632" target="_blank">
+          <div class="h-12 flex items-center">
+            <img class="mx-auto h-10 group-hover:h-12 transition-all duration-300" src="./public/images/whatsapp.svg" alt="Logo de Whatsapp">
+          </div>
+          <p>317-043-9632</p>
+        </a>
+        <a class="group hidden md:inline" href="http://web.whatsapp.com/send?phone=+573170439632&abid=+573170439632" target="_blank">
+          <div class="h-12 flex items-center">
+            <img class="mx-auto h-10 group-hover:h-12 transition-all duration-300" src="./public/images/whatsapp.svg" alt="Logo de Whatsapp">
+          </div>
+          <p>317-043-9632</p>
+        </a>
+
+        <a class="group" href="mailto:ventas@asiaacuacultura.com" target="_blank">
+          <div class="h-12 flex items-center">
+            <img class="mx-auto h-10 group-hover:h-12 transition-all duration-300" src="./public/images/mail.svg" alt="Icono de email">
+          </div>
+          <p>ventas@asiaacuacultura.com</p>
+        </a>
+      </div>
+    </section>
   </footer>
+
+  <script src="./js/navbar.js"></script>
+  <script src="./js/carrusel.js"></script>
 </body>
 </html>
