@@ -25,11 +25,9 @@ hamburgerMenuItems.forEach((item) => {
   const href = item.getAttribute('href');
   console.log(href);
   if (href === path) {
-    item.classList.add('text-white', 'bg-secondary');
-    item.classList.remove('text-gray-900', 'hover:bg-grey/10')
+    item.classList.add('active');
   } else {
-    item.classList.add('text-gray-900', 'hover:bg-grey/10')
-    item.classList.remove('text-white', 'bg-secondary');
+    item.classList.remove('active');
   }
 });
 

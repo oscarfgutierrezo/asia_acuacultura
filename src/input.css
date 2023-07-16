@@ -12,6 +12,15 @@
   src: url("../public/fonts/foregen.otf") format("opentype");
 }
 
+.hamburger-menu-item.active {
+  color: white;
+  background-color: #AD3405;
+}
+
+.hamburger-menu-item.active:hover {
+  background-color: #AD3405;
+}
+
 .carousel-container.active {
   display: flex;
 }
@@ -25,5 +34,6 @@
 }
 
 #hamburguer-menu.active {
-  height: 200px;
+  display: flex;
+  height: max-content;
 }

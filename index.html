@@ -7,28 +7,27 @@
   <title>Asia - Acuacultura</title>
   <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body class="max-w-md">
+<body>
   <header>
-    <nav class="max-w-md fixed top-0 w-full px-5 h-14 flex justify-end bg-none z-40">
-      <button id="hamburger-menu-btn">
+    <nav class="fixed top-0 w-full px-5 h-14 flex justify-end items-center text-xl font-foregen bg-none z-40 md:px-10 md:bg-secondary">
+      <button id="hamburger-menu-btn" class="md:hidden">
         <img class="h-10" src="./public/images/hamburger.svg" alt="icono hamburger menu">
       </button>
-      <div class="absolute left-0 top-10 w-full h-0 items-center justify-between overflow-hidden transition-all duration-300 md:flex md:w-auto md:order-1" id="hamburguer-menu">
-        <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
-          <li>
-            <a href="/" class="hamburger-menu-item block py-2 pl-3 pr-4 text-white bg-secondary rounded md:bg-transparent md:text-secondary md:p-0">Home</a>
-          </li>
-          <li>
-            <a href="/asesorias.html" class="hamburger-menu-item block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-grey/10 md:hover:bg-transparent md:hover:text-blue-700 md:p-0" aria-current="page">Asesorías y Proyectos</a>
-          </li>
-          <li>
-            <a href="/equipos.html" class="hamburger-menu-item block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-grey/10 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Equipos, Accesorios e Insumos</a>
-          </li>
-        </ul>
-      </div>
+      <ul class="absolute hidden top-14 right-0 w-full h-0 flex-col p-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:relative md:p-0 md:w-full md:h-max md:top-0 md:flex md:flex-row md:justify-end md:gap-10 md:bg-transparent md:border-none" id="hamburguer-menu">
+        <li>
+          <a href="/" class="hamburger-menu-item block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-grey/10 md:p-0 md:text-secondary-soft md:hover:text-white md:hover:bg-transparent">Home</a>
+        </li>
+        <li>
+          <a href="/asesorias.html" class="hamburger-menu-item block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-grey/10 md:p-0 md:text-secondary-soft md:hover:text-white md:hover:bg-transparent"">Asesorías y Proyectos</a>
+        </li>
+        <li>
+          <a href="/equipos.html" class="hamburger-menu-item block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-grey/10 md:p-0 md:text-secondary-soft md:hover:text-white md:hover:bg-transparent">Equipos, Accesorios e Insumos</a>
+        </li>
+      </ul>
+      <img class="absolute top-2 left-10 h-32" src="./public/images/asia-logo.svg" alt="Logo Asia Acuacultura">
     </nav>
     <!-- LOGO Y SEMICIRCULO NARANJA -->
-    <section class="max-w-md fixed top-0 w-full z-30">
+    <section class="fixed top-0 w-full z-30 md:hidden">
       <div id="navbar-container" class="h-40 overflow-hidden bg-transparent">
         <div id="navbar" class="relative -top-48 -left-[5%] w-[110%] h-80 bg-secondary rounded-[50%] transition-all duration-300"></div>
       </div>
