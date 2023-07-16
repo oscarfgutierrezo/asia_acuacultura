@@ -13,8 +13,6 @@ const createCarousel = containerId => {
     carouselItems[index].classList.add("active");
     carouselIndicators[index].classList.add("active");
 
-    console.log(index);
-    console.log(carouselItems.length);
     prevBtn.disabled = index === 0;
     nextBtn.disabled = index === carouselItems.length - 1;
   }
@@ -50,3 +48,6 @@ createCarousel("carousel-discos");
 createCarousel("carousel-tuberias");
 createCarousel("carousel-alarmas");
 createCarousel("carousel-monitorPh");
+createCarousel("carousel-probioticos");
+createCarousel("carousel-antibioticos");
+createCarousel("carousel-pruebas");

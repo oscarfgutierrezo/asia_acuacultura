@@ -1,4 +1,4 @@
-import { blowersIndustrial, blowersIndustrialDobleTapa, blowersEjelibre, blowersAcuarios, blowersIndustrialHg, splashOxipez, filtros, discos, alarmas } from './data/index.js'
+import { blowersIndustrial, blowersIndustrialDobleTapa, blowersEjelibre, blowersAcuarios, blowersIndustrialHg, splashOxipez, filtros, discos, alarmas, probioticos, desinfectantes, antibioticos, pruebas } from './data/index.js'
 
 /* Blowers Industriales Monofase */
 
@@ -742,4 +742,274 @@ alarmas.forEach( (producto, index) => {
     indicador.classList.add('active');
   }
   alarmasIndicadoresDOM.appendChild(indicador);
+})
+
+/* Probioticos */
+
+const probioticosContainerDOM = document.querySelector('#probioticos')
+const probioticosIndicadoresDOM = document.querySelector('#probioticos-indicadores')
+
+probioticos.forEach( (producto, index) => {
+  const {ref, descripcion, cantidad, precio} = producto;
+  const productoContainer = document.createElement('div');
+  /* Contenedor */
+  productoContainer.classList.add('carousel-item', 'absolute', 'opacity-0', 'h-full', 'w-full', 'object-cover', 'rounded-xl', 'transition-all', 'duration-700');
+  if (index === 0) {
+    productoContainer.classList.add('active');
+  }
+
+  /* Imagen */
+  const img = document.createElement('img');
+  img.classList.add('mx-auto', 'h-44');
+  img.src = './public/images/probioticos.png';
+  img.alt = 'Alarma de corte de energía';
+
+  /* Info Contenedor */
+  const infoContainer = document.createElement('div');
+  infoContainer.classList.add('pt-2', 'flex', 'flex-col', 'gap-1', 'text-lg', 'leading-5');
+
+  /* Referencia */
+  const referencia = document.createElement('p');
+  referencia.classList.add('mx-auto', 'mb-2', 'w-[98%]', 'text-xl', 'text-white', 'text-center', 'bg-secondary-soft', 'rounded-full');
+  referencia.textContent = `${ref}`;
+
+  /* Descripcion */
+  const descripcionInfo = document.createElement('p');
+  descripcionInfo.classList.add('text-center');
+  descripcionInfo.innerHTML = descripcion
+
+  /* Cantidad */
+  const cantidadInfo = document.createElement('p');
+  cantidadInfo.classList.add('text-center');
+  cantidadInfo.textContent = cantidad
+  
+  /* Precio */
+  const precioInfo = document.createElement('p');
+  precioInfo.classList.add('text-2xl', 'text-center', 'text-secondary');
+  precioInfo.textContent = `$ ${precio}`
+
+  /* Agregar elementos a InfoContainer */
+  infoContainer.appendChild(referencia);
+  infoContainer.appendChild(descripcionInfo);
+  infoContainer.appendChild(cantidadInfo);
+  infoContainer.appendChild(precioInfo);
+
+  /* Agregar elementos a Contenedor del producto */
+  productoContainer.appendChild(img);
+  productoContainer.appendChild(infoContainer);
+
+  /* Agregar elementos al DOM */
+  probioticosContainerDOM.appendChild(productoContainer);
+
+  /* Agregar indicadores */
+  const indicador = document.createElement('button');
+  indicador.classList.add('carousel-indicator', 'h-3', 'w-3', 'rounded-[50%]', 'bg-secondary-soft/50');
+  if (index === 0) {
+    indicador.classList.add('active');
+  }
+  probioticosIndicadoresDOM.appendChild(indicador);
+})
+
+/* Desinfectantes */
+
+const desinfectantesContainerDOM = document.querySelector('#desinfectantes')
+const desinfectantesIndicadoresDOM = document.querySelector('#desinfectantes-indicadores')
+
+desinfectantes.forEach( (producto, index) => {
+  const {ref, descripcion, cantidad, precio} = producto;
+  const productoContainer = document.createElement('div');
+  /* Contenedor */
+  productoContainer.classList.add('carousel-item', 'absolute', 'opacity-0', 'h-full', 'w-full', 'object-cover', 'rounded-xl', 'transition-all', 'duration-700');
+  if (index === 0) {
+    productoContainer.classList.add('active');
+  }
+
+  /* Imagen */
+  const img = document.createElement('img');
+  img.classList.add('mx-auto', 'h-44');
+  img.src = './public/images/desinfectantes.png';
+  img.alt = 'Alarma de corte de energía';
+
+  /* Info Contenedor */
+  const infoContainer = document.createElement('div');
+  infoContainer.classList.add('pt-2', 'flex', 'flex-col', 'gap-1', 'text-lg', 'leading-5');
+
+  /* Referencia */
+  const referencia = document.createElement('p');
+  referencia.classList.add('mx-auto', 'mb-2', 'w-[98%]', 'text-xl', 'text-white', 'text-center', 'bg-secondary-soft', 'rounded-full');
+  referencia.textContent = `${ref}`;
+
+  /* Descripcion */
+  const descripcionInfo = document.createElement('p');
+  descripcionInfo.classList.add('text-center');
+  descripcionInfo.innerHTML = descripcion
+
+  /* Cantidad */
+  const cantidadInfo = document.createElement('p');
+  cantidadInfo.classList.add('text-center');
+  cantidadInfo.textContent = cantidad
+  
+  /* Precio */
+  const precioInfo = document.createElement('p');
+  precioInfo.classList.add('text-2xl', 'text-center', 'text-secondary');
+  precioInfo.textContent = `$ ${precio}`
+
+  /* Agregar elementos a InfoContainer */
+  infoContainer.appendChild(referencia);
+  infoContainer.appendChild(descripcionInfo);
+  infoContainer.appendChild(cantidadInfo);
+  infoContainer.appendChild(precioInfo);
+
+  /* Agregar elementos a Contenedor del producto */
+  productoContainer.appendChild(img);
+  productoContainer.appendChild(infoContainer);
+
+  /* Agregar elementos al DOM */
+  desinfectantesContainerDOM.appendChild(productoContainer);
+
+  /* Agregar indicadores */
+  const indicador = document.createElement('button');
+  indicador.classList.add('carousel-indicator', 'h-3', 'w-3', 'rounded-[50%]', 'bg-secondary-soft/50');
+  if (index === 0) {
+    indicador.classList.add('active');
+  }
+  desinfectantesIndicadoresDOM.appendChild(indicador);
+})
+
+/* Antibióticos */
+
+const antibioticosContainerDOM = document.querySelector('#antibioticos')
+const antibioticosIndicadoresDOM = document.querySelector('#antibioticos-indicadores')
+
+antibioticos.forEach( (producto, index) => {
+  const {ref, descripcion, cantidad, precio} = producto;
+  const productoContainer = document.createElement('div');
+  /* Contenedor */
+  productoContainer.classList.add('carousel-item', 'absolute', 'opacity-0', 'h-full', 'w-full', 'object-cover', 'rounded-xl', 'transition-all', 'duration-700');
+  if (index === 0) {
+    productoContainer.classList.add('active');
+  }
+
+  /* Imagen */
+  const img = document.createElement('img');
+  img.classList.add('mx-auto', 'h-44');
+  img.src = './public/images/antibioticos.png';
+  img.alt = 'Alarma de corte de energía';
+
+  /* Info Contenedor */
+  const infoContainer = document.createElement('div');
+  infoContainer.classList.add('pt-2', 'flex', 'flex-col', 'gap-1', 'text-lg', 'leading-5');
+
+  /* Referencia */
+  const referencia = document.createElement('p');
+  referencia.classList.add('mx-auto', 'mb-2', 'w-[98%]', 'text-xl', 'text-white', 'text-center', 'bg-secondary-soft', 'rounded-full');
+  referencia.textContent = `${ref}`;
+
+  /* Descripcion */
+  const descripcionInfo = document.createElement('p');
+  descripcionInfo.classList.add('text-center');
+  descripcionInfo.innerHTML = descripcion
+
+  /* Cantidad */
+  const cantidadInfo = document.createElement('p');
+  cantidadInfo.classList.add('text-center');
+  cantidadInfo.textContent = cantidad
+  
+  /* Precio */
+  const precioInfo = document.createElement('p');
+  precioInfo.classList.add('text-2xl', 'text-center', 'text-secondary');
+  precioInfo.textContent = `$ ${precio}`
+
+  /* Agregar elementos a InfoContainer */
+  infoContainer.appendChild(referencia);
+  infoContainer.appendChild(descripcionInfo);
+  infoContainer.appendChild(cantidadInfo);
+  infoContainer.appendChild(precioInfo);
+
+  /* Agregar elementos a Contenedor del producto */
+  productoContainer.appendChild(img);
+  productoContainer.appendChild(infoContainer);
+
+  /* Agregar elementos al DOM */
+  antibioticosContainerDOM.appendChild(productoContainer);
+
+  /* Agregar indicadores */
+  const indicador = document.createElement('button');
+  indicador.classList.add('carousel-indicator', 'h-3', 'w-3', 'rounded-[50%]', 'bg-secondary-soft/50');
+  if (index === 0) {
+    indicador.classList.add('active');
+  }
+  antibioticosIndicadoresDOM.appendChild(indicador);
+})
+
+/* Pruebas */
+
+const pruebasContainerDOM = document.querySelector('#pruebas')
+const pruebasIndicadoresDOM = document.querySelector('#pruebas-indicadores')
+
+pruebas.forEach( (producto, index) => {
+  const {ref, descripcion, parametros, cantidad, precio} = producto;
+  const productoContainer = document.createElement('div');
+  /* Contenedor */
+  productoContainer.classList.add('carousel-item', 'absolute', 'opacity-0', 'h-full', 'w-full', 'object-cover', 'rounded-xl', 'transition-all', 'duration-700');
+  if (index === 0) {
+    productoContainer.classList.add('active');
+  }
+
+  /* Imagen */
+  const img = document.createElement('img');
+  img.classList.add('mx-auto', 'h-44');
+  img.src = './public/images/pruebas.png';
+  img.alt = 'Alarma de corte de energía';
+
+  /* Info Contenedor */
+  const infoContainer = document.createElement('div');
+  infoContainer.classList.add('pt-2', 'flex', 'flex-col', 'gap-1', 'text-lg', 'leading-5');
+
+  /* Referencia */
+  const referencia = document.createElement('p');
+  referencia.classList.add('mx-auto', 'mb-2', 'w-[98%]', 'text-xl', 'text-white', 'text-center', 'bg-secondary-soft', 'rounded-full');
+  referencia.textContent = `${ref}`;
+
+  /* Descripcion */
+  const descripcionInfo = document.createElement('p');
+  descripcionInfo.classList.add('text-center');
+  descripcionInfo.innerHTML = descripcion;
+
+  /* Parametros */
+  const parametrosInfo = document.createElement('p');
+  parametrosInfo.classList.add('text-center');
+  parametrosInfo.textContent = `Análsis: ${parametros}`
+  
+  /* Cantidad */
+  const cantidadInfo = document.createElement('p');
+  cantidadInfo.classList.add('text-center');
+  cantidadInfo.textContent = `Número de pruebas: ${cantidad}`;
+  
+  /* Precio */
+  const precioInfo = document.createElement('p');
+  precioInfo.classList.add('text-2xl', 'text-center', 'text-secondary');
+  precioInfo.textContent = `$ ${precio}`
+
+  /* Agregar elementos a InfoContainer */
+  infoContainer.appendChild(referencia);
+  infoContainer.appendChild(descripcionInfo);
+  infoContainer.appendChild(parametrosInfo);
+  infoContainer.appendChild(cantidadInfo);
+  infoContainer.appendChild(precioInfo);
+
+  /* Agregar elementos a Contenedor del producto */
+  productoContainer.appendChild(img);
+  productoContainer.appendChild(infoContainer);
+
+  /* Agregar elementos al DOM */
+  pruebasContainerDOM.appendChild(productoContainer);
+
+  /* Agregar indicadores */
+  const indicador = document.createElement('button');
+  indicador.classList.add('carousel-indicator', 'h-3', 'w-3', 'rounded-[50%]', 'bg-secondary-soft/50');
+  if (index === 0) {
+    indicador.classList.add('active');
+  }
+  pruebasIndicadoresDOM.appendChild(indicador);
 })

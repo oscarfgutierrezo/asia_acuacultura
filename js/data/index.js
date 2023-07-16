@@ -7,3 +7,7 @@ export * from './splashOxipez.js';
 export * from './filtros.js';
 export * from './discos.js';
 export * from './alarmas.js';
+export * from './probioticos.js';
+export * from './dsinfectantes.js';
+export * from './antibioticos.js';
+export * from './pruebas.js';
