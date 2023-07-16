@@ -7,23 +7,133 @@
   <title>Asia - Acuacultura</title>
   <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body>
-  <header></header>
-  <main></main>
-  <footer class="mb-10 px-5">
-    <div class="mb-5 flex items-center gap-4">
-      <div class="h-1 w-full border-2 border-grey"></div>
-      <p class="shrink-0 font-bebasNeue text-secondary text-2xl">O contáctenos:</p>
-      <div class="h-1 w-full border-2 border-grey"></div>
-    </div>
-    <div class="flex flex-wrap justify-center gap-x-5 gap-y-2 font-bebasNeue text-xl">
-      <a href="#">
-        <img class="mx-auto h-12" src="./public/images/whatsapp.svg" alt="Logo de Youtube">317-043-9632
-      </a>
-      <a href="#">
-        <img class="mx-auto h-12" src="./public/images/mail.svg" alt="Logo de Instagram">ventas@asiaacuacultura.com
-      </a>
-    </div>
+<body class="max-w-md">
+  <header>
+    <nav class="max-w-md fixed top-0 w-full px-5 h-14 flex justify-end bg-none z-40">
+      <button id="hamburger-menu-btn">
+        <img class="h-10" src="./public/images/hamburger.svg" alt="icono hamburger menu">
+      </button>
+      <div class="absolute left-0 top-10 w-full h-0 items-center justify-between overflow-hidden transition-all duration-300 md:flex md:w-auto md:order-1" id="hamburguer-menu">
+        <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
+          <li>
+            <a href="./" class="hamburger-menu-item block py-2 pl-3 pr-4 text-white bg-secondary rounded md:bg-transparent md:text-secondary md:p-0">Home</a>
+          </li>
+          <li>
+            <a href="./asesorias.html" class="hamburger-menu-item block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-grey/10 md:hover:bg-transparent md:hover:text-blue-700 md:p-0" aria-current="page">Asesorías y Proyectos</a>
+          </li>
+          <li>
+            <a href="./equipos.html" class="hamburger-menu-item block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-grey/10 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Equipos, Accesorios e Insumos</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- LOGO Y SEMICIRCULO NARANJA -->
+    <section class="max-w-md fixed top-0 w-full z-30">
+      <div id="navbar-container" class="h-14 overflow-hidden bg-secondary">
+        <div id="navbar" class="relative -top-48 -left-[5%] w-[110%] h-80 bg-transparent rounded-[50%] transition-all duration-300"></div>
+      </div>
+      <img id="logo-navbar" class="absolute h-40 w-40 top-[100px] left-1/2 -translate-x-1/2 -translate-y-1/2 transition-all duration-300" src="./public/images/asia-logo.svg" alt="Logo de Asia Acuacultura">
+    </section>
+  </header>
+
+  <main class="font-bebasNeue">
+    <section class="relative mb-5 pt-48 pb-7 bg-background rounded-b-full shadow-gray-600 shadow-md">
+      <p class="text-7xl text-center text-brown">Equipos</p>
+      <p class="absolute translate-x-1/2 right-1/2 -bottom-1 w-max px-12 pb-0.5 font-foregen text-3xl text-white bg-secondary rounded-full">De aireación</p>
+    </section>
+    <section class="px-5 flex flex-col gap-2">
+      <div class="flex items-center gap-4">
+        <div class="h-1 w-full border-2 border-secondary"></div>
+        <p class="shrink-0 text-xl text-secondary">Blowers Línea RB</p>
+        <div class="h-1 w-full border-2 border-secondary"></div>
+      </div>
+      <div>
+        <button class="mb-5 w-full text-2xl text-white bg-primary rounded-full">Blowers Industriales Monofase</button>
+        <!-- CARRUSEL -->
+        <div class="w-full flex justify-center">
+          <div class="carousel relative w-full h-[360px]">
+            <!-- ITEMS -->
+            <div id="blowers-industriales-monofase" class="w-full"></div>
+
+            <!-- BOTONES -->
+            <div class="absolute top-40 translate-y-1/2 w-full flex justify-between">
+              <button id="prevBtn" class="w-9 disabled:opacity-50" disabled>
+                <img src="./public/images/prev-btn.svg" alt="">
+              </button>
+              <button id="nextBtn" class="w-9 disabled:opacity-50">
+                <img src="./public/images/next-btn.svg" alt="">
+              </button>
+            </div>
+            <!-- INDICADORES -->
+            <div id="blowers-industriales-monofase-indicadores" class="absolute bottom-2 right-1/2 translate-x-1/2 flex justify-center gap-1"></div>
+          </div>
+        </div>
+      </div>
+
+  </main>
+
+  <footer class="mt-96 mb-10 px-5 flex flex-col gap-5">
+    <section>
+      <div class="mb-5 flex items-center gap-4">
+        <div class="h-1 w-full border-2 border-grey"></div>
+        <p class="shrink-0 font-bebasNeue text-secondary text-2xl">Síganos y conozca más:</p>
+        <div class="h-1 w-full border-2 border-grey"></div>
+      </div>
+      <div class="flex flex-wrap justify-center gap-x-5 gap-y-2 font-bebasNeue text-xl">
+        <a class="group" href="#" target="_blank">
+          <div class="h-12 flex items-center">
+            <img class="mx-auto h-10 group-hover:h-12 transition-all duration-300" src="./public/images/youtube.svg" alt="Logo de Youtube">
+          </div>
+          <p>Asia_Acuacultura</p>
+        </a>
+        <a class="group" href="https://instagram.com/asiaacuacultura?igshid=YzcxN2Q2NzY0OA==" target="_blank">
+          <div class="h-12 flex items-center">
+            <img class="mx-auto h-10 group-hover:h-12 transition-all duration-300" src="./public/images/instagram.svg" alt="Logo de Instagram">
+          </div>
+          <p>Asia_Acuacultura</p>
+        </a>
+        <a class="group" href="#" target="_blank">
+          <div class="h-12 flex items-center">
+            <img class="mx-auto h-10 group-hover:h-12 transition-all duration-300" src="./public/images/facebook.svg" alt="Logo de Facebook">
+          </div>
+          <p>Asia_Acuacultura</p>
+        </a>
+      </div>
+    </section>
+    <section>
+      <div class="mb-5 flex items-center gap-4">
+        <div class="h-1 w-full border-2 border-grey"></div>
+        <p class="shrink-0 font-bebasNeue text-secondary text-2xl">O contáctenos:</p>
+        <div class="h-1 w-full border-2 border-grey"></div>
+      </div>
+      <div class="flex flex-wrap justify-center gap-x-5 gap-y-2 font-bebasNeue text-xl">
+
+        <!-- href whatsapp segun dispositivo -->
+        <a class="group md:hidden" href="whatsapp://send?phone=+573170439632&abid=+573170439632" target="_blank">
+          <div class="h-12 flex items-center">
+            <img class="mx-auto h-10 group-hover:h-12 transition-all duration-300" src="./public/images/whatsapp.svg" alt="Logo de Whatsapp">
+          </div>
+          <p>317-043-9632</p>
+        </a>
+        <a class="group hidden md:inline" href="http://web.whatsapp.com/send?phone=+573170439632&abid=+573170439632" target="_blank">
+          <div class="h-12 flex items-center">
+            <img class="mx-auto h-10 group-hover:h-12 transition-all duration-300" src="./public/images/whatsapp.svg" alt="Logo de Whatsapp">
+          </div>
+          <p>317-043-9632</p>
+        </a>
+
+        <a class="group" href="mailto:ventas@asiaacuacultura.com" target="_blank">
+          <div class="h-12 flex items-center">
+            <img class="mx-auto h-10 group-hover:h-12 transition-all duration-300" src="./public/images/mail.svg" alt="Icono de email">
+          </div>
+          <p>ventas@asiaacuacultura.com</p>
+        </a>
+      </div>
+    </section>
   </footer>
+
+  <script src="./js/navbar.js"></script>
+  <script src="./js/carruselCatalogo.js" type="module"></script>
+  <script src="./js/carrusel.js"></script>
 </body>
 </html>
