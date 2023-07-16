@@ -20,8 +20,10 @@ document.addEventListener('click', (event) => {
 
 const path = window.location.pathname;
 const hamburgerMenuItems = document.querySelectorAll('.hamburger-menu-item');
+console.log(path);
 hamburgerMenuItems.forEach((item) => {
   const href = item.getAttribute('href');
+  console.log(href);
   if (href === path) {
     item.classList.add('text-white', 'bg-secondary');
     item.classList.remove('text-gray-900', 'hover:bg-grey/10')
