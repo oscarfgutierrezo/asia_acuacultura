@@ -1,10 +1,16 @@
 const createCarousel = containerId => {
   const container = document.getElementById(containerId);
+  const carousel = container.querySelector(".carousel-container")
+  const carouselBtn = container.querySelector(".carousel-btn")
   const carouselItems = Array.from(container.querySelectorAll(".carousel-item"));
   const carouselIndicators = Array.from(container.querySelectorAll(".carousel-indicator"));
   const prevBtn = container.querySelector(".prevBtn");
   const nextBtn = container.querySelector(".nextBtn");
   let currentSlide = 0;
+
+  const toggleCarousel = () => {
+    carousel.classList.toggle('active');
+  }
 
   const showSlide = index => {
     carouselItems.forEach(item => item.classList.remove("active"));
@@ -33,6 +39,7 @@ const createCarousel = containerId => {
 
   prevBtn.addEventListener("click", prevSlide);
   nextBtn.addEventListener("click", nextSlide);
+  carouselBtn.addEventListener("click", toggleCarousel);
   carouselIndicators.forEach((indicator, index) => indicator.addEventListener("click", () => showSlide(index)));
 }
 
@@ -48,6 +55,9 @@ createCarousel("carousel-discos");
 createCarousel("carousel-tuberias");
 createCarousel("carousel-alarmas");
 createCarousel("carousel-monitorPh");
-createCarousel("carousel-probioticos");
+createCarousel("carousel-refractometros"); 
+createCarousel("carousel-conos"); 
+createCarousel("carousel-probioticos"); 
+createCarousel("carousel-desinfectantes");
 createCarousel("carousel-antibioticos");
 createCarousel("carousel-pruebas");

@@ -673,6 +673,11 @@ video {
   margin-right: auto;
 }
 
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
 .my-3 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
@@ -709,10 +714,6 @@ video {
 
 .mt-4 {
   margin-top: 1rem;
-}
-
-.mt-96 {
-  margin-top: 24rem;
 }
 
 .block {
@@ -783,10 +784,6 @@ video {
   height: 310px;
 }
 
-.h-\[320px\] {
-  height: 320px;
-}
-
 .h-\[330px\] {
   height: 330px;
 }
@@ -817,10 +814,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-\[390px\] {
-  height: 390px;
 }
 
 .w-1\/2 {
@@ -1427,6 +1420,10 @@ video {
   font-family: foregen;
 
   src: url("../public/fonts/foregen.otf") format("opentype");
+}
+
+.carousel-container.active {
+  display: flex;
 }
 
 .carousel-item.active {

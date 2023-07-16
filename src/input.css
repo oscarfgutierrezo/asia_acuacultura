@@ -12,6 +12,10 @@
   src: url("../public/fonts/foregen.otf") format("opentype");
 }
 
+.carousel-container.active {
+  display: flex;
+}
+
 .carousel-item.active {
   opacity: 1;
 }
