@@ -42,3 +42,4 @@ createCarousel("carousel-blowers-industrial-dobletapa");
 createCarousel("carousel-blowers-ejelibre");
 createCarousel("carousel-blowers-acuarios");
 createCarousel("carousel-blowers-industrialesHG");
+createCarousel("carousel-splash-oxipez");

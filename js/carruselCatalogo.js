@@ -1,4 +1,4 @@
-import { blowersIndustrial, blowersIndustrialDobleTapa, blowersEjelibre, blowersAcuarios, blowersIndustrialHg } from './data/index.js'
+import { blowersIndustrial, blowersIndustrialDobleTapa, blowersEjelibre, blowersAcuarios, blowersIndustrialHg, splashOxipez } from './data/index.js'
 
 /* Blowers Industriales Monofase */
 
@@ -458,5 +458,87 @@ blowersIndustrialHg.forEach( (producto, index) => {
     indicador.classList.add('active');
   }
   blowersIndustrialHGIndicadoresDOM.appendChild(indicador);
+})
+
+/* Splash Oxipez */
+
+const splashOxipezContainerDOM = document.querySelector('#splash-oxipez')
+const splashOxipezIndicadoresDOM = document.querySelector('#splash-oxipez-indicadores')
+
+splashOxipez.forEach( (producto, index) => {
+  const {ref, potencia, voltaje, oxigeno, ltr, metros, precio} = producto;
+  const productoContainer = document.createElement('div');
+  /* Contenedor */
+  productoContainer.classList.add('carousel-item', 'absolute', 'opacity-0', 'h-full', 'w-full', 'object-cover', 'rounded-xl', 'transition-all', 'duration-700');
+  if (index === 0) {
+    productoContainer.classList.add('active');
+  }
+
+  /* Imagen */
+  const img = document.createElement('img');
+  img.classList.add('mx-auto', 'h-44');
+  img.src = './public/images/SplashOxipez.png';
+  img.alt = 'Blower Acuarios';
+
+  /* Info Contenedor */
+  const infoContainer = document.createElement('div');
+  infoContainer.classList.add('pt-2', 'flex', 'flex-col', 'gap-1', 'text-lg', 'leading-5');
+
+  /* Referencia */
+  const referencia = document.createElement('p');
+  referencia.classList.add('mx-auto', 'mb-2', 'w-[98%]', 'text-xl', 'text-white', 'text-center', 'bg-secondary-soft', 'rounded-full');
+  referencia.textContent = `${ref}`
+
+  /* Potencia Container */
+  const potenciaContainer = document.createElement('div');
+  potenciaContainer.classList.add('flex', 'justify-center', 'gap-1');
+    const potenciaInfo = document.createElement('p');
+    potenciaInfo.classList.add('w-[49%]', 'text-right');
+    potenciaInfo.textContent = `Potencia ${potencia}`;
+    const potenciaDivisor = document.createElement('div');
+    potenciaDivisor.classList.add('border', 'border-secondary');
+    const voltajeInfo = document.createElement('p');
+    voltajeInfo.classList.add('w-[49%]');
+    voltajeInfo.textContent = `Voltaje ${voltaje}`;
+  potenciaContainer.appendChild(potenciaInfo);
+  potenciaContainer.appendChild(potenciaDivisor);
+  potenciaContainer.appendChild(voltajeInfo);
+
+  /* Oxigeno x Hora */
+  const oxigenoInfo = document.createElement('p');
+  oxigenoInfo.classList.add('text-center');
+  oxigenoInfo.textContent = `Kilogramos de oxígeno por hora: ${oxigeno}`
+  
+  /* Caudal */
+  const caudalInfo = document.createElement('p');
+  caudalInfo.classList.add('text-center');
+  caudalInfo.innerHTML = `Caudal ${ltr} ltr/min - ${metros} m<sup>3</sup>/h`;
+  
+  /* Precio */
+  const precioInfo = document.createElement('p');
+  precioInfo.classList.add('text-2xl', 'text-center', 'text-secondary');
+  precioInfo.textContent = `$ ${precio}"`
+
+  /* Agregar elementos a InfoContainer */
+  infoContainer.appendChild(referencia)
+  infoContainer.appendChild(potenciaContainer)
+  infoContainer.appendChild(oxigenoInfo)
+  infoContainer.appendChild(caudalInfo)
+  infoContainer.appendChild(precioInfo)
+
+  /* Agregar elementos a Contenedor del producto */
+  productoContainer.appendChild(img);
+  productoContainer.appendChild(infoContainer);
+
+  /* Agregar elementos al DOM */
+  splashOxipezContainerDOM.appendChild(productoContainer);
+
+  /* Agregar indicadores */
+  const indicador = document.createElement('button');
+  indicador.classList.add('carousel-indicator', 'h-3', 'w-3', 'rounded-[50%]', 'bg-secondary-soft/50');
+  if (index === 0) {
+    indicador.classList.add('active');
+  }
+  splashOxipezIndicadoresDOM.appendChild(indicador);
 })
 
