@@ -40,3 +40,4 @@ const createCarousel = containerId => {
 createCarousel("carousel-blowers-industrial");
 createCarousel("carousel-blowers-industrial-dobletapa");
 createCarousel("carousel-blowers-ejelibre");
+createCarousel("carousel-blowers-acuarios");

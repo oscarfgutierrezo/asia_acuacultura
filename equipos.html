@@ -41,6 +41,7 @@
       <p class="text-7xl text-center text-brown">Equipos</p>
       <p class="absolute translate-x-1/2 right-1/2 -bottom-1 w-max px-12 pb-0.5 font-foregen text-3xl text-white bg-secondary rounded-full">De aireación</p>
     </section>
+
     <section class="px-5 flex flex-col gap-2">
       <div class="flex items-center gap-4">
         <div class="h-1 w-full border-2 border-secondary"></div>
@@ -119,6 +120,41 @@
           </div>
         </div>
       </div>
+    </section>
+
+    <section class="px-5 flex flex-col gap-2">
+      <div class="flex items-center gap-4">
+        <div class="h-1 w-full border-2 border-secondary"></div>
+        <p class="shrink-0 text-xl text-secondary">Blowers Línea HG</p>
+        <div class="h-1 w-full border-2 border-secondary"></div>
+      </div>
+
+      <!-- Blowers Acuarios -->
+      <div>
+        <button class="mb-5 w-full text-2xl text-white bg-primary rounded-full">Blowers Acuarios</button>
+        <!-- CARRUSEL -->
+        <div class="mb-5 w-full flex justify-center">
+          <div id="carousel-blowers-acuarios" class="relative w-full h-[360px]">
+            <!-- ITEMS -->
+            <div id="blowers-acuarios" class="w-full"></div>
+
+            <!-- BOTONES -->
+            <div class="absolute top-40 translate-y-1/2 w-full flex justify-between">
+              <button class="prevBtn w-9 disabled:opacity-50" disabled>
+                <img src="./public/images/prev-btn.svg" alt="">
+              </button>
+              <button class="nextBtn w-9 disabled:opacity-50">
+                <img src="./public/images/next-btn.svg" alt="">
+              </button>
+            </div>
+            <!-- INDICADORES -->
+            <div id="blowers-acuarios-indicadores" class="absolute bottom-0 right-1/2 translate-x-1/2 w-full flex justify-center flex-wrap gap-1"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    </section>
 
   </main>
 

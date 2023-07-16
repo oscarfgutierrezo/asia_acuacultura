@@ -1,6 +1,6 @@
 export const blowersIndustrial = [
   {
-    ref: "010 7AV15",
+    ref: "2RB 010 7AV15",
     potencia: "230W",
     voltajeMin: "110V",
     voltajeMax: "220V",
@@ -12,7 +12,7 @@ export const blowersIndustrial = [
     precio: "814.000"
   },
   {
-    ref: "110 7AV15",
+    ref: "2RB 110 7AV15",
     potencia: "280W",
     voltajeMin: "110V",
     voltajeMax: "220V",
@@ -24,7 +24,7 @@ export const blowersIndustrial = [
     precio: "870.000"
   },
   {
-    ref: "210 7AV15",
+    ref: "2RB 210 7AV15",
     potencia: "450W/0.6HP",
     voltajeMin: "110V",
     voltajeMax: "220V",
@@ -36,7 +36,7 @@ export const blowersIndustrial = [
     precio: "1.090.000"
   },
   {
-    ref: "230 7AV15",
+    ref: "2RB 230 7AV15",
     potencia: "450W/0.6HP",
     voltajeMin: "110V",
     voltajeMax: "220V",
@@ -48,7 +48,7 @@ export const blowersIndustrial = [
     precio: "1.150.000"
   },
   {
-    ref: "310 7AA11",
+    ref: "2RB 310 7AA11",
     potencia: "1 HP",
     voltajeMin: "MONO",
     voltajeMax: "220V",
@@ -60,7 +60,7 @@ export const blowersIndustrial = [
     precio: "1.265.000"
   },
   {
-    ref: "410 7AV15",
+    ref: "2RB 410 7AV15",
     potencia: "1.2 HP",
     voltajeMin: "110V",
     voltajeMax: "220V",
@@ -72,7 +72,7 @@ export const blowersIndustrial = [
     precio: "1.650.000"
   },
   {
-    ref: "510 7AV15",
+    ref: "2RB 510 7AV15",
     potencia: "1.7 HP",
     voltajeMin: "110V",
     voltajeMax: "220V",
@@ -84,7 +84,7 @@ export const blowersIndustrial = [
     precio: "2.090.000"
   },
   {
-    ref: "410 7AV25",
+    ref: "2RB 410 7AV25",
     potencia: "1.7 HP",
     voltajeMin: "110V",
     voltajeMax: "220V",
@@ -96,7 +96,7 @@ export const blowersIndustrial = [
     precio: "1.850.000"
   },
   {
-    ref: "510 7AA11",
+    ref: "2RB 510 7AA11",
     potencia: "1.7 HP",
     voltajeMin: "Mono",
     voltajeMax: "220V",
@@ -108,7 +108,7 @@ export const blowersIndustrial = [
     precio: "1.950.000"
   },
   {
-    ref: "510 7AV25",
+    ref: "2RB 510 7AV25",
     potencia: "2.3 HP",
     voltajeMin: "110V",
     voltajeMax: "220V",
@@ -120,7 +120,7 @@ export const blowersIndustrial = [
     precio: "2.810.000"
   },
   {
-    ref: "510 7AV26",
+    ref: "2RB 510 7AV26",
     potencia: "2.3 HP",
     voltajeMin: "Mono",
     voltajeMax: "220V",
@@ -132,7 +132,7 @@ export const blowersIndustrial = [
     precio: "2.450.000"
   },
   {
-    ref: "710 7AA11",
+    ref: "2RB 710 7AA11",
     potencia: "3.4 HP",
     voltajeMin: "Mono",
     voltajeMax: "220V",
@@ -144,7 +144,7 @@ export const blowersIndustrial = [
     precio: "3.675.000"
   },
   {
-    ref: "410 7AW16",
+    ref: "2RB 410 7AW16",
     potencia: "1.2 HP",
     voltajeMin: "220V",
     voltajeMax: "440V",
@@ -156,7 +156,7 @@ export const blowersIndustrial = [
     precio: "1.560.000"
   },
   {
-    ref: "410 7AW26",
+    ref: "2RB 410 7AW26",
     potencia: "2 HP",
     voltajeMin: "220V",
     voltajeMax: "440V",
@@ -168,7 +168,7 @@ export const blowersIndustrial = [
     precio: "1.800.000"
   },
   {
-    ref: "510 7AW26",
+    ref: "2RB 510 7AW26",
     potencia: "2.7 HP",
     voltajeMin: "220V",
     voltajeMax: "440V",
@@ -180,7 +180,7 @@ export const blowersIndustrial = [
     precio: "2.200.000"
   },
   {
-    ref: "610 7AW06",
+    ref: "2RB 610 7AW06",
     potencia: "2.7 HP",
     voltajeMin: "220V",
     voltajeMax: "440V",
@@ -192,7 +192,7 @@ export const blowersIndustrial = [
     precio: "2.680.000"
   },
   {
-    ref: "710 7AW16",
+    ref: "2RB 710 7AW16",
     potencia: "3.4 HP",
     voltajeMin: "220V",
     voltajeMax: "440V",
@@ -204,7 +204,7 @@ export const blowersIndustrial = [
     precio: "2.915.000"
   },
   {
-    ref: "630 7AW26",
+    ref: "2RB 630 7AW26",
     potencia: "4.6 HP",
     voltajeMin: "220V",
     voltajeMax: "440V",
@@ -216,7 +216,7 @@ export const blowersIndustrial = [
     precio: "3.542.000"
   },
   {
-    ref: "730 7AW36",
+    ref: "2RB 730 7AW36",
     potencia: "6 HP",
     voltajeMin: "220V",
     voltajeMax: "440V",
@@ -228,7 +228,7 @@ export const blowersIndustrial = [
     precio: "4.830.000"
   },
   {
-    ref: "910 7AW06",
+    ref: "2RB 910 7AW06",
     potencia: "13 HP",
     voltajeMin: "220V",
     voltajeMax: "440V",
