@@ -43,3 +43,4 @@ createCarousel("carousel-blowers-ejelibre");
 createCarousel("carousel-blowers-acuarios");
 createCarousel("carousel-blowers-industrialesHG");
 createCarousel("carousel-splash-oxipez");
+createCarousel("carousel-filtros");
