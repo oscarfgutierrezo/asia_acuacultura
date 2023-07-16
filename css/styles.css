@@ -803,6 +803,26 @@ video {
   height: 100%;
 }
 
+.h-\[370px\] {
+  height: 370px;
+}
+
+.h-\[4000px\] {
+  height: 4000px;
+}
+
+.h-\[400px\] {
+  height: 400px;
+}
+
+.h-\[420px\] {
+  height: 420px;
+}
+
+.h-\[430px\] {
+  height: 430px;
+}
+
 .w-1\/2 {
   width: 50%;
 }
