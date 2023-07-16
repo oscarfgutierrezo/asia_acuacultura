@@ -1,1 +1,1 @@
-export * from './blowersIndustrialesMonofase.js';
+export * from './blowersIndustrial.js';

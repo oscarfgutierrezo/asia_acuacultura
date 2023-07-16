@@ -1,11 +1,11 @@
-import { blowersIndustrialesMonofase } from './data/index.js'
+import { blowersIndustrial } from './data/index.js'
 
 /* Blowers Industriales Monofase */
 
-const blowersIndustrialesMonofaseContainerDOM = document.querySelector('#blowers-industriales-monofase')
-const blowersIndustrialesMonofaseIndicadoresDOM = document.querySelector('#blowers-industriales-monofase-indicadores')
+const blowersIndustrialContainerDOM = document.querySelector('#blowers-industriales')
+const blowersIndustrialIndicadoresDOM = document.querySelector('#blowers-industriales-indicadores')
 
-blowersIndustrialesMonofase.forEach( (producto, index) => {
+blowersIndustrial.forEach( (producto, index) => {
   const {ref, potencia, voltajeMin, voltajeMax, kpa, psi, caudal, cfm, entrada, precio} = producto;
   const productoContainer = document.createElement('div');
   /* Contenedor */
@@ -31,7 +31,7 @@ blowersIndustrialesMonofase.forEach( (producto, index) => {
 
   /* Potencia Container */
   const potenciaContainer = document.createElement('div');
-  potenciaContainer.classList.add('flex', 'justify-center', 'gap-3');
+  potenciaContainer.classList.add('flex', 'justify-center', 'gap-1');
     const potenciaInfo = document.createElement('p');
     potenciaInfo.classList.add('w-[49%]', 'text-right');
     potenciaInfo.textContent = `Potencia ${potencia}`;
@@ -46,7 +46,7 @@ blowersIndustrialesMonofase.forEach( (producto, index) => {
 
   /* Presion Container */
   const presionContainer = document.createElement('div');
-  presionContainer.classList.add('flex', 'justify-center', 'gap-3');
+  presionContainer.classList.add('flex', 'justify-center', 'gap-1');
     const presionInfo = document.createElement('p');
     presionInfo.classList.add('w-[49%]', 'text-right');
     presionInfo.textContent = `Presión ${kpa} kpa - ${psi} psi`;
@@ -56,7 +56,7 @@ blowersIndustrialesMonofase.forEach( (producto, index) => {
     entradaInfo.classList.add('w-[49%]');
     entradaInfo.innerHTML = `Caudal ${caudal} m<sup>3</sup>/h - ${cfm} cfm</p>`;
   presionContainer.appendChild(presionInfo);
-  presionContainer.appendChild(potenciaDivisor);
+  presionContainer.appendChild(presionDivisor);
   presionContainer.appendChild(entradaInfo);
 
   /* Entrada salida info */
@@ -81,7 +81,7 @@ blowersIndustrialesMonofase.forEach( (producto, index) => {
   productoContainer.appendChild(infoContainer);
 
   /* Agregar elementos al DOM */
-  blowersIndustrialesMonofaseContainerDOM.appendChild(productoContainer);
+  blowersIndustrialContainerDOM.appendChild(productoContainer);
 
   /* Agregar indicadores */
   const indicador = document.createElement('button');
@@ -89,5 +89,5 @@ blowersIndustrialesMonofase.forEach( (producto, index) => {
   if (index === 0) {
     indicador.classList.add('active');
   }
-  blowersIndustrialesMonofaseIndicadoresDOM.appendChild(indicador);
+  blowersIndustrialIndicadoresDOM.appendChild(indicador);
 })

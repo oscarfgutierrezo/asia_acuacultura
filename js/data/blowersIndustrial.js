@@ -1,4 +1,4 @@
-export const blowersIndustrialesMonofase = [
+export const blowersIndustrial = [
   {
     ref: "010 7AV15",
     potencia: "230W",
@@ -142,5 +142,101 @@ export const blowersIndustrialesMonofase = [
     cfm: "221",
     entrada: "2",
     precio: "3.675.000"
-  }  
+  },
+  {
+    ref: "410 7AW16",
+    potencia: "1.2 HP",
+    voltajeMin: "220V",
+    voltajeMax: "440V",
+    kpa: "16",
+    psi: "2.3",
+    caudal: "175",
+    cfm: "103",
+    entrada: "1 1/2",
+    precio: "1.560.000"
+  },
+  {
+    ref: "410 7AW26",
+    potencia: "2 HP",
+    voltajeMin: "220V",
+    voltajeMax: "440V",
+    kpa: "22",
+    psi: "3.19",
+    caudal: "175",
+    cfm: "103",
+    entrada: "1 1/2",
+    precio: "1.800.000"
+  },
+  {
+    ref: "510 7AW26",
+    potencia: "2.7 HP",
+    voltajeMin: "220V",
+    voltajeMax: "440V",
+    kpa: "21",
+    psi: "3",
+    caudal: "255",
+    cfm: "150",
+    entrada: "2",
+    precio: "2.200.000"
+  },
+  {
+    ref: "610 7AW06",
+    potencia: "2.7 HP",
+    voltajeMin: "220V",
+    voltajeMax: "440V",
+    kpa: "19",
+    psi: "2.75",
+    caudal: "315",
+    cfm: "185",
+    entrada: "2",
+    precio: "2.680.000"
+  },
+  {
+    ref: "710 7AW16",
+    potencia: "3.4 HP",
+    voltajeMin: "220V",
+    voltajeMax: "440V",
+    kpa: "19",
+    psi: "2.75",
+    caudal: "376",
+    cfm: "221",
+    entrada: "2",
+    precio: "2.915.000"
+  },
+  {
+    ref: "630 7AW26",
+    potencia: "4.6 HP",
+    voltajeMin: "220V",
+    voltajeMax: "440V",
+    kpa: "22",
+    psi: "3.1",
+    caudal: "415",
+    cfm: "244",
+    entrada: "2",
+    precio: "3.542.000"
+  },
+  {
+    ref: "730 7AW36",
+    potencia: "6 HP",
+    voltajeMin: "220V",
+    voltajeMax: "440V",
+    kpa: "26",
+    psi: "3.7",
+    caudal: "500",
+    cfm: "294",
+    entrada: "2",
+    precio: "4.830.000"
+  },
+  {
+    ref: "910 7AW06",
+    potencia: "13 HP",
+    voltajeMin: "220V",
+    voltajeMax: "440V",
+    kpa: "14",
+    psi: "2",
+    caudal: "1250",
+    cfm: "736",
+    entrada: "4",
+    precio: "14.400.000"
+  }
 ]

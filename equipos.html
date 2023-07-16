@@ -47,25 +47,51 @@
         <p class="shrink-0 text-xl text-secondary">Blowers Línea RB</p>
         <div class="h-1 w-full border-2 border-secondary"></div>
       </div>
+
+      <!-- Blowers Industriales Monofase -->
       <div>
-        <button class="mb-5 w-full text-2xl text-white bg-primary rounded-full">Blowers Industriales Monofase</button>
+        <button class="w-full text-2xl text-white bg-primary rounded-full">Blowers Industriales</button>
         <!-- CARRUSEL -->
-        <div class="w-full flex justify-center">
-          <div class="carousel relative w-full h-[360px]">
+        <div class="my-5 w-full flex justify-center">
+          <div id="carousel-blowers-industrial" class="relative w-full h-[360px]">
             <!-- ITEMS -->
-            <div id="blowers-industriales-monofase" class="w-full"></div>
+            <div id="blowers-industriales" class="w-full"></div>
 
             <!-- BOTONES -->
             <div class="absolute top-40 translate-y-1/2 w-full flex justify-between">
-              <button id="prevBtn" class="w-9 disabled:opacity-50" disabled>
+              <button class="prevBtn w-9 disabled:opacity-50" disabled>
                 <img src="./public/images/prev-btn.svg" alt="">
               </button>
-              <button id="nextBtn" class="w-9 disabled:opacity-50">
+              <button class="nextBtn w-9 disabled:opacity-50">
                 <img src="./public/images/next-btn.svg" alt="">
               </button>
             </div>
             <!-- INDICADORES -->
-            <div id="blowers-industriales-monofase-indicadores" class="absolute bottom-2 right-1/2 translate-x-1/2 flex justify-center gap-1"></div>
+            <div id="blowers-industriales-indicadores" class="absolute bottom-0 right-1/2 translate-x-1/2 w-full flex justify-center flex-wrap gap-1"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blowers Industriales Doble Tapa Monofase -->
+      <div>
+        <button class="mb-5 w-full text-2xl text-white bg-primary rounded-full">Blowers Industriales Doble Tapa</button>
+        <!-- CARRUSEL -->
+        <div class="w-full flex justify-center">
+          <div id="carousel-blowers-industrial-trifase" class="relative w-full h-[360px]">
+            <!-- ITEMS -->
+            <div id="blowers-industriales-trifase" class="w-full"></div>
+
+            <!-- BOTONES -->
+            <div class="absolute top-40 translate-y-1/2 w-full flex justify-between">
+              <button class="prevBtn w-9 disabled:opacity-50" disabled>
+                <img src="./public/images/prev-btn.svg" alt="">
+              </button>
+              <button class="nextBtn w-9 disabled:opacity-50">
+                <img src="./public/images/next-btn.svg" alt="">
+              </button>
+            </div>
+            <!-- INDICADORES -->
+            <div id="blowers-industriales-trifase-indicadores" class="absolute bottom-0 right-1/2 translate-x-1/2 flex justify-center flex-wrap gap-1"></div>
           </div>
         </div>
       </div>
@@ -134,6 +160,20 @@
 
   <script src="./js/navbar.js"></script>
   <script src="./js/carruselCatalogo.js" type="module"></script>
-  <script src="./js/carrusel.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", async function() {
+      await new Promise(resolve => {
+        const script = document.createElement('script');
+        script.src = "./js/carruselCatalogo.js";
+        script.type = "module";
+        script.onload = resolve;
+        document.head.appendChild(script);
+      });
+      
+      const script = document.createElement('script');
+      script.src = "./js/carruselEquipos.js";
+      document.head.appendChild(script);
+    });
+  </script>
 </body>
 </html>
