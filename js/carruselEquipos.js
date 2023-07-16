@@ -39,3 +39,4 @@ const createCarousel = containerId => {
 // Crear instancias de los carruseles
 createCarousel("carousel-blowers-industrial");
 createCarousel("carousel-blowers-industrial-dobletapa");
+createCarousel("carousel-blowers-ejelibre");
