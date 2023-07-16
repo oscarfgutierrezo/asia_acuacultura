@@ -1,4 +1,4 @@
-import { blowersIndustrial, blowersIndustrialDobleTapa, blowersEjelibre, blowersAcuarios, blowersIndustrialHg, splashOxipez, filtros } from './data/index.js'
+import { blowersIndustrial, blowersIndustrialDobleTapa, blowersEjelibre, blowersAcuarios, blowersIndustrialHg, splashOxipez, filtros, discos } from './data/index.js'
 
 /* Blowers Industriales Monofase */
 
@@ -600,4 +600,80 @@ filtros.forEach( (producto, index) => {
     indicador.classList.add('active');
   }
   filtrosIndicadoresDOM.appendChild(indicador);
+})
+
+/* Discos */
+
+const discosContainerDOM = document.querySelector('#discos')
+const discosIndicadoresDOM = document.querySelector('#discos-indicadores')
+
+discos.forEach( (producto, index) => {
+  const {ref, diametro, flujo, oxigenacion, precio} = producto;
+  const productoContainer = document.createElement('div');
+  /* Contenedor */
+  productoContainer.classList.add('carousel-item', 'absolute', 'opacity-0', 'h-full', 'w-full', 'object-cover', 'rounded-xl', 'transition-all', 'duration-700');
+  if (index === 0) {
+    productoContainer.classList.add('active');
+  }
+
+  /* Imagen */
+  const img = document.createElement('img');
+  img.classList.add('mx-auto', 'h-44');
+  img.src = './public/images/discos.png';
+  img.alt = 'Blower Acuarios';
+
+  /* Info Contenedor */
+  const infoContainer = document.createElement('div');
+  infoContainer.classList.add('pt-2', 'flex', 'flex-col', 'gap-1', 'text-lg', 'leading-5');
+
+  /* Referencia */
+  const referencia = document.createElement('p');
+  referencia.classList.add('mx-auto', 'mb-2', 'w-[98%]', 'text-xl', 'text-white', 'text-center', 'bg-secondary-soft', 'rounded-full');
+  referencia.textContent = `${ref}`;
+
+  /* Diametro Container */
+  const diametroContainer = document.createElement('div');
+  diametroContainer.classList.add('flex', 'justify-center', 'gap-1');
+    const potenciaInfo = document.createElement('p');
+    potenciaInfo.classList.add('w-[49%]', 'text-right');
+    potenciaInfo.textContent = `Diametro ${diametro}`;
+    const potenciaDivisor = document.createElement('div');
+    potenciaDivisor.classList.add('border', 'border-secondary');
+    const voltajeInfo = document.createElement('p');
+    voltajeInfo.classList.add('w-[49%]');
+    voltajeInfo.innerHTML = `Flujo de aire ${flujo} m<sup>3</sup>/h`;
+  diametroContainer.appendChild(potenciaInfo);
+  diametroContainer.appendChild(potenciaDivisor);
+  diametroContainer.appendChild(voltajeInfo);
+
+  /* Oxigenacion */
+  const oxigenacionInfo = document.createElement('p');
+  oxigenacionInfo.classList.add('text-center');
+  oxigenacionInfo.innerHTML = `Capacidad de oxigenación: ${oxigenacion} Kg O<sup>2</sup>/H`
+  
+  /* Precio */
+  const precioInfo = document.createElement('p');
+  precioInfo.classList.add('text-2xl', 'text-center', 'text-secondary');
+  precioInfo.textContent = `$ ${precio}"`
+
+  /* Agregar elementos a InfoContainer */
+  infoContainer.appendChild(referencia);
+  infoContainer.appendChild(diametroContainer);
+  infoContainer.appendChild(oxigenacionInfo);
+  infoContainer.appendChild(precioInfo);
+
+  /* Agregar elementos a Contenedor del producto */
+  productoContainer.appendChild(img);
+  productoContainer.appendChild(infoContainer);
+
+  /* Agregar elementos al DOM */
+  discosContainerDOM.appendChild(productoContainer);
+
+  /* Agregar indicadores */
+  const indicador = document.createElement('button');
+  indicador.classList.add('carousel-indicator', 'h-3', 'w-3', 'rounded-[50%]', 'bg-secondary-soft/50');
+  if (index === 0) {
+    indicador.classList.add('active');
+  }
+  discosIndicadoresDOM.appendChild(indicador);
 })
