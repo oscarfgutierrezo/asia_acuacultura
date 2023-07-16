@@ -58,13 +58,19 @@
         </div>
       </div>
       <div class="max-w-sm mx-auto px-5 pt-3 flex justify-center items-end">
-        <a class="group flex items-center" href="">
+        <a class="group flex items-center" href="/equipos.html">
           <img class="mx-auto group-hover:w-full transition-all duration-300" src="./public/images/pregunta-equipos.png" alt="Imagen con pregunta sobre asesoria en equipos">
         </a>
-        <a class="group w-[60%] flex items-center" href="">
-          <img class="mx-auto group-hover:w-full transition-all duration-300" src="./public/images/pregunta-asesoria.png" alt="Imagen con logo de whatsapp">
+
+        <!-- href whatsapp segun dispositivo -->
+        <a class="group w-[60%] flex items-center md:hidden" href="whatsapp://send?phone=+573170439632&abid=+573170439632" target="_blank">
+          <img class="mx-auto group-hover:w-full transition-all duration-300" src="./public/images/pregunta-asesoria.png">
         </a>
-        <a class="group flex items-center" href="">
+        <a class="group hidden md:inline" href="http://web.whatsapp.com/send?phone=+573170439632&abid=+573170439632" target="_blank">
+          <img class="mx-auto group-hover:w-full transition-all duration-300" src="./public/images/pregunta-asesoria.png">
+        </a>
+
+        <a class="group flex items-center" href="/equipos.html#insumos">
           <img class="mx-auto group-hover:w-full transition-all duration-300" src="./public/images/pregunta-insumos.png" alt="Imagen con pregunta sobre asesoria en equipos">
         </a>
       </div>
