@@ -6,3 +6,4 @@ export * from './blowersIndustrialHg.js';
 export * from './splashOxipez.js';
 export * from './filtros.js';
 export * from './discos.js';
+export * from './alarmas.js';

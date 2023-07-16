@@ -783,6 +783,14 @@ video {
   height: 310px;
 }
 
+.h-\[330px\] {
+  height: 330px;
+}
+
+.h-\[350px\] {
+  height: 350px;
+}
+
 .h-\[360px\] {
   height: 360px;
 }
@@ -793,14 +801,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-\[320px\] {
-  height: 320px;
-}
-
-.h-\[330px\] {
-  height: 330px;
 }
 
 .w-1\/2 {

@@ -45,3 +45,5 @@ createCarousel("carousel-blowers-industrialesHG");
 createCarousel("carousel-splash-oxipez");
 createCarousel("carousel-filtros");
 createCarousel("carousel-discos");
+createCarousel("carousel-tuberias");
+createCarousel("carousel-alarmas");
