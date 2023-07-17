@@ -9,22 +9,24 @@
 </head>
 <body>
   <header>
-    <nav class="fixed top-0 w-full px-5 h-14 flex justify-end items-center text-xl font-foregen bg-none z-40 md:h-32 md:px-10 md:py-5 md:items-end md:bg-secondary">
+    <nav class="fixed top-0 w-full px-5 h-14 flex justify-end items-center text-xl font-foregen bg-none z-40 md:h-32 md:px-10 md:pt-5 md:items-end md:bg-secondary">
       <button id="hamburger-menu-btn" class="md:hidden">
         <img class="h-10" src="./public/images/hamburger.svg" alt="icono hamburger menu">
       </button>
-      <ul class="absolute hidden top-14 right-0 w-full h-0 flex-col p-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:relative md:p-0 md:w-full md:h-max md:top-0 md:flex md:flex-row md:justify-end md:gap-10 md:bg-transparent md:border-none" id="hamburguer-menu">
+      <ul class="absolute hidden top-14 right-0 w-full h-0 flex-col p-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:relative md:p-0 md:w-full md:h-max md:top-0 md:flex md:flex-row md:justify-end md:gap-5 md:bg-transparent md:border-none" id="hamburguer-menu">
         <li>
-          <a href="/" class="hamburger-menu-item block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-grey/10 transition-all duration-300 md:p-0 md:text-secondary-soft md:hover:text-white md:hover:bg-transparent">Home</a>
+          <a href="/" class="hamburger-menu-item block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-grey/10 transition-all duration-300 md:px-0 md:py-2 md:text-secondary-soft md:hover:text-white md:hover:bg-transparent">Home</a>
         </li>
+        <div class="hidden border border-secondary-soft md:block"></div>
         <li>
-          <a href="/asesorias.html" class="hamburger-menu-item block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-grey/10 transition-all duration-300 md:p-0 md:text-secondary-soft md:hover:text-white md:hover:bg-transparent"">Asesorías y Proyectos</a>
+          <a href="/asesorias.html" class="hamburger-menu-item block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-grey/10 transition-all duration-300 md:px-0 md:py-2 md:p-0 md:text-secondary-soft md:hover:text-white md:hover:bg-transparent"">Asesorías y Proyectos</a>
         </li>
+        <div class="hidden border border-secondary-soft md:block"></div>
         <li>
-          <a href="/equipos.html" class="hamburger-menu-item block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-grey/10 transition-all duration-300 md:p-0 md:text-secondary-soft md:hover:text-white md:hover:bg-transparent">Equipos, Accesorios e Insumos</a>
+          <a href="/equipos.html" class="hamburger-menu-item block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-grey/10 transition-all duration-300 md:px-0 md:py-2 md:p-0 md:text-secondary-soft md:hover:text-white md:hover:bg-transparent">Equipos, Accesorios e Insumos</a>
         </li>
       </ul>
-      <img class="hidden absolute top-6 left-10 h-40 md:block" src="./public/images/asia-logo.svg" alt="Logo Asia Acuacultura">
+      <img class="hidden absolute top-9 left-10 h-40 md:block" src="./public/images/asia-logo.svg" alt="Logo Asia Acuacultura">
     </nav>
     <!-- LOGO Y SEMICIRCULO NARANJA -->
     <section class="fixed top-0 w-full z-30 md:hidden">
@@ -36,12 +38,12 @@
   </header>
 
   <main class="font-bebasNeue">
-    <section class="relative pt-48 pb-7 bg-background border-b-2 border-brown z-10 md:px-10 md:pb-0 md:border-0">
+    <section class="relative pt-48 pb-7 bg-background border-b-2 border-brown z-10 md:px-10 md:pt-56 md:pb-0 md:border-0">
       <div class="flex flex-col pt-5 pr-20 md:flex-row">
         <h2 class="pl-5 text-6xl text-brown md:inline md:pl-0 md:text-8xl">Asesoría</h2>
         <p class="w-full h-min pl-5 font-foregen text-2xl text-white bg-secondary -z-10 md:relative md:-bottom-7 md:-left-3 md:py-1 md:text-4xl">En proyectos</p>
       </div>
-      <p class="w-[55%] pt-2 pl-5 text-xl leading-6 md:text-3xl md:leading-none md:pl-0">Desde la planeación, hasta la operación pasando por fases de diseño, construcción, supervisión e interventoría.</p>
+      <p class="w-[65%] pt-2 pl-5 text-xl leading-6 md:text-3xl md:leading-none md:pl-0">Desde la planeación, hasta la operación pasando por fases de diseño, construcción, supervisión, interventoría y capacitación.</p>
       <picture>
         <source srcset="/public/images/trabajador-movil.png" media="(max-width: 767px)" />
         <source srcset="/public/images/trabajador.png" media="(min-width: 768px)" />
@@ -50,13 +52,13 @@
       <p class="absolute translate-x-1/2 right-1/2 -bottom-4 w-max px-5 pt-0.5 font-foregen text-lg text-white bg-brown rounded-full md:relative md:translate-x-0 md:-left-10 md:-right-10 md:bottom-0 md:mt-5 md:w-screen md:px-10 md:py-2 md:text-3xl md:rounded-none">Las modalidades más asesoradas:</p>
       <div class="hidden relative -left-10 w-screen pl-10 py-4 text-2xl leading-6 bg-secondary-soft md:block">
         <p class="text-white">Sistemas para producción</p>
-        <p class="text-brown">Semilla de peces y camarones.</p>
-        <p class="text-white">Granjas convencionales, semi-intensivas y super-intensivas</p>
+        <p class="pb-2 text-brown">Semilla de peces y camarones.</p>
+        <p class="w-[60%] text-white">Granjas convencionales, semi-intensivas y <span class="whitespace-nowrap">super-intensivas</span></p>
         <p class="text-brown">Para cultivos en tierra, geomembrana e iprs.</p>
       </div>
     </section>
 
-    <section class="relative px-5 overflow-hidden flex flex-col md:pt-10 md:px-10 md:flex-row md:overflow-visible md:justify-between md:z-20 md:bg-background">
+    <section class="relative px-5 overflow-hidden flex flex-col md:pt-10 md:px-10 md:flex-row md:overflow-visible md:justify-between md:z-20 md:bg-background-grey">
       <div class="absolute -top-36 left-0 w-full h-[380px] bg-secondary-soft rounded-b-[50%] -z-10 md:hidden"></div>
       <div class="px-10 pt-8 flex justify-center gap-2 md:hidden">
         <div class="max-w-[116px]">
@@ -69,7 +71,7 @@
           <p class="text-lg text-center text-brown leading-4">Para cultivos en tierra, geomembrana e iprs.</p>
         </div>
       </div>
-      <div class="max-w-sm mx-auto mb-5 pt-3 flex justify-center items-end md:absolute md:right-16 md:-top-24 md:max-w-[220px] md:flex-wrap md:gap-x-5">
+      <div class="max-w-sm mx-auto mb-5 pt-3 flex justify-center items-end md:absolute md:right-14 md:-top-8 md:max-w-[220px] md:flex-wrap md:gap-x-5">
         <a class="group flex items-center md:w-24 md:h-24" href="/equipos.html">
           <img class="mx-auto group-hover:w-full transition-all duration-300 md:w-20" src="./public/images/pregunta-equipos.png" alt="Imagen con pregunta sobre asesoria en equipos">
         </a>
@@ -79,28 +81,38 @@
           <img class="mx-auto group-hover:w-full transition-all duration-300" src="./public/images/pregunta-asesoria.png">
         </a>
         <a class="hidden w-full -order-1 md:block" href="http://web.whatsapp.com/send?phone=+573170439632&abid=+573170439632" target="_blank">
-          <img class="mx-auto" src="./public/images/pregunta-asesoria.png">
+          <img class="mx-auto w-40" src="./public/images/pregunta-asesoria.png">
         </a>
 
         <a class="group flex items-center md:w-24 md:h-24" href="/equipos.html#insumos">
           <img class="mx-auto group-hover:w-full transition-all duration-300 md:w-20" src="./public/images/pregunta-insumos.png" alt="Imagen con pregunta sobre asesoria en equipos">
         </a>
       </div>
-      <div class="flex flex-col gap-1 md:gap-2 md:max-w-md">
+      <div class="flex flex-col gap-1 md:gap-2 md:w-[60%]">
         <p class="w-max mx-auto px-7 pb-0.5 font-foregen text-2xl text-white bg-secondary rounded-full md:relative md:-left-10 md:mx-0 md:pl-10 md:pr-28 md:text-3xl md:rounded-l-none">Diseño y produccion de</p>
-        <p class="text-center text-4xl text-primary md:text-5xl md:text-left">Proyectos Acuícolas</p>
+        <p class="text-center text-4xl text-primary md:text-5xl md:text-left md:text-brown">Proyectos Acuícolas</p>
         <p class="text-xl text-center text-brown leading-6 md:text-2xl md:text-left">Construímos tanques en geomembrana que se ajustan a las necesidades propias del proyecto, aumentando las probabilidades de éxito.</p>
       </div>
     </section>
-    <section class="py-10 px-5 md:px-10 md:bg-background">
+    <section class="py-10 px-5 md:px-10 md:bg-background-grey">
       <p class="w-max mx-auto px-3 mb-3 font-foregen text-lg text-white bg-brown rounded-full md:py-0.5 md:mb-5 md:text-2xl">Una imagen vale más que mil palabras</p>
-      <div class="flex flex-wrap gap-1 md:flex-nowrap md:overflow-x-scroll">
-        <img class="w-[49%] h-40 object-cover md:h-64" src="./public/images/carrusel_movil_01.jpg" alt="">
-        <img class="w-[49%] h-40 object-cover md:h-64" src="./public/images/carrusel_movil_02.jpg" alt="">
-        <img class="w-[49%] h-40 object-cover md:h-64" src="./public/images/carrusel_movil_03.jpg" alt="">
-        <img class="w-[49%] h-40 object-cover md:h-64" src="./public/images/carrusel_movil_04.jpg" alt="">
-        <img class="w-[49%] h-40 object-cover md:h-64" src="./public/images/carrusel_movil_05.jpg" alt="">
-        <img class="w-[49%] h-40 object-cover md:h-64" src="./public/images/carrusel_movil_01.jpg" alt="">
+      <div id="slide-asesorias-fotos" class="relative">
+        <div class="slide-container flex flex-wrap gap-1 md:flex-nowrap md:overflow-x-scroll">
+          <img class="w-[49%] h-40 object-cover md:h-64" src="./public/images/carrusel_movil_01.jpg" alt="">
+          <img class="w-[49%] h-40 object-cover md:h-64" src="./public/images/carrusel_movil_02.jpg" alt="">
+          <img class="w-[49%] h-40 object-cover md:h-64" src="./public/images/carrusel_movil_03.jpg" alt="">
+          <img class="w-[49%] h-40 object-cover md:h-64" src="./public/images/carrusel_movil_04.jpg" alt="">
+          <img class="w-[49%] h-40 object-cover md:h-64" src="./public/images/carrusel_movil_05.jpg" alt="">
+          <img class="w-[49%] h-40 object-cover md:h-64" src="./public/images/carrusel_movil_01.jpg" alt="">
+        </div>
+        <div class="absolute -translate-y-1/2 top-1/2 left-2 right-2 flex justify-between">
+          <button class="prev-btn">
+            <img class="h-10" src="./public/images/prev-btn.svg" alt="Icono boton hacia la izquierda">
+          </button>
+          <button class="next-btn">
+            <img class="h-10" src="./public/images/next-btn.svg" alt="Icono boton hacia la derecha">
+          </button>
+        </div>
       </div>
       <div class="hidden pt-10 md:flex gap-5 justify-between">
         <div class="flex flex-col gap-2 w-[45%]">
@@ -109,7 +121,7 @@
           <p class="text-xl text-center text-brown leading-6 md:text-2xl md:text-left">cursos especializados en piscicultura. Técnicas de cultivo el Biofloc, Geomembranas y piscinas. Campamentos de capacitación. </p>
         </div>
         <div>
-          <iframe width="350px" height="230px" src="https://www.youtube.com/embed/TSr3BaFkg2E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <!-- <iframe width="350px" height="230px" src="https://www.youtube.com/embed/TSr3BaFkg2E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
         </div>
       </div>
       <img class="mt-5 mx-auto md:w-[400px] md:mt-10" src="./public/images/experiencia.png" alt="30 años de experiencia">
@@ -220,5 +232,6 @@
 
   <script src="./js/navbar.js"></script>
   <script src="./js/carruselHome.js"></script>
+  <script src="./js/nowrapSlide.js"></script>
 </body>
 </html>
