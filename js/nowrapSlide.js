@@ -1,6 +1,8 @@
 const nowrapSlide = ( containerId ) => {
     const container = document.getElementById(containerId);
+    console.log(container);
     const images = container.querySelector(".slide-container")
+    console.log(images);
     const prevBtn = container.querySelector(".prev-btn");
     const nextBtn = container.querySelector(".next-btn");
 
