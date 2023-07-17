@@ -23,3 +23,4 @@ const nowrapSlide = ( containerId ) => {
 }
 
 nowrapSlide("slide-asesorias-fotos")
+nowrapSlide("slide-asesorias-testimoniales")

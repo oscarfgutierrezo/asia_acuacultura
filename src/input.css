@@ -37,3 +37,7 @@
   display: flex;
   height: max-content;
 }
+
+.fullscreen-p10 {
+  width: calc(100% - 30px);
+}
