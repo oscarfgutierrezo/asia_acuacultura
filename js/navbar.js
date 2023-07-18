@@ -38,6 +38,7 @@ function handleScroll() {
 
   const navbar = document.querySelector('#navbar');
   const navbarLogo = document.querySelector('#logo-navbar');
+  const navbarContainer = document.querySelector('#navbar-container');
 
   // Si el desplazamiento es mayor o igual a 20px
   if (scrollTop >= 64) {
@@ -45,11 +46,15 @@ function handleScroll() {
     navbar.classList.add('rounded-none', 'top-0', 'h-14');
     navbarLogo.classList.remove('h-40', 'w-40', 'top-[100px]', 'left-1/2')
     navbarLogo.classList.add('h-24', 'w-24', 'top-[60px]', 'left-16');
+    navbarContainer.classList.add('h-14');
+    navbarContainer.classList.remove('h-40');
   } else {
     navbar.classList.remove('rounded-none', 'top-0', 'h-14');
     navbar.classList.add('rounded-[50%]', '-top-48', 'h-80');
     navbarLogo.classList.remove('h-24', 'w-24', 'top-[60px]', 'left-16');
-    navbarLogo.classList.add('h-40', 'w-40', 'top-[100px]', 'left-1/2')
+    navbarLogo.classList.add('h-40', 'w-40', 'top-[100px]', 'left-1/2');
+    navbarContainer.classList.add('h-40');
+    navbarContainer.classList.remove('h-14');
   }
 }
 
