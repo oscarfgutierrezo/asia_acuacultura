@@ -9,27 +9,28 @@
 </head>
 <body>
   <header>
-    <nav class="fixed top-0 w-full px-5 h-14 flex justify-end items-center text-xl font-foregen bg-none z-40 md:h-32 md:px-10 md:pt-5 md:items-end md:bg-secondary">
-      <button id="hamburger-menu-btn" class="md:hidden">
+    <nav class="fixed top-0 w-full px-5 h-14 flex justify-end items-center text-xl font-foregen bg-none z-40 lg:h-32 lg:px-10 lg:pt-5 lg:items-end lg:bg-secondary lg:text-2xl">
+      <button id="hamburger-menu-btn" class="lg:hidden">
         <img class="h-10" src="./public/images/hamburger.svg" alt="icono hamburger menu">
       </button>
-      <ul class="absolute hidden top-14 right-0 w-full h-0 flex-col p-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:relative md:p-0 md:w-full md:h-max md:top-0 md:flex md:flex-row md:justify-end md:gap-5 md:bg-transparent md:border-none" id="hamburguer-menu">
+      <ul class="absolute hidden top-14 right-0 w-full h-0 flex-col p-4 font-medium rounded-lg bg-gray-50 sm:right-5 sm:w-80 lg:relative lg:p-0 lg:w-full lg:h-max lg:top-0 lg:flex lg:flex-row lg:justify-end lg:gap-5 lg:bg-transparent lg:border-none xl:justify-center" id="hamburguer-menu">
         <li>
-          <a href="./index.html" class="hamburger-menu-item block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-grey/10 transition-all duration-300 md:px-0 md:py-2 md:text-secondary-soft md:hover:text-white md:hover:bg-transparent">Home</a>
+          <a href="/" class="hamburger-menu-item block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-grey/10 transition-all duration-300 lg:px-0 lg:py-2 lg:text-secondary-soft lg:hover:text-white lg:hover:bg-transparent">Home</a>
         </li>
-        <div class="hidden border border-secondary-soft md:block"></div>
+        <div class="hidden border border-secondary-soft lg:block"></div>
         <li>
-          <a href="./asesorias.html" class="hamburger-menu-item block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-grey/10 transition-all duration-300 md:px-0 md:py-2 md:p-0 md:text-secondary-soft md:hover:text-white md:hover:bg-transparent"">Asesorías y Proyectos</a>
+          <a href="/asesorias.html" class="hamburger-menu-item block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-grey/10 transition-all duration-300 lg:px-0 lg:py-2 lg:p-0 lg:text-secondary-soft lg:hover:text-white lg:hover:bg-transparent"">Asesorías y Proyectos</a>
         </li>
-        <div class="hidden border border-secondary-soft md:block"></div>
+        <div class="hidden border border-secondary-soft lg:block"></div>
         <li>
-          <a href="./equipos.html" class="hamburger-menu-item block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-grey/10 transition-all duration-300 md:px-0 md:py-2 md:p-0 md:text-secondary-soft md:hover:text-white md:hover:bg-transparent">Equipos, Accesorios e Insumos</a>
+          <a href="/equipos.html" class="hamburger-menu-item block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-grey/10 transition-all duration-300 lg:px-0 lg:py-2 lg:p-0 lg:text-secondary-soft lg:hover:text-white lg:hover:bg-transparent">Equipos, Accesorios e Insumos</a>
         </li>
       </ul>
-      <img class="hidden absolute top-9 left-10 h-40 md:block" src="./public/images/asia-logo.svg" alt="Logo Asia Acuacultura">
+      <img class="hidden absolute top-4 h-40 lg:block lg:left-[3%] xl:left-[6%] 2xl:left-[10%]" src="./public/images/asia-logo.svg" alt="Logo Asia Acuacultura">
     </nav>
-    <!-- LOGO Y SEMICIRCULO NARANJA -->
-    <section class="fixed top-0 w-full z-30 md:hidden">
+    
+    <!-- Logo y semicirculo pantallas en navbar contraido -->
+    <section class="fixed top-0 w-full z-30 lg:hidden">
       <div id="navbar-container" class="h-40 overflow-hidden bg-transparent">
         <div id="navbar" class="relative -top-48 -left-[5%] w-[110%] h-80 bg-secondary rounded-[50%] transition-all duration-300"></div>
       </div>
@@ -40,423 +41,426 @@
   <main class="mb-10 font-bebasNeue">
     
     <!-- Equipos de aireacion -->
-    <section class="flex flex-col gap-2">
+    <section class="mb-10 flex flex-col gap-2">
       <!-- Titulo -->
-      <div class="relative mb-5 pt-48 pb-7 bg-background rounded-b-full shadow-gray-600 shadow-md">
+      <div class="relative mb-10 pt-48 pb-5 bg-background shadow-gray-600 shadow-md">
         <p class="text-7xl text-center text-brown">Equipos</p>
-        <p class="absolute translate-x-1/2 right-1/2 -bottom-1 w-max px-12 pb-0.5 font-foregen text-3xl text-white bg-secondary rounded-full">De aireación</p>
+        <p class="absolute translate-x-1/2 translate-y-1/2 right-1/2 bottom-0 px-12 pb-0.5 w-max font-foregen text-3xl text-white bg-secondary rounded-full">De aireación</p>
       </div>
 
-      <!-- Blowers Linea RB -->
-      <div class="px-5 flex flex-col gap-2">
-
-        <!-- Titulo -->
-        <div class="flex items-center gap-4">
-          <div class="h-1 w-full border-2 border-secondary"></div>
-          <p class="shrink-0 text-xl text-secondary">Blowers Línea RB</p>
-          <div class="h-1 w-full border-2 border-secondary"></div>
-        </div>
+      <div class="px-5 flex flex-col justify-center items-center gap-5 flex-wrap sm:px-10 md:flex-row md:items-start">
+        <!-- Blowers Linea RB -->
+        <div class="w-full max-w-[400px] md:max-w-[320px] flex flex-col gap-2 xl:max-w-[350px]">
   
-        <!-- Carrusel Blowers Industriales -->
-        <div id="carousel-blowers-industrial">
-          <button class="carousel-btn w-full text-2xl text-white bg-primary rounded-full">Blowers Industriales</button>
-          <!-- CARRUSEL -->
-          <div class="carousel-container hidden my-5 w-full justify-center">
-            <div class="relative w-full h-[360px]">
-              <!-- ITEMS -->
-              <div id="blowers-industriales" class="w-full"></div>
-  
-              <!-- BOTONES -->
-              <div class="absolute top-40 translate-y-1/2 w-full flex justify-between">
-                <button class="prevBtn w-9 disabled:opacity-50" disabled>
-                  <img src="./public/images/prev-btn.svg" alt="">
-                </button>
-                <button class="nextBtn w-9 disabled:opacity-50">
-                  <img src="./public/images/next-btn.svg" alt="">
-                </button>
+          <!-- Titulo -->
+          <div class="flex items-center gap-4">
+            <div class="h-1 w-full border-2 border-secondary"></div>
+            <p class="shrink-0 text-xl text-secondary">Blowers Línea RB</p>
+            <div class="h-1 w-full border-2 border-secondary"></div>
+          </div>
+    
+          <!-- Carrusel Blowers Industriales -->
+          <div id="carousel-blowers-industrial">
+            <button class="carousel-btn w-full text-xl text-white bg-primary rounded-full sm:text-2xl">Blowers Industriales</button>
+            <!-- CARRUSEL -->
+            <div class="carousel-container hidden my-5 w-full justify-center">
+              <div class="relative w-full h-[360px]">
+                <!-- ITEMS -->
+                <div id="blowers-industriales" class="w-full"></div>
+    
+                <!-- BOTONES -->
+                <div class="absolute top-40 translate-y-1/2 w-full flex justify-between">
+                  <button class="prevBtn w-9 disabled:opacity-50" disabled>
+                    <img src="./public/images/prev-btn.svg" alt="">
+                  </button>
+                  <button class="nextBtn w-9 disabled:opacity-50">
+                    <img src="./public/images/next-btn.svg" alt="">
+                  </button>
+                </div>
+                <!-- INDICADORES -->
+                <div id="blowers-industriales-indicadores" class="absolute bottom-0 right-1/2 translate-x-1/2 w-full flex justify-center flex-wrap gap-1"></div>
               </div>
-              <!-- INDICADORES -->
-              <div id="blowers-industriales-indicadores" class="absolute bottom-0 right-1/2 translate-x-1/2 w-full flex justify-center flex-wrap gap-1"></div>
+            </div>
+          </div>
+    
+          <!-- Carrusel Blowers Industriales Doble Tapa -->
+          <div id="carousel-blowers-industrial-dobletapa">
+            <button class="carousel-btn w-full text-xl text-white bg-primary rounded-full sm:text-2xl">Blowers Industriales Doble Tapa</button>
+            <!-- CARRUSEL -->
+            <div class="carousel-container hidden my-5 w-full justify-center">
+              <div class="relative w-full h-[360px]">
+                <!-- ITEMS -->
+                <div id="blowers-industriales-dobletapa" class="w-full"></div>
+    
+                <!-- BOTONES -->
+                <div class="absolute top-40 translate-y-1/2 w-full flex justify-between">
+                  <button class="prevBtn w-9 disabled:opacity-50" disabled>
+                    <img src="./public/images/prev-btn.svg" alt="">
+                  </button>
+                  <button class="nextBtn w-9 disabled:opacity-50">
+                    <img src="./public/images/next-btn.svg" alt="">
+                  </button>
+                </div>
+                <!-- INDICADORES -->
+                <div id="blowers-industriales-dobletapa-indicadores" class="absolute bottom-0 right-1/2 translate-x-1/2 w-full flex justify-center flex-wrap gap-1"></div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Carrusel Blowers Industriales Eje Libre -->
+          <div id="carousel-blowers-ejelibre">
+            <button class="carousel-btn w-full text-xl text-white bg-primary rounded-full sm:text-2xl">Blowers Industriales de Eje Libre</button>
+            <!-- CARRUSEL -->
+            <div class="carousel-container hidden my-5 w-full justify-center">
+              <div class="relative w-full h-[360px]">
+                <!-- ITEMS -->
+                <div id="blowers-ejelibre" class="w-full"></div>
+    
+                <!-- BOTONES -->
+                <div class="absolute top-40 translate-y-1/2 w-full flex justify-between">
+                  <button class="prevBtn w-9 disabled:opacity-50" disabled>
+                    <img src="./public/images/prev-btn.svg" alt="">
+                  </button>
+                  <button class="nextBtn w-9 disabled:opacity-50">
+                    <img src="./public/images/next-btn.svg" alt="">
+                  </button>
+                </div>
+                <!-- INDICADORES -->
+                <div id="blowers-ejelibre-indicadores" class="absolute bottom-0 right-1/2 translate-x-1/2 w-full flex justify-center flex-wrap gap-1"></div>
+              </div>
             </div>
           </div>
         </div>
   
-        <!-- Carrusel Blowers Industriales Doble Tapa -->
-        <div id="carousel-blowers-industrial-dobletapa">
-          <button class="carousel-btn w-full text-2xl text-white bg-primary rounded-full">Blowers Industriales Doble Tapa</button>
-          <!-- CARRUSEL -->
-          <div class="carousel-container hidden my-5 w-full justify-center">
-            <div class="relative w-full h-[360px]">
-              <!-- ITEMS -->
-              <div id="blowers-industriales-dobletapa" class="w-full"></div>
+        <!-- Blowers Linea HG -->
+        <div class="w-full max-w-[400px] md:max-w-[320px] flex flex-col gap-2 xl:max-w-[350px]">
   
-              <!-- BOTONES -->
-              <div class="absolute top-40 translate-y-1/2 w-full flex justify-between">
-                <button class="prevBtn w-9 disabled:opacity-50" disabled>
-                  <img src="./public/images/prev-btn.svg" alt="">
-                </button>
-                <button class="nextBtn w-9 disabled:opacity-50">
-                  <img src="./public/images/next-btn.svg" alt="">
-                </button>
+          <!-- Titulo -->
+          <div class="flex items-center gap-4">
+            <div class="h-1 w-full border-2 border-secondary"></div>
+            <p class="shrink-0 text-xl text-secondary">Blowers Línea HG</p>
+            <div class="h-1 w-full border-2 border-secondary"></div>
+          </div>
+  
+          <!-- Carrusel Blowers Acuarios -->
+          <div id="carousel-blowers-acuarios">
+            <button class="carousel-btn w-full text-xl text-white bg-primary rounded-full sm:text-2xl">Blowers Acuarios</button>
+            <!-- CARRUSEL -->
+            <div class="carousel-container hidden my-5 w-full justify-center">
+              <div class="relative w-full h-[360px]">
+                <!-- ITEMS -->
+                <div id="blowers-acuarios" class="w-full"></div>
+  
+                <!-- BOTONES -->
+                <div class="absolute top-40 translate-y-1/2 w-full flex justify-between">
+                  <button class="prevBtn w-9 disabled:opacity-50" disabled>
+                    <img src="./public/images/prev-btn.svg" alt="">
+                  </button>
+                  <button class="nextBtn w-9 disabled:opacity-50">
+                    <img src="./public/images/next-btn.svg" alt="">
+                  </button>
+                </div>
+                <!-- INDICADORES -->
+                <div id="blowers-acuarios-indicadores" class="absolute bottom-0 right-1/2 translate-x-1/2 w-full flex justify-center flex-wrap gap-1"></div>
               </div>
-              <!-- INDICADORES -->
-              <div id="blowers-industriales-dobletapa-indicadores" class="absolute bottom-0 right-1/2 translate-x-1/2 w-full flex justify-center flex-wrap gap-1"></div>
+            </div>
+          </div>
+  
+          <!-- Carrusel Blowers Industriales -->
+          <div id="carousel-blowers-industrialesHG">
+            <button class="carousel-btn w-full text-xl text-white bg-primary rounded-full sm:text-2xl">Blowers Industriales</button>
+            <!-- CARRUSEL -->
+            <div class="carousel-container hidden my-5 w-full justify-center">
+              <div class="relative w-full h-[360px]">
+                <!-- ITEMS -->
+                <div id="blowers-industrialesHG" class="w-full"></div>
+  
+                <!-- BOTONES -->
+                <div class="absolute top-40 translate-y-1/2 w-full flex justify-between">
+                  <button class="prevBtn w-9 disabled:opacity-50" disabled>
+                    <img src="./public/images/prev-btn.svg" alt="">
+                  </button>
+                  <button class="nextBtn w-9 disabled:opacity-50">
+                    <img src="./public/images/next-btn.svg" alt="">
+                  </button>
+                </div>
+                <!-- INDICADORES -->
+                <div id="blowers-industrialesHG-indicadores" class="absolute bottom-0 right-1/2 translate-x-1/2 w-full flex justify-center flex-wrap gap-1"></div>
+              </div>
             </div>
           </div>
         </div>
   
-        <!-- Carrusel Blowers Industriales Eje Libre -->
-        <div id="carousel-blowers-ejelibre">
-          <button class="carousel-btn w-full text-2xl text-white bg-primary rounded-full">Blowers Industriales de Eje Libre</button>
-          <!-- CARRUSEL -->
-          <div class="carousel-container hidden my-5 w-full justify-center">
-            <div class="relative w-full h-[360px]">
-              <!-- ITEMS -->
-              <div id="blowers-ejelibre" class="w-full"></div>
-  
-              <!-- BOTONES -->
-              <div class="absolute top-40 translate-y-1/2 w-full flex justify-between">
-                <button class="prevBtn w-9 disabled:opacity-50" disabled>
-                  <img src="./public/images/prev-btn.svg" alt="">
-                </button>
-                <button class="nextBtn w-9 disabled:opacity-50">
-                  <img src="./public/images/next-btn.svg" alt="">
-                </button>
+        <!-- Splash -->
+        <div class="w-full max-w-[400px] md:max-w-[320px] flex flex-col gap-2 xl:max-w-[350px]">
+          <!-- Titulo -->
+          <div class="flex items-center gap-4">
+            <div class="h-1 w-full border-2 border-secondary"></div>
+            <p class="shrink-0 text-xl text-secondary">Splash</p>
+            <div class="h-1 w-full border-2 border-secondary"></div>
+          </div>
+    
+          <!-- Carrusel Splash Oxipez -->
+          <div id="carousel-splash-oxipez" >
+            <button class="carousel-btn w-full text-xl text-white bg-primary rounded-full sm:text-2xl">Splash Oxipez</button>
+            <!-- CARRUSEL -->
+            <div class="carousel-container hidden my-5 w-full justify-center">
+              <div class="relative w-full h-[360px]">
+                <!-- ITEMS -->
+                <div id="splash-oxipez" class="w-full"></div>
+    
+                <!-- BOTONES -->
+                <div class="absolute top-40 translate-y-1/2 w-full flex justify-between">
+                  <button class="prevBtn w-9 disabled:opacity-50" disabled>
+                    <img src="./public/images/prev-btn.svg" alt="">
+                  </button>
+                  <button class="nextBtn w-9 disabled:opacity-50">
+                    <img src="./public/images/next-btn.svg" alt="">
+                  </button>
+                </div>
+                <!-- INDICADORES -->
+                <div id="splash-oxipez-indicadores" class="absolute bottom-0 right-1/2 translate-x-1/2 w-full flex justify-center flex-wrap gap-1"></div>
               </div>
-              <!-- INDICADORES -->
-              <div id="blowers-ejelibre-indicadores" class="absolute bottom-0 right-1/2 translate-x-1/2 w-full flex justify-center flex-wrap gap-1"></div>
             </div>
           </div>
         </div>
       </div>
-
-      <!-- Blowers Linea HG -->
-      <div class="px-5 flex flex-col gap-2">
-
-        <!-- Titulo -->
-        <div class="flex items-center gap-4">
-          <div class="h-1 w-full border-2 border-secondary"></div>
-          <p class="shrink-0 text-xl text-secondary">Blowers Línea HG</p>
-          <div class="h-1 w-full border-2 border-secondary"></div>
-        </div>
-
-        <!-- Carrusel Blowers Acuarios -->
-        <div id="carousel-blowers-acuarios">
-          <button class="carousel-btn w-full text-2xl text-white bg-primary rounded-full">Blowers Acuarios</button>
-          <!-- CARRUSEL -->
-          <div class="carousel-container hidden my-5 w-full justify-center">
-            <div class="relative w-full h-[360px]">
-              <!-- ITEMS -->
-              <div id="blowers-acuarios" class="w-full"></div>
-
-              <!-- BOTONES -->
-              <div class="absolute top-40 translate-y-1/2 w-full flex justify-between">
-                <button class="prevBtn w-9 disabled:opacity-50" disabled>
-                  <img src="./public/images/prev-btn.svg" alt="">
-                </button>
-                <button class="nextBtn w-9 disabled:opacity-50">
-                  <img src="./public/images/next-btn.svg" alt="">
-                </button>
-              </div>
-              <!-- INDICADORES -->
-              <div id="blowers-acuarios-indicadores" class="absolute bottom-0 right-1/2 translate-x-1/2 w-full flex justify-center flex-wrap gap-1"></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Carrusel Blowers Industriales -->
-        <div id="carousel-blowers-industrialesHG">
-          <button class="carousel-btn w-full text-2xl text-white bg-primary rounded-full">Blowers Industriales</button>
-          <!-- CARRUSEL -->
-          <div class="carousel-container hidden my-5 w-full justify-center">
-            <div class="relative w-full h-[360px]">
-              <!-- ITEMS -->
-              <div id="blowers-industrialesHG" class="w-full"></div>
-
-              <!-- BOTONES -->
-              <div class="absolute top-40 translate-y-1/2 w-full flex justify-between">
-                <button class="prevBtn w-9 disabled:opacity-50" disabled>
-                  <img src="./public/images/prev-btn.svg" alt="">
-                </button>
-                <button class="nextBtn w-9 disabled:opacity-50">
-                  <img src="./public/images/next-btn.svg" alt="">
-                </button>
-              </div>
-              <!-- INDICADORES -->
-              <div id="blowers-industrialesHG-indicadores" class="absolute bottom-0 right-1/2 translate-x-1/2 w-full flex justify-center flex-wrap gap-1"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Splash -->
-      <div class="mb-5 px-5 flex flex-col gap-2">
-        <!-- Titulo -->
-        <div class="flex items-center gap-4">
-          <div class="h-1 w-full border-2 border-secondary"></div>
-          <p class="shrink-0 text-xl text-secondary">Splash</p>
-          <div class="h-1 w-full border-2 border-secondary"></div>
-        </div>
-  
-        <!-- Carrusel Splash Oxipez -->
-        <div id="carousel-splash-oxipez" >
-          <button class="carousel-btn w-full text-2xl text-white bg-primary rounded-full">Splash Oxipez</button>
-          <!-- CARRUSEL -->
-          <div class="carousel-container hidden my-5 w-full justify-center">
-            <div class="relative w-full h-[360px]">
-              <!-- ITEMS -->
-              <div id="splash-oxipez" class="w-full"></div>
-  
-              <!-- BOTONES -->
-              <div class="absolute top-40 translate-y-1/2 w-full flex justify-between">
-                <button class="prevBtn w-9 disabled:opacity-50" disabled>
-                  <img src="./public/images/prev-btn.svg" alt="">
-                </button>
-                <button class="nextBtn w-9 disabled:opacity-50">
-                  <img src="./public/images/next-btn.svg" alt="">
-                </button>
-              </div>
-              <!-- INDICADORES -->
-              <div id="splash-oxipez-indicadores" class="absolute bottom-0 right-1/2 translate-x-1/2 w-full flex justify-center flex-wrap gap-1"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
     </section>
 
     <!-- Accesorios y otros equipos -->
-    <section class="flex flex-col gap-2">
+    <section class="mb-10 flex flex-col gap-2">
       <!-- Titulo -->
-      <div class="relative mb-10 py-5 bg-background  shadow-gray-600 shadow-md">
+      <div class="relative mb-10 py-5 bg-background shadow-gray-600 shadow-md">
         <p class="text-7xl text-center text-brown">Accesorios</p>
         <p class="absolute translate-x-1/2 translate-y-1/2 right-1/2 bottom-0 px-12 pb-0.5 w-max font-foregen text-3xl text-white bg-secondary rounded-full">y otros equipos</p>
       </div>
 
-      <!-- Accesorios -->
-      <div class="mb-5 px-5 flex flex-col gap-2">
-        
-        <!-- Titulo -->
-        <div class="flex items-center gap-4">
-          <div class="h-1 w-full border-2 border-secondary"></div>
-          <p class="shrink-0 text-xl text-secondary">Accesorios</p>
-          <div class="h-1 w-full border-2 border-secondary"></div>
-        </div>
-  
-        <!-- Carrusel Filtros -->
-        <div id="carousel-filtros">
-          <button class="carousel-btn w-full text-2xl text-white bg-primary rounded-full">Filtros</button>
-          <!-- CARRUSEL -->
-          <div class="carousel-container hidden my-5 w-full justify-center">
-            <div class="relative w-full h-[310px]">
-              <!-- ITEMS -->
-              <div id="filtros" class="w-full"></div>
-  
-              <!-- BOTONES -->
-              <div class="absolute top-40 translate-y-1/2 w-full flex justify-between">
-                <button class="prevBtn w-9 disabled:opacity-50" disabled>
-                  <img src="./public/images/prev-btn.svg" alt="">
-                </button>
-                <button class="nextBtn w-9 disabled:opacity-50">
-                  <img src="./public/images/next-btn.svg" alt="">
-                </button>
+      <div class="px-5 flex flex-col justify-center items-center gap-5 flex-wrap sm:px-10 md:flex-row md:items-start">
+        <!-- Accesorios -->
+        <div class="w-full max-w-[400px] md:max-w-[320px] flex flex-col gap-2 xl:max-w-[350px]">
+          
+          <!-- Titulo -->
+          <div class="flex items-center gap-4">
+            <div class="h-1 w-full border-2 border-secondary"></div>
+            <p class="shrink-0 text-xl text-secondary">Accesorios</p>
+            <div class="h-1 w-full border-2 border-secondary"></div>
+          </div>
+    
+          <!-- Carrusel Filtros -->
+          <div id="carousel-filtros">
+            <button class="carousel-btn w-full text-xl text-white bg-primary rounded-full sm:text-2xl">Filtros</button>
+            <!-- CARRUSEL -->
+            <div class="carousel-container hidden my-5 w-full justify-center">
+              <div class="relative w-full h-[310px]">
+                <!-- ITEMS -->
+                <div id="filtros" class="w-full"></div>
+    
+                <!-- BOTONES -->
+                <div class="absolute top-40 translate-y-1/2 w-full flex justify-between">
+                  <button class="prevBtn w-9 disabled:opacity-50" disabled>
+                    <img src="./public/images/prev-btn.svg" alt="">
+                  </button>
+                  <button class="nextBtn w-9 disabled:opacity-50">
+                    <img src="./public/images/next-btn.svg" alt="">
+                  </button>
+                </div>
+                <!-- INDICADORES -->
+                <div id="filtros-indicadores" class="absolute bottom-0 right-1/2 translate-x-1/2 w-full flex justify-center flex-wrap gap-1"></div>
               </div>
-              <!-- INDICADORES -->
-              <div id="filtros-indicadores" class="absolute bottom-0 right-1/2 translate-x-1/2 w-full flex justify-center flex-wrap gap-1"></div>
             </div>
           </div>
-        </div>
-  
-        <!-- Carrusel Discos Difusores -->
-        <div id="carousel-discos">
-          <button class="carousel-btn w-full text-2xl text-white bg-primary rounded-full">Discos difusores de burbuja fina</button>
-          <!-- CARRUSEL -->
-          <div class="carousel-container hidden my-5 w-full justify-center">
-            <div class="relative w-full h-[330px]">
-              <!-- ITEMS -->
-              <div id="discos" class="w-full"></div>
-  
-              <!-- BOTONES -->
-              <div class="absolute top-40 translate-y-1/2 w-full flex justify-between">
-                <button class="prevBtn w-9 disabled:opacity-50" disabled>
-                  <img src="./public/images/prev-btn.svg" alt="">
-                </button>
-                <button class="nextBtn w-9 disabled:opacity-50">
-                  <img src="./public/images/next-btn.svg" alt="">
-                </button>
+    
+          <!-- Carrusel Discos Difusores -->
+          <div id="carousel-discos">
+            <button class="carousel-btn w-full text-xl text-white bg-primary rounded-full sm:text-2xl">Discos difusores de burbuja fina</button>
+            <!-- CARRUSEL -->
+            <div class="carousel-container hidden my-5 w-full justify-center">
+              <div class="relative w-full h-[330px]">
+                <!-- ITEMS -->
+                <div id="discos" class="w-full"></div>
+    
+                <!-- BOTONES -->
+                <div class="absolute top-40 translate-y-1/2 w-full flex justify-between">
+                  <button class="prevBtn w-9 disabled:opacity-50" disabled>
+                    <img src="./public/images/prev-btn.svg" alt="">
+                  </button>
+                  <button class="nextBtn w-9 disabled:opacity-50">
+                    <img src="./public/images/next-btn.svg" alt="">
+                  </button>
+                </div>
+                <!-- INDICADORES -->
+                <div id="discos-indicadores" class="absolute bottom-0 right-1/2 translate-x-1/2 w-full flex justify-center flex-wrap gap-1"></div>
               </div>
-              <!-- INDICADORES -->
-              <div id="discos-indicadores" class="absolute bottom-0 right-1/2 translate-x-1/2 w-full flex justify-center flex-wrap gap-1"></div>
             </div>
           </div>
-        </div>
-  
-        <!-- Carrusel Tuberias, conectores y mezcladores -->
-        <div id="carousel-tuberias">
-          <button class="carousel-btn w-full text-2xl text-white bg-primary rounded-full">Tuberías - Conectores - Mezcladores</button>
-          <!-- CARRUSEL -->
-          <div class="carousel-container hidden my-5 w-full justify-center">
-            <div class="relative w-full h-[350px]">
-              <!-- ITEMS -->
-              <div id="tuberias" class="w-full">
-  
-                <div class="carousel-item absolute opacity-0 h-full w-full object-cover rounded-xl transition-all duration-700 active">
-                  <img class="mx-auto h-44" src="./public/images/tuberias.png" alt="Blower Acuarios">
-                  <div class="pt-2 flex flex-col gap-1 text-lg leading-5">
-                    <p class="mx-auto mb-2 w-[98%] text-xl text-white text-center bg-secondary-soft rounded-full">Manguera Difusora</p>
-                    <div class="flex justify-center gap-1">
-                      <p class="w-[49%] text-right">Diametro Externo 1"</p>
-                      <div class="border border-secondary"></div>
-                      <p class="w-[49%]">Diametro Interno 1/2"</p>
+    
+          <!-- Carrusel Tuberias, conectores y mezcladores -->
+          <div id="carousel-tuberias">
+            <button class="carousel-btn w-full text-xl text-white bg-primary rounded-full sm:text-2xl">Tuberías - Conectores - Mezcladores</button>
+            <!-- CARRUSEL -->
+            <div class="carousel-container hidden my-5 w-full justify-center">
+              <div class="relative w-full h-[350px]">
+                <!-- ITEMS -->
+                <div id="tuberias" class="w-full">
+    
+                  <div class="carousel-item absolute opacity-0 h-full w-full object-cover rounded-xl transition-all duration-700 active">
+                    <img class="mx-auto h-44" src="./public/images/tuberias.png" alt="Blower Acuarios">
+                    <div class="pt-2 flex flex-col gap-1 text-lg leading-5">
+                      <p class="mx-auto mb-2 w-[98%] text-xl text-white text-center bg-secondary-soft rounded-full">Manguera Difusora</p>
+                      <div class="flex justify-center gap-1">
+                        <p class="w-[49%] text-right">Diametro Externo 1"</p>
+                        <div class="border border-secondary"></div>
+                        <p class="w-[49%]">Diametro Interno 1/2"</p>
+                      </div>
+                      <p class="text-center">Flujo Óptimo de Aire: 0,037 M<sup>3</sup>Min</p>
+                      <p class="text-center">Precio Por Metro</p>
+                      <p class="text-2xl text-center text-secondary">$ 12.150 &lt 100M / $ 11.000 &gt 100M</p>
                     </div>
-                    <p class="text-center">Flujo Óptimo de Aire: 0,037 M<sup>3</sup>Min</p>
-                    <p class="text-center">Precio Por Metro</p>
-                    <p class="text-2xl text-center text-secondary">$ 12.150 &lt 100M / $ 11.000 &gt 100M</p>
+                  </div>
+                  <div class="carousel-item absolute opacity-0 h-full w-full object-cover rounded-xl transition-all duration-700">
+                    <img class="mx-auto h-44" src="./public/images/tuberias.png" alt="Blower Acuarios">
+                    <div class="pt-2 flex flex-col gap-1 text-lg leading-5">
+                      <p class="mx-auto mb-2 w-[98%] text-xl text-white text-center bg-secondary-soft rounded-full">Conector
+                        Estrella</p>
+                      <p class="text-center">Salida 6 de 1/2"</p>
+                      <p class="text-center">Entrada Roscada 3/4</p>
+                      <p class="text-2xl text-center text-secondary">$ 10.000</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item absolute opacity-0 h-full w-full object-cover rounded-xl transition-all duration-700">
+                    <img class="mx-auto h-44" src="./public/images/mezclador.png" alt="Blower Acuarios">
+                    <div class="pt-2 flex flex-col gap-1 text-lg leading-5">
+                      <p class="mx-auto mb-2 w-[98%] text-xl text-white text-center bg-secondary-soft rounded-full">Mezclador Venturi para Piscicultura</p>
+                      <p class="text-center">Aireador estático
+                        sumergible</p>
+                      <p class="text-center">Cuerpo, conectores (3/4" y 1"), Boquillas intercambiables (30, 50 y 100 L/min). </p>
+                      <p class="text-2xl text-center text-secondary">$ 150.000</p>
+                    </div>
                   </div>
                 </div>
-                <div class="carousel-item absolute opacity-0 h-full w-full object-cover rounded-xl transition-all duration-700">
-                  <img class="mx-auto h-44" src="./public/images/tuberias.png" alt="Blower Acuarios">
-                  <div class="pt-2 flex flex-col gap-1 text-lg leading-5">
-                    <p class="mx-auto mb-2 w-[98%] text-xl text-white text-center bg-secondary-soft rounded-full">Conector
-                      Estrella</p>
-                    <p class="text-center">Salida 6 de 1/2"</p>
-                    <p class="text-center">Entrada Roscada 3/4</p>
-                    <p class="text-2xl text-center text-secondary">$ 10.000</p>
-                  </div>
+    
+                <!-- BOTONES -->
+                <div class="absolute top-40 translate-y-1/2 w-full flex justify-between">
+                  <button class="prevBtn w-9 disabled:opacity-50" disabled>
+                    <img src="./public/images/prev-btn.svg" alt="">
+                  </button>
+                  <button class="nextBtn w-9 disabled:opacity-50">
+                    <img src="./public/images/next-btn.svg" alt="">
+                  </button>
                 </div>
-                <div class="carousel-item absolute opacity-0 h-full w-full object-cover rounded-xl transition-all duration-700">
-                  <img class="mx-auto h-44" src="./public/images/mezclador.png" alt="Blower Acuarios">
-                  <div class="pt-2 flex flex-col gap-1 text-lg leading-5">
-                    <p class="mx-auto mb-2 w-[98%] text-xl text-white text-center bg-secondary-soft rounded-full">Mezclador Venturi para Piscicultura</p>
-                    <p class="text-center">Aireador estático
-                      sumergible</p>
-                    <p class="text-center">Cuerpo, conectores (3/4" y 1"), Boquillas intercambiables (30, 50 y 100 L/min). </p>
-                    <p class="text-2xl text-center text-secondary">$ 150.000</p>
-                  </div>
+                <!-- INDICADORES -->
+                <div id="tuberias-indicadores" class="absolute bottom-0 right-1/2 translate-x-1/2 w-full flex justify-center flex-wrap gap-1">
+                  <button class="carousel-indicator h-3 w-3 rounded-[50%] bg-secondary-soft/50 active"></button>
+                  <button class="carousel-indicator h-3 w-3 rounded-[50%] bg-secondary-soft/50"></button>
+                  <button class="carousel-indicator h-3 w-3 rounded-[50%] bg-secondary-soft/50"></button>
                 </div>
               </div>
+            </div>
+          </div>
   
-              <!-- BOTONES -->
-              <div class="absolute top-40 translate-y-1/2 w-full flex justify-between">
-                <button class="prevBtn w-9 disabled:opacity-50" disabled>
-                  <img src="./public/images/prev-btn.svg" alt="">
-                </button>
-                <button class="nextBtn w-9 disabled:opacity-50">
-                  <img src="./public/images/next-btn.svg" alt="">
-                </button>
-              </div>
-              <!-- INDICADORES -->
-              <div id="tuberias-indicadores" class="absolute bottom-0 right-1/2 translate-x-1/2 w-full flex justify-center flex-wrap gap-1">
-                <button class="carousel-indicator h-3 w-3 rounded-[50%] bg-secondary-soft/50 active"></button>
-                <button class="carousel-indicator h-3 w-3 rounded-[50%] bg-secondary-soft/50"></button>
-                <button class="carousel-indicator h-3 w-3 rounded-[50%] bg-secondary-soft/50"></button>
+          <!-- Carrusel Alarmas -->
+          <div id="carousel-alarmas">
+            <button class="carousel-btn w-full text-xl text-white bg-primary rounded-full sm:text-2xl">Alarmas de corte de Energía</button>
+            <!-- CARRUSEL -->
+            <div class="carousel-container hidden my-5 w-full justify-center">
+              <div class="relative w-full h-[330px]">
+                <!-- ITEMS -->
+                <div id="alarmas" class="w-full"></div>
+    
+                <!-- BOTONES -->
+                <div class="absolute top-40 translate-y-1/2 w-full flex justify-between">
+                  <button class="prevBtn w-9 disabled:opacity-50" disabled>
+                    <img src="./public/images/prev-btn.svg" alt="">
+                  </button>
+                  <button class="nextBtn w-9 disabled:opacity-50">
+                    <img src="./public/images/next-btn.svg" alt="">
+                  </button>
+                </div>
+                <!-- INDICADORES -->
+                <div id="alarmas-indicadores" class="absolute bottom-0 right-1/2 translate-x-1/2 w-full flex justify-center flex-wrap gap-1"></div>
               </div>
             </div>
           </div>
         </div>
-
-        <!-- Carrusel Alarmas -->
-        <div id="carousel-alarmas">
-          <button class="carousel-btn w-full text-2xl text-white bg-primary rounded-full">Alarmas de corte de Energía</button>
-          <!-- CARRUSEL -->
-          <div class="carousel-container hidden my-5 w-full justify-center">
-            <div class="relative w-full h-[330px]">
-              <!-- ITEMS -->
-              <div id="alarmas" class="w-full"></div>
   
-              <!-- BOTONES -->
-              <div class="absolute top-40 translate-y-1/2 w-full flex justify-between">
-                <button class="prevBtn w-9 disabled:opacity-50" disabled>
-                  <img src="./public/images/prev-btn.svg" alt="">
-                </button>
-                <button class="nextBtn w-9 disabled:opacity-50">
-                  <img src="./public/images/next-btn.svg" alt="">
-                </button>
+        <!-- Medición y tratamiento -->
+        <div class="w-full max-w-[400px] md:max-w-[320px] flex flex-col gap-2 xl:max-w-[350px]">
+          
+          <!-- Titulo -->
+          <div class="flex items-center gap-4">
+            <div class="h-1 w-full border-2 border-secondary"></div>
+            <p class="shrink-0 text-xl text-secondary">Medición y Tratamiento</p>
+            <div class="h-1 w-full border-2 border-secondary"></div>
+          </div>
+  
+          <!-- Carrusel Monitor Ph -->
+          <div id="carousel-monitorPh">
+            <button class="carousel-btn w-full text-xl text-white bg-primary rounded-full sm:text-2xl">Monitor PH y Temperatura</button>
+            <!-- CARRUSEL -->
+            <div class="carousel-container hidden my-5 w-full justify-center">
+              <div class="relative w-full h-[370px]">
+                <!-- ITEMS -->
+                <div id="monitorPh" class="w-full"></div>
+                <!-- BOTONES -->
+                <div class="absolute top-40 translate-y-1/2 w-full flex justify-between">
+                  <button class="prevBtn w-9 disabled:opacity-50" disabled>
+                    <img src="./public/images/prev-btn.svg" alt="">
+                  </button>
+                  <button class="nextBtn w-9 disabled:opacity-50" disabled>
+                    <img src="./public/images/next-btn.svg" alt="">
+                  </button>
+                </div>
+                <!-- INDICADORES -->
+                <div id="monitorPh-indicadores" class="absolute bottom-0 right-1/2 translate-x-1/2 w-full flex justify-center flex-wrap gap-1"></div>
               </div>
-              <!-- INDICADORES -->
-              <div id="alarmas-indicadores" class="absolute bottom-0 right-1/2 translate-x-1/2 w-full flex justify-center flex-wrap gap-1"></div>
             </div>
           </div>
-        </div>
-      </div>
-
-      <!-- Medición y tratamiento -->
-      <div class="mb-5 px-5 flex flex-col gap-2">
-        
-        <!-- Titulo -->
-        <div class="flex items-center gap-4">
-          <div class="h-1 w-full border-2 border-secondary"></div>
-          <p class="shrink-0 text-xl text-secondary">Medición y Tratamiento</p>
-          <div class="h-1 w-full border-2 border-secondary"></div>
-        </div>
-
-        <!-- Carrusel Monitor Ph -->
-        <div id="carousel-monitorPh">
-          <button class="carousel-btn w-full text-2xl text-white bg-primary rounded-full">Monitor PH y Temperatura</button>
-          <!-- CARRUSEL -->
-          <div class="carousel-container hidden my-5 w-full justify-center">
-            <div class="relative w-full h-[370px]">
-              <!-- ITEMS -->
-              <div id="monitorPh" class="w-full"></div>
-              <!-- BOTONES -->
-              <div class="absolute top-40 translate-y-1/2 w-full flex justify-between">
-                <button class="prevBtn w-9 disabled:opacity-50" disabled>
-                  <img src="./public/images/prev-btn.svg" alt="">
-                </button>
-                <button class="nextBtn w-9 disabled:opacity-50" disabled>
-                  <img src="./public/images/next-btn.svg" alt="">
-                </button>
+  
+          <!-- Carrusel Refractómetros -->
+          <div id="carousel-refractometros">
+            <button class="carousel-btn w-full text-xl text-white bg-primary rounded-full sm:text-2xl">Refractómetro Portatil</button>
+            <!-- CARRUSEL -->
+            <div class="carousel-container hidden my-5 w-full justify-center">
+              <div class="relative w-full h-[430px]">
+                <!-- ITEMS -->
+                <div id="refractometros" class="w-full"></div>
+  
+                <!-- BOTONES -->
+                <div class="absolute top-40 translate-y-1/2 w-full flex justify-between">
+                  <button class="prevBtn w-9 disabled:opacity-50" disabled>
+                    <img src="./public/images/prev-btn.svg" alt="">
+                  </button>
+                  <button class="nextBtn w-9 disabled:opacity-50" disabled>
+                    <img src="./public/images/next-btn.svg" alt="">
+                  </button>
+                </div>
+                <!-- INDICADORES -->
+                <div id="refractometros-indicadores" class="absolute bottom-0 right-1/2 translate-x-1/2 w-full flex justify-center flex-wrap gap-1"></div>
               </div>
-              <!-- INDICADORES -->
-              <div id="monitorPh-indicadores" class="absolute bottom-0 right-1/2 translate-x-1/2 w-full flex justify-center flex-wrap gap-1"></div>
             </div>
           </div>
-        </div>
-
-        <!-- Carrusel Refractómetros -->
-        <div id="carousel-refractometros">
-          <button class="carousel-btn w-full text-2xl text-white bg-primary rounded-full">Refractómetro Portatil</button>
-          <!-- CARRUSEL -->
-          <div class="carousel-container hidden my-5 w-full justify-center">
-            <div class="relative w-full h-[430px]">
-              <!-- ITEMS -->
-              <div id="refractometros" class="w-full"></div>
-
-              <!-- BOTONES -->
-              <div class="absolute top-40 translate-y-1/2 w-full flex justify-between">
-                <button class="prevBtn w-9 disabled:opacity-50" disabled>
-                  <img src="./public/images/prev-btn.svg" alt="">
-                </button>
-                <button class="nextBtn w-9 disabled:opacity-50" disabled>
-                  <img src="./public/images/next-btn.svg" alt="">
-                </button>
+  
+          <!-- Carrusel Cono IMHOFF -->
+          <div id="carousel-conos">
+            <button class="carousel-btn w-full text-xl text-white bg-primary rounded-full sm:text-2xl">Cono IMHOFF</button>
+            <!-- CARRUSEL -->
+            <div class="carousel-container hidden my-5 w-full justify-center">
+              <div class="relative w-full h-[400px]">
+                <!-- ITEMS -->
+                <div id="conos" class="w-full">
+                </div>
+                <!-- BOTONES -->
+                <div class="absolute top-40 translate-y-1/2 w-full flex justify-between">
+                  <button class="prevBtn w-9 disabled:opacity-50" disabled>
+                    <img src="./public/images/prev-btn.svg" alt="">
+                  </button>
+                  <button class="nextBtn w-9 disabled:opacity-50" disabled>
+                    <img src="./public/images/next-btn.svg" alt="">
+                  </button>
+                </div>
+                <!-- INDICADORES -->
+                <div id="conos-indicadores" class="absolute bottom-0 right-1/2 translate-x-1/2 w-full flex justify-center flex-wrap gap-1"></div>
               </div>
-              <!-- INDICADORES -->
-              <div id="refractometros-indicadores" class="absolute bottom-0 right-1/2 translate-x-1/2 w-full flex justify-center flex-wrap gap-1"></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Carrusel Cono IMHOFF -->
-        <div id="carousel-conos">
-          <button class="carousel-btn w-full text-2xl text-white bg-primary rounded-full">Cono IMHOFF</button>
-          <!-- CARRUSEL -->
-          <div class="carousel-container hidden my-5 w-full justify-center">
-            <div class="relative w-full h-[400px]">
-              <!-- ITEMS -->
-              <div id="conos" class="w-full">
-              </div>
-              <!-- BOTONES -->
-              <div class="absolute top-40 translate-y-1/2 w-full flex justify-between">
-                <button class="prevBtn w-9 disabled:opacity-50" disabled>
-                  <img src="./public/images/prev-btn.svg" alt="">
-                </button>
-                <button class="nextBtn w-9 disabled:opacity-50" disabled>
-                  <img src="./public/images/next-btn.svg" alt="">
-                </button>
-              </div>
-              <!-- INDICADORES -->
-              <div id="conos-indicadores" class="absolute bottom-0 right-1/2 translate-x-1/2 w-full flex justify-center flex-wrap gap-1"></div>
             </div>
           </div>
         </div>
@@ -471,98 +475,100 @@
         <p class="absolute translate-x-1/2 translate-y-1/2 right-1/2 bottom-0 px-12 pb-0.5 w-max font-foregen text-3xl text-white bg-secondary rounded-full">para Acuacultura</p>
       </div>
 
-      <!-- Carrusel Probióticos -->
-      <div id="carousel-probioticos" class="px-5">
-        <button class="carousel-btn w-full text-2xl text-white bg-primary rounded-full">Probióticos</button>
-        <!-- CARRUSEL -->
-        <div class="carousel-container hidden my-5 w-full justify-center">
-          <div id="carousel-probioticos" class="relative w-full h-[330px]">
-            <!-- ITEMS -->
-            <div id="probioticos" class="w-full"></div>
-
-            <!-- BOTONES -->
-            <div class="absolute top-40 translate-y-1/2 w-full flex justify-between">
-              <button class="prevBtn w-9 disabled:opacity-50" disabled>
-                <img src="./public/images/prev-btn.svg" alt="">
-              </button>
-              <button class="nextBtn w-9 disabled:opacity-50">
-                <img src="./public/images/next-btn.svg" alt="">
-              </button>
+      <div class="px-5 flex flex-col justify-center items-center gap-x-5 gap-y-2 flex-wrap sm:px-10 md:flex-row md:items-start">
+        <!-- Carrusel Probióticos -->
+        <div id="carousel-probioticos" class="w-full max-w-[400px] md:max-w-[320px] flex flex-col gap-2 xl:max-w-[350px]">
+          <button class="carousel-btn w-full text-xl text-white bg-primary rounded-full sm:text-2xl">Probióticos</button>
+          <!-- CARRUSEL -->
+          <div class="carousel-container hidden my-5 w-full justify-center">
+            <div id="carousel-probioticos" class="relative w-full h-[330px]">
+              <!-- ITEMS -->
+              <div id="probioticos" class="w-full"></div>
+  
+              <!-- BOTONES -->
+              <div class="absolute top-40 translate-y-1/2 w-full flex justify-between">
+                <button class="prevBtn w-9 disabled:opacity-50" disabled>
+                  <img src="./public/images/prev-btn.svg" alt="">
+                </button>
+                <button class="nextBtn w-9 disabled:opacity-50">
+                  <img src="./public/images/next-btn.svg" alt="">
+                </button>
+              </div>
+              <!-- INDICADORES -->
+              <div id="probioticos-indicadores" class="absolute bottom-0 right-1/2 translate-x-1/2 w-full flex justify-center flex-wrap gap-1"></div>
             </div>
-            <!-- INDICADORES -->
-            <div id="probioticos-indicadores" class="absolute bottom-0 right-1/2 translate-x-1/2 w-full flex justify-center flex-wrap gap-1"></div>
           </div>
         </div>
-      </div>
-
-      <!-- Carrusel Desinfectantes -->
-      <div id="carousel-desinfectantes" class="px-5">
-        <button class="carousel-btn w-full text-2xl text-white bg-primary rounded-full">Desinfectantes</button>
-        <!-- CARRUSEL -->
-        <div class="carousel-container hidden my-5 w-full justify-center">
-          <div class="relative w-full h-[330px]">
-            <!-- ITEMS -->
-            <div id="desinfectantes" class="w-full"></div>
-
-            <!-- BOTONES -->
-            <div class="absolute top-40 translate-y-1/2 w-full flex justify-between">
-              <button class="prevBtn w-9 disabled:opacity-50" disabled>
-                <img src="./public/images/prev-btn.svg" alt="">
-              </button>
-              <button class="nextBtn w-9 disabled:opacity-50" disabled>
-                <img src="./public/images/next-btn.svg" alt="">
-              </button>
+  
+        <!-- Carrusel Desinfectantes -->
+        <div id="carousel-desinfectantes" class="w-full max-w-[400px] md:max-w-[320px] flex flex-col gap-2 xl:max-w-[350px]">
+          <button class="carousel-btn w-full text-xl text-white bg-primary rounded-full sm:text-2xl">Desinfectantes</button>
+          <!-- CARRUSEL -->
+          <div class="carousel-container hidden my-5 w-full justify-center">
+            <div class="relative w-full h-[330px]">
+              <!-- ITEMS -->
+              <div id="desinfectantes" class="w-full"></div>
+  
+              <!-- BOTONES -->
+              <div class="absolute top-40 translate-y-1/2 w-full flex justify-between">
+                <button class="prevBtn w-9 disabled:opacity-50" disabled>
+                  <img src="./public/images/prev-btn.svg" alt="">
+                </button>
+                <button class="nextBtn w-9 disabled:opacity-50" disabled>
+                  <img src="./public/images/next-btn.svg" alt="">
+                </button>
+              </div>
+              <!-- INDICADORES -->
+              <div id="desinfectantes-indicadores" class="absolute bottom-0 right-1/2 translate-x-1/2 w-full flex justify-center flex-wrap gap-1"></div>
             </div>
-            <!-- INDICADORES -->
-            <div id="desinfectantes-indicadores" class="absolute bottom-0 right-1/2 translate-x-1/2 w-full flex justify-center flex-wrap gap-1"></div>
           </div>
         </div>
-      </div>
-
-      <!-- Carrusel Antibióticos -->
-      <div id="carousel-antibioticos" class="px-5">
-        <button class="carousel-btn w-full text-2xl text-white bg-primary rounded-full">Antibióticos</button>
-        <!-- CARRUSEL -->
-        <div class="carousel-container hidden my-5 w-full justify-center">
-          <div class="relative w-full h-[330px]">
-            <!-- ITEMS -->
-            <div id="antibioticos" class="w-full"></div>
-
-            <!-- BOTONES -->
-            <div class="absolute top-40 translate-y-1/2 w-full flex justify-between">
-              <button class="prevBtn w-9 disabled:opacity-50" disabled>
-                <img src="./public/images/prev-btn.svg" alt="">
-              </button>
-              <button class="nextBtn w-9 disabled:opacity-50">
-                <img src="./public/images/next-btn.svg" alt="">
-              </button>
+  
+        <!-- Carrusel Antibióticos -->
+        <div id="carousel-antibioticos" class="w-full max-w-[400px] md:max-w-[320px] flex flex-col gap-2 xl:max-w-[350px]">
+          <button class="carousel-btn w-full text-xl text-white bg-primary rounded-full sm:text-2xl">Antibióticos</button>
+          <!-- CARRUSEL -->
+          <div class="carousel-container hidden my-5 w-full justify-center">
+            <div class="relative w-full h-[330px]">
+              <!-- ITEMS -->
+              <div id="antibioticos" class="w-full"></div>
+  
+              <!-- BOTONES -->
+              <div class="absolute top-40 translate-y-1/2 w-full flex justify-between">
+                <button class="prevBtn w-9 disabled:opacity-50" disabled>
+                  <img src="./public/images/prev-btn.svg" alt="">
+                </button>
+                <button class="nextBtn w-9 disabled:opacity-50">
+                  <img src="./public/images/next-btn.svg" alt="">
+                </button>
+              </div>
+              <!-- INDICADORES -->
+              <div id="antibioticos-indicadores" class="absolute bottom-0 right-1/2 translate-x-1/2 w-full flex justify-center flex-wrap gap-1"></div>
             </div>
-            <!-- INDICADORES -->
-            <div id="antibioticos-indicadores" class="absolute bottom-0 right-1/2 translate-x-1/2 w-full flex justify-center flex-wrap gap-1"></div>
           </div>
         </div>
-      </div>
-
-      <!-- Carrusel Pruebas -->
-      <div id="carousel-pruebas" class="px-5">
-        <button class="carousel-btn w-full text-2xl text-white bg-primary rounded-full">Pruebas Reactivas</button>
-        <!-- CARRUSEL -->
-        <div class="carousel-container hidden my-5 w-full justify-center">
-          <div class="relative w-full h-[370px]">
-            <!-- ITEMS -->
-            <div id="pruebas" class="w-full"></div>
-
-            <!-- BOTONES -->
-            <div class="absolute top-40 translate-y-1/2 w-full flex justify-between">
-              <button class="prevBtn w-9 disabled:opacity-50" disabled>
-                <img src="./public/images/prev-btn.svg" alt="">
-              </button>
-              <button class="nextBtn w-9 disabled:opacity-50">
-                <img src="./public/images/next-btn.svg" alt="">
-              </button>
+  
+        <!-- Carrusel Pruebas -->
+        <div id="carousel-pruebas" class="w-full max-w-[400px] md:max-w-[320px] flex flex-col gap-2 xl:max-w-[350px]">
+          <button class="carousel-btn w-full text-xl text-white bg-primary rounded-full sm:text-2xl">Pruebas Reactivas</button>
+          <!-- CARRUSEL -->
+          <div class="carousel-container hidden my-5 w-full justify-center">
+            <div class="relative w-full h-[370px]">
+              <!-- ITEMS -->
+              <div id="pruebas" class="w-full"></div>
+  
+              <!-- BOTONES -->
+              <div class="absolute top-40 translate-y-1/2 w-full flex justify-between">
+                <button class="prevBtn w-9 disabled:opacity-50" disabled>
+                  <img src="./public/images/prev-btn.svg" alt="">
+                </button>
+                <button class="nextBtn w-9 disabled:opacity-50">
+                  <img src="./public/images/next-btn.svg" alt="">
+                </button>
+              </div>
+              <!-- INDICADORES -->
+              <div id="pruebas-indicadores" class="absolute bottom-0 right-1/2 translate-x-1/2 w-full flex justify-center flex-wrap gap-1"></div>
             </div>
-            <!-- INDICADORES -->
-            <div id="pruebas-indicadores" class="absolute bottom-0 right-1/2 translate-x-1/2 w-full flex justify-center flex-wrap gap-1"></div>
           </div>
         </div>
       </div>
@@ -579,19 +585,19 @@
       <div class="flex flex-wrap justify-center gap-x-5 gap-y-2 font-bebasNeue text-xl">
         <a class="group" href="https://www.youtube.com/@Asiaacuacultura" target="_blank">
           <div class="h-12 flex items-center">
-            <img class="mx-auto h-10 group-hover:h-12 transition-all duration-300" src="./public/images/youtube.svg" alt="Logo de Youtube">
+            <img class="mx-auto h-10 group-hover:h-12 transition-all duration-300" src="./public/images/youtube.png" alt="Logo de Youtube">
           </div>
           <p>Asia_Acuacultura</p>
         </a>
         <a class="group" href="https://instagram.com/asiaacuacultura?igshid=YzcxN2Q2NzY0OA==" target="_blank">
           <div class="h-12 flex items-center">
-            <img class="mx-auto h-10 group-hover:h-12 transition-all duration-300" src="./public/images/instagram.svg" alt="Logo de Instagram">
+            <img class="mx-auto h-10 group-hover:h-12 transition-all duration-300" src="./public/images/Instagram.png" alt="Logo de Instagram">
           </div>
           <p>Asia_Acuacultura</p>
         </a>
         <a class="group" href="https://www.facebook.com/profile.php?id=100094075017343&mibextid=ZbWKwL" target="_blank">
           <div class="h-12 flex items-center">
-            <img class="mx-auto h-10 group-hover:h-12 transition-all duration-300" src="./public/images/facebook.svg" alt="Logo de Facebook">
+            <img class="mx-auto h-10 group-hover:h-12 transition-all duration-300" src="./public/images/facebook.png" alt="Logo de Facebook">
           </div>
           <p>Asia_Acuacultura</p>
         </a>
@@ -608,20 +614,20 @@
         <!-- href whatsapp segun dispositivo -->
         <a class="group md:hidden" href="whatsapp://send?phone=+573170439632&abid=+573170439632" target="_blank">
           <div class="h-12 flex items-center">
-            <img class="mx-auto h-10 group-hover:h-12 transition-all duration-300" src="./public/images/whatsapp.svg" alt="Logo de Whatsapp">
+            <img class="mx-auto h-10 group-hover:h-12 transition-all duration-300" src="./public/images/whatsapp.png" alt="Logo de Whatsapp">
           </div>
           <p>317-043-9632</p>
         </a>
         <a class="group hidden md:inline" href="http://web.whatsapp.com/send?phone=+573170439632&abid=+573170439632" target="_blank">
           <div class="h-12 flex items-center">
-            <img class="mx-auto h-10 group-hover:h-12 transition-all duration-300" src="./public/images/whatsapp.svg" alt="Logo de Whatsapp">
+            <img class="mx-auto h-10 group-hover:h-12 transition-all duration-300" src="./public/images/whatsapp.png" alt="Logo de Whatsapp">
           </div>
           <p>317-043-9632</p>
         </a>
 
         <a class="group" href="mailto:ventas@asiaacuacultura.com" target="_blank">
           <div class="h-12 flex items-center">
-            <img class="mx-auto h-10 group-hover:h-12 transition-all duration-300" src="./public/images/mail.svg" alt="Icono de email">
+            <img class="mx-auto h-10 group-hover:h-12 transition-all duration-300" src="./public/images/mail.png" alt="Icono de email">
           </div>
           <p>ventas@asiaacuacultura.com</p>
         </a>
