@@ -38,37 +38,55 @@
     </section>
   </header>
 
-  <main class="pt-36 mb-10 pb-10 bg-background rounded-b-full shadow-gray-600 shadow-md">
+  <main class="pt-36 mb-10 pb-10 bg-background rounded-b-full shadow-gray-600 shadow-md lg:pt-32">
     <div class="bg-primary-dark">
       <div class="mb-3 pb-20 bg-background rounded-b-full shadow-gray-600 shadow-md">
         
         <!-- CARRUSEL -->
-        <section class="px-5 w-full flex justify-center">
-          <div class="relative w-full h-60">
+        <section class="px-5 w-full flex justify-center sm:px-10 lg:px-0">
+          <div id="slide-home-fotos" class="relative w-full h-60 sm:h-72 md:h-96 lg:h-[450px]">
             <!-- IMÁGENES -->
-            <div class=" w-full">
-              <img class="carousel-item absolute opacity-0 h-full w-full object-cover rounded-xl transition-all duration-700 active" src="./public/images/carrusel_movil_01.jpg" alt="Imagen 1">
-              <img class="carousel-item absolute opacity-0 h-full w-full object-cover rounded-xl transition-all duration-700" src="./public/images/carrusel_movil_02.jpg" alt="Imagen 2">
-              <img class="carousel-item absolute opacity-0 h-full w-full object-cover rounded-xl transition-all duration-700" src="./public/images/carrusel_movil_03.jpg" alt="Imagen 3">
-              <img class="carousel-item absolute opacity-0 h-full w-full object-cover rounded-xl transition-all duration-700" src="./public/images/carrusel_movil_04.jpg" alt="Imagen 3">
-              <img class="carousel-item absolute opacity-0 h-full w-full object-cover rounded-xl transition-all duration-700" src="./public/images/carrusel_movil_05.jpg" alt="Imagen 3">
+            <div class="slide-container w-full lg:flex lg:flex-nowrap lg:h-full lg:overflow-x-scroll">
+              <picture>
+                <source srcset="./public/images/carrusel_movil_01.jpg" media="(max-width: 425px)"/>
+                <source srcset="./public/images/carrusel_tablet_01.jpg" media="(min-width: 426px) and (max-width: 767px)"/>
+                <source srcset="./public/images/carrusel_desktop_01.jpg" media="(min-width: 768px)"/>
+                <img class="carousel-item absolute opacity-0 h-full w-full object-cover rounded-xl transition-all duration-700 lg:rounded-none lg:relative lg:min-w-[800px] lg:opacity-100 lg:border-2 active" src="./public/images/carrusel_desktop_01.jpg" alt="Imagen 1">
+              </picture>
+              <picture>
+                <source srcset="./public/images/carrusel_movil_02.jpg" media="(max-width: 425px)"/>
+                <source srcset="./public/images/carrusel_tablet_02.jpg" media="(min-width: 426px) and (max-width: 767px)"/>
+                <source srcset="./public/images/carrusel_desktop_02.jpg" media="(min-width: 768px)"/>
+                <img class="carousel-item absolute opacity-0 h-full w-full object-cover rounded-xl transition-all duration-700 lg:rounded-none lg:relative lg:min-w-[800px] lg:opacity-100 lg:border-2 active" src="./public/images/carrusel_desktop_02.jpg" alt="Imagen 2">
+              </picture>
+              <picture>
+                <source srcset="./public/images/carrusel_movil_03.jpg" media="(max-width: 425px)"/>
+                <source srcset="./public/images/carrusel_tablet_03.jpg" media="(min-width: 426px) and (max-width: 767px)"/>
+                <source srcset="./public/images/carrusel_desktop_03.jpg" media="(min-width: 768px)"/>
+                <img class="carousel-item absolute opacity-0 h-full w-full object-cover rounded-xl transition-all duration-700 lg:rounded-none lg:relative lg:min-w-[800px] lg:opacity-100 lg:border-2 active" src="./public/images/carrusel_desktop_03.jpg" alt="Imagen 3">
+              </picture>
+              <picture>
+                <source srcset="./public/images/carrusel_movil_04.jpg" media="(max-width: 425px)"/>
+                <source srcset="./public/images/carrusel_tablet_04.jpg" media="(min-width: 426px) and (max-width: 767px)"/>
+                <source srcset="./public/images/carrusel_desktop_04.jpg" media="(min-width: 768px)"/>
+                <img class="carousel-item absolute opacity-0 h-full w-full object-cover rounded-xl transition-all duration-700 lg:rounded-none lg:relative lg:min-w-[800px] lg:opacity-100 lg:border-2 lg:border-x-white active" src="./public/images/carrusel_desktop_04.jpg" alt="Imagen 4">
+              </picture>
             </div>
             <!-- BOTONES -->
-            <div class="absolute top-1/2 -translate-y-1/2 px-1 w-full flex justify-between">
-              <button id="prevBtn" class="w-9 disabled:opacity-50" disabled>
+            <div class="absolute top-1/2 -translate-y-1/2 px-1 w-full flex justify-between lg:px-10">
+              <button id="prevBtn" class="prev-btn w-9 disabled:opacity-50" disabled>
                 <img src="./public/images/prev-btn.svg" alt="">
               </button>
-              <button id="nextBtn" class="w-9 disabled:opacity-50">
+              <button id="nextBtn" class="next-btn w-9 disabled:opacity-50">
                 <img src="./public/images/next-btn.svg" alt="">
               </button>
             </div>
             <!-- INDICADORES -->
-            <div class="absolute bottom-2 right-1/2 translate-x-1/2 flex justify-center gap-2">
-              <button class="carousel-indicator h-3 w-3 rounded-[50%] bg-white/70 active"></button>
-              <button class="carousel-indicator h-3 w-3 rounded-[50%] bg-white/70"></button>
-              <button class="carousel-indicator h-3 w-3 rounded-[50%] bg-white/70"></button>
-              <button class="carousel-indicator h-3 w-3 rounded-[50%] bg-white/70"></button>
-              <button class="carousel-indicator h-3 w-3 rounded-[50%] bg-white/70"></button>
+            <div class="absolute bottom-2 right-1/2 translate-x-1/2 flex justify-center gap-2 lg:hidden">
+              <button class="carousel-indicator h-3 w-3 rounded-[50%] bg-secondary-soft/50 active"></button>
+              <button class="carousel-indicator h-3 w-3 rounded-[50%] bg-secondary-soft/50"></button>
+              <button class="carousel-indicator h-3 w-3 rounded-[50%] bg-secondary-soft/50"></button>
+              <button class="carousel-indicator h-3 w-3 rounded-[50%] bg-secondary-soft/50"></button>
             </div>
           </div>
         </section>
@@ -182,5 +200,6 @@
 
   <script src="./js/navbar.js"></script>
   <script src="./js/carruselHome.js"></script>
+  <script src="./js/nowrapSlide.js"></script>
 </body>
 </html>
