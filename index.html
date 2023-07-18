@@ -38,9 +38,9 @@
     </section>
   </header>
 
-  <main class="pt-36 mb-10 pb-10 bg-background rounded-b-full shadow-gray-600 shadow-md sm:rounded-none sm:shadow-none lg:pt-32">
+  <main class="pt-36 mb-10 pb-10 font-bebasNeue bg-background rounded-b-full shadow-gray-600 shadow-md sm:rounded-none sm:shadow-none lg:pt-32 lg:pb-0">
     <div class="bg-primary-dark">
-      <div class="mb-3 pb-20 bg-background rounded-b-full shadow-gray-600 shadow-md">
+      <div class="mb-3 pb-20 bg-background rounded-b-full shadow-gray-600 shadow-md lg:rounded-none lg:shadow-none lg:pb-0">
         
         <!-- CARRUSEL -->
         <section class="px-5 w-full flex justify-center order-1 sm:px-10 lg:px-0">
@@ -91,49 +91,64 @@
           </div>
         </section>
 
-        <!--  -->
-        <section>
-
+        <!-- Enlaces version Desktop -->
+        <section class="hidden lg:block">
+          <div class="py-5 bg-gradient-to-b from-primary-dark to-primary">
+            <p class="mx-auto text-4xl text-white text-center">Nuestra amplia línea de productos y servicios le ayudarán a <br><strong class="text-[2.5rem] text-brown tracking-wide">mejorar la productividad</strong> sin importar en qué etapa se encuentre:</p>
+          </div>
+          <div class="bg-brown overflow-hidden">
+            <div class="max-w-7xl mx-auto flex justify-center text-3xl text-white leading-7">
+              <a class="relative block w-1/3 pt-10 pb-5 text-center border-r border-white" href="/asesorias.html">Hasta ahora<br><span class="text-secondary-soft">tengo la idea</span> y no sé<br>por dónde empezar.
+                <div class="absolute translate-x-1/2 right-1/2 -top-4 h-8 w-8 bg-primary rotate-45"></div>
+              </a>
+              <a class="relative block w-1/3 pt-10 pb-5 text-center border-r border-white" href="/equipos.html">Mi proyecto está<br>en construcción <br>y <span class="text-secondary-soft">necesito equiparlo.</span>
+                <div class="absolute translate-x-1/2 right-1/2 -top-4 h-8 w-8 bg-primary rotate-45"></div>
+              </a>
+              <a class="relative block w-1/3 pt-10 pb-5 text-center" href="/equipos.html#insumos">Ya tengo todo,<br> tan<span class="text-secondary-soft"> solo necesito<br>insumos.</span>
+                <div class="absolute translate-x-1/2 right-1/2 -top-4 h-8 w-8 bg-primary rotate-45"></div>
+              </a>
+            </div>
+          </div>
         </section>
 
-        <section class="mt-10 px-5 order-2 sm:px-10">
-          <ul class="flex flex-col items-center gap-2 font-foregen text-xl tracking-wide md:flex-row md:gap-2 lg:gap-5">
-            <li class="w-full max-w-sm lg:max-w-[300px]">
-              <a class="group block text-center text-white rounded-full shadow-gray-500 shadow-md overflow-hidden transition-all duration-300 hover:shadow-none focus-within:bg-secondary focus-within:shadow-none md:rounded-lg md:shadow-none" href="./equipos.html">
-                <img class="hidden mx-auto w-44 h-52 md:block object-contain lg:w-52 lg:h-56" src="./public/images/trabajador-medio.png" alt="Blower Industrial">
-                <p class="text-xl bg-secondary-soft transition-all duration-300 group-hover:bg-secondary md:py-2 md:bg-brown md:rounded-t-lg md:group-hover:bg-brown lg:text-2xl">Asesorías y Proyectos</p>
+        <section class="my-10 px-5 order-2 lg:px-10">
+          <ul class="max-w-6xl mx-auto flex flex-col items-center gap-2 font-foregen text-xl tracking-wide md:flex-row md:gap-2 md:justify-between">
+            <li class="w-full max-w-sm lg:max-w-[300px] xl:max-w-[350px]">
+              <a class="group block text-center text-white rounded-full shadow-gray-500 shadow-md overflow-hidden transition-all duration-300 hover:shadow-none focus-within:bg-secondary focus-within:shadow-none md:rounded-lg md:shadow-none" href="./asesorias.html">
+                <img class="hidden mx-auto w-44 h-52 md:block object-contain lg:w-52 lg:h-56" src="./public/images/trabajador-medio.png" alt="Trabajador industrial">
+                <p class="text-xl bg-secondary-soft transition-all duration-300 group-hover:bg-secondary md:py-2 md:bg-brown md:rounded-t-lg md:group-hover:bg-brown lg:text-3xl">Asesorías y Proyectos</p>
                 <p class="hidden py-2 px-3 min-h-[100px] bg-primary leading-5 transition-all duration-300 md:block">planeación, operación, diseño, construcción, supervisión, interventoría y capacitaciones.</p>
               </a>
             </li>
-            <li class="w-full max-w-sm lg:max-w-[300px]">
+            <li class="w-full max-w-sm lg:max-w-[300px] xl:max-w-[350px]">
               <a class="group block text-center text-white rounded-full shadow-gray-500 shadow-md overflow-hidden transition-all duration-300 hover:shadow-none focus-within:bg-secondary focus-within:shadow-none md:rounded-lg md:shadow-none" href="./equipos.html">
                 <img class="hidden mx-auto w-44 h-52 md:block object-contain lg:w-52 lg:h-56" src="./public/images/BlowerIndustrial.png" alt="Blower Industrial">
-                <p class="text-xl bg-secondary-soft transition-all duration-300 group-hover:bg-secondary md:py-2 md:bg-brown md:rounded-t-lg md:group-hover:bg-brown lg:text-2xl">Equipos y accesorios</p>
+                <p class="text-xl bg-secondary-soft transition-all duration-300 group-hover:bg-secondary md:py-2 md:bg-brown md:rounded-t-lg md:group-hover:bg-brown lg:text-3xl">Equipos y accesorios</p>
                 <p class="hidden py-2 px-3 min-h-[100px] bg-primary leading-5 transition-all duration-300 md:block">blowers, splash, filtros, difusores, conectores, alarmas de energía, tuberías y tratamiento de aguas.</p>
               </a>
             </li>
-            <li class="w-full max-w-sm lg:max-w-[300px]">
-              <a class="group block text-center text-white rounded-full shadow-gray-500 shadow-md overflow-hidden transition-all duration-300 hover:shadow-none focus-within:bg-secondary focus-within:shadow-none md:rounded-lg md:shadow-none" href="./equipos.html">
-                <img class="hidden mx-auto w-44 h-52 md:block object-contain lg:w-52 lg:h-56" src="./public/images/probioticos.png" alt="Blower Industrial">
-                <p class="text-xl bg-secondary-soft transition-all duration-300 group-hover:bg-secondary md:py-2 md:bg-brown md:rounded-t-lg md:group-hover:bg-brown lg:text-2xl">Insumos</p>
+            <li class="w-full max-w-sm lg:max-w-[300px] xl:max-w-[350px]">
+              <a class="group block text-center text-white rounded-full shadow-gray-500 shadow-md overflow-hidden transition-all duration-300 hover:shadow-none focus-within:bg-secondary focus-within:shadow-none md:rounded-lg md:shadow-none" href="./equipos.html#insumos">
+                <img class="hidden mx-auto w-44 h-52 md:block object-contain lg:w-52 lg:h-56" src="./public/images/probioticos.png" alt="Recipientes de plástico que contienen antibióticos">
+                <p class="text-xl bg-secondary-soft transition-all duration-300 group-hover:bg-secondary md:py-2 md:bg-brown md:rounded-t-lg md:group-hover:bg-brown lg:text-3xl">Insumos</p>
                 <p class="hidden py-2 px-3 min-h-[100px] bg-primary leading-5 transition-all duration-300 md:block">blowers, splash, filtros, difusores, conectores, alarmas de energía, tuberías y tratamiento de aguas.</p>
               </a>
             </li>
           </ul>
         </section>
 
-        <section class="relative w-full mt-10 px-5 flex flex-col items-center gap-3 order-3">
+        <section class="relative w-full mt-10 px-5 flex flex-col items-center gap-3 order-3 lg:hidden">
           <img class="h-52 sm:h-64" src="./public/images/pregunta-mejorar.png" alt="¿Desea crear o mejorar su proyecto acuicola?">
           <img class="absolute -bottom-24 translate-x-1/2 right-1/2 h-52 mr-4 sm:-bottom-20 sm:mr-8" src="./public/images/pez.svg" alt="Pez">
         </section>
       </div>
-      <section class="px-5 py-10 bg-gradient-to-b from-primary-dark from-20% to-primary to-80% -z-20">
+      <section class="px-5 py-10 bg-gradient-to-b from-primary-dark from-20% to-primary to-80% -z-20 lg:hidden">
         <p class="font-bebasNeue text-2xl leading-7 tracking-wide text-white text-center font-light sm:text-3xl sm:leading-none">Nuestra amplia línea de productos<br> y servicios le ayudarán a <br><strong class="text-3xl text-brown leading-none sm:text-4xl sm:leading-none">mejorar la productividad<br></strong> sin importar en qué<br> etapa se encuentre:</p>
       </section> 
     </div>
 
-    <div> 
-      <section class="mb-10">
+    <div class="lg:bg-white lg:py-20"> 
+      <section class="mb-10 lg:hidden">
         <ul class="flex flex-col gap-0.5 font-bebasNeue text-lg leading-5 sm:flex-row sm:text-2xl">
           <li class="sm:w-1/3">
             <a class="h-14 px-5 flex justify-center items-center text-center text-white bg-secondary shadow-gray-500 shadow-md sm:h-full sm:py-3" href="./asesorias.html">Hasta ahora tengo la idea y no sé por dónde empezar.</a>
@@ -147,16 +162,40 @@
         </ul>
       </section>
 
-      <section class="relative h-64 px-5 flex items-center sm:px-10 sm:text-center">
+      <!-- Descarga Portafolio mobile y tablet -->
+      <section class="relative h-64 px-5 flex items-center sm:px-10 sm:text-center lg:hidden">
         <div class="absolute -translate-y-1/2 top-1/2 right-1/2 sm:relative sm:translate-y-0 sm:top-0 sm:right-0 md:w-1/2">
           <img class="mx-auto w-48 sm:w-56 md:w-60" src="./public/images/catalogo.png" alt="Libro con titulo Todo Asia Acuacultura">
         </div>
         <p class="w-1/2 ml-auto pl-2 font-bebasNeue text-2xl leading-6 sm:text-3xl sm:leading-none">También puede encontrar todo lo que necesita en nuestro <a class="block text-3xl text-secondary leading-7 sm:text-4xl" href="./public/CatalogoAsia2023.pdf" download>Portafolio completo <br>en PDF</a></p>
       </section>
+
+      <!-- Descarga portafolio Desktop -->
+      <section class="relative py-5 bg-gradient-to-r from-secondary via-secondary-soft to-secondary">
+        <div class="max-w-6xl mx-auto px-10 flex justify-between items-center">
+          <p class="text-3xl text-white text-right leading-7">también puede encontrar<br>todo lo que necesita en nuestro<br>portafolio completo en PDF</p>
+          <a class="text-5xl text-white transition-all duration-300 hover:text-[3.1rem]" href="./public/CatalogoAsia2023.pdf" download>Descárguelo Aquí</a>
+        </div>
+        <div class="absolute translate-x-1/2 translate-y-1/2 right-1/2 bottom-1/2 h-60 w-60 bg-white rounded-full"></div>
+        <img class="absolute translate-x-1/2 translate-y-1/2 right-1/2 bottom-1/2 w-48" src="/public/images/catalogo.png" alt="">
+      </section>
+    </div>
+
+    <!-- Contáctenos Desktop-->
+    <div class="bg-background py-10">
+      <section class="max-w-5xl mx-auto flex justify-around">
+        <div>
+          <p class=" text-right text-4xl text-brown">No espere a tocar fondo,<br><span class="text-5xl text-secondary">El momento de<br>crece es ahora.</span></p>
+        </div>
+        <div class="relative flex items-end">
+          <a class="px-14 py-2 text-white text-5xl bg-secondary rounded-r-full shadow-brown transition-all duration-300 hover:bg-primary-dark focus-within::bg-primary-dark" href="mailto:ventas@asiaacuacultura.com" target="_blank">Contáctenos hoy</a>
+          <img class="absolute -top-24 -left-60 -rotate-[75deg]" src="/public/images/pez.svg" alt="Pez">
+        </div>
+      </section>
     </div>
   </main>
 
-  <footer class="mb-10 px-5 flex flex-col gap-5">
+  <footer class="mb-10 px-5 flex flex-col gap-5 lg:pt-5">
     <section>
       <div class="mb-5 flex items-center gap-4">
         <div class="h-1 w-full border-2 border-grey"></div>
