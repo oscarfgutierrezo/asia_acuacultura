@@ -29,5 +29,3 @@ if (window.location.pathname === '/asesorias.html') {
 } else if (window.location.pathname === '/' && (window.innerWidth >= 1024)) {
     nowrapSlide("slide-home-fotos", 400)
 };
-
-console.log(window.location.pathname);
