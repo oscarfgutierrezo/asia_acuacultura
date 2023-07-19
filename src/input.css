@@ -41,3 +41,11 @@
 .fullscreen-p10 {
   width: calc(100% - 30px);
 }
+
+.triangulo{
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 16px solid #443F35;
+}
