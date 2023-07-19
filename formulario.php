@@ -1,26 +1,25 @@
 <?php
     if(isset($_POST['submit'])){
-        // Nombres de los meses en español
-        $nombresMeses = array(
-            1 => 'Enero', 2 => 'Febrero', 3 => 'Marzo', 4 => 'Abril', 5 => 'Mayo', 6 => 'Junio',
-            7 => 'Julio', 8 => 'Agosto', 9 => 'Septiembre', 10 => 'Octubre', 11 => 'Noviembre', 12 => 'Diciembre'
-        );
 
+        // Variables base datos
         $nombre = $_POST['nombre'];
         $telefono = $_POST['telefono'];
         $email = $_POST['email'];
         $ciudad = $_POST['ciudad'];
         $fecha = date('Y-m-d');
 
+        // Info catalogo
+        $file = "./public/CatalogoAsia2023.pdf";
+        $filename = "CatalogoAsiaAcuacultura.pdf";
+
         // Obtener el día, nombre del mes y año actual
         $dia = date('d');
-        $mesNumero = date('n'); // Número del mes sin ceros a la izquierda
-        $mes = $nombresMeses[$mesNumero];
+        $mes = date('m');
         $anio = date('Y');
 
         // Crear el cuerpo del correo con la información y la fecha actual
         $asunto = "Nuevo cliente registrado";
-        $cuerpo = "El día $dia de $mes del $anio se ha registrado un nuevo cliente en la base de datos:\n\n" .
+        $cuerpo = "El día $dia del mes $mes del $anio se ha registrado un nuevo cliente en la base de datos:\n\n" .
                   "Nombre: $nombre\n" .
                   "Teléfono: $telefono\n" .
                   "Email: $email\n" .
@@ -34,7 +33,11 @@
           die("Falló la conexión: " . $conexion->connect_error);
         }
 
-        if ($conexion->query($sql) === TRUE) {    
+        if ($conexion->query($sql) === TRUE) {
+            header("Content-Type: application/pdf");
+            header("Content-Disposition: attachment; filename=\"$filename\"");
+            readfile($file);
+            
             mail('oscarfgutierrezo@gmail.com', $asunto, $cuerpo );
         } else {
           echo "Error: " . $sql . "<br>" . $conexion->error;
