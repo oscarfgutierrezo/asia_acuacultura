@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Oscar Gutierrez">
   <title>Asia - Acuacultura</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
@@ -171,14 +172,17 @@
         <div class="absolute -translate-y-1/2 top-1/2 right-1/2 sm:relative sm:translate-y-0 sm:top-0 sm:right-0 md:w-1/2">
           <img class="mx-auto w-48 sm:w-56 md:w-60" src="./public/images/catalogo.png" alt="Libro con titulo Todo Asia Acuacultura">
         </div>
-        <p class="w-1/2 ml-auto pl-2 font-bebasNeue text-2xl leading-6 sm:text-3xl sm:leading-none">También puede encontrar todo lo que necesita en nuestro <a class="block text-3xl text-secondary leading-7 transition-all duration-300 hover:text-secondary-soft focus-within:text-secondary-soft sm:text-4xl" href="./public/CatalogoAsia2023.pdf" download>Portafolio completo <br>en PDF</a></p>
+        <div class="ml-auto w-1/2 pl-2 flex flex-col font-bebasNeue">
+          <p class="text-2xl leading-6 sm:text-3xl sm:leading-none">También puede encontrar todo lo que necesita en nuestro</p>
+          <button class="modal-form-home-btn block text-left text-3xl text-secondary leading-7 transition-all duration-300 hover:text-secondary-soft focus-within:text-secondary-soft sm:text-4xl sm:text-center">Portafolio completo <br>en PDF</button>
+        </div>
       </section>
 
       <!-- Descarga portafolio Desktop -->
       <section class="hidden relative py-5 bg-gradient-to-r from-secondary via-secondary-soft to-secondary lg:block">
         <div class="max-w-6xl mx-auto px-10 flex justify-between items-center">
           <p class="text-3xl text-white text-right leading-7">también puede encontrar<br>todo lo que necesita en nuestro<br>portafolio completo en PDF</p>
-          <a class="text-5xl text-white transition-all duration-300 hover:text-secondary-soft focus-within:text-secondary-soft" href="./public/CatalogoAsia2023.pdf" download>Descárguelo Aquí</a>
+          <button class="modal-form-home-btn text-5xl text-white transition-all duration-300 hover:text-secondary-soft focus-within:text-secondary-soft">Descárguelo Aquí</button>
         </div>
         <div class="absolute translate-x-1/2 translate-y-1/2 right-1/2 bottom-1/2 h-60 w-60 bg-white rounded-full"></div>
         <img class="absolute translate-x-1/2 translate-y-1/2 right-1/2 bottom-1/2 w-48" src="/public/images/catalogo.png" alt="">
@@ -206,6 +210,8 @@
       <a class="hidden md:inline" href="http://web.whatsapp.com/send?phone=+573170439632&abid=+573170439632" target="_blank">
         <img class="h-16" src="./public/images/whatsapp.png" alt="Logo Whatsapp">
       </a>
+    </div>
+
     </div>
   </main>
 
@@ -269,8 +275,45 @@
     </section>
   </footer>
 
+  <!-- Modal formulario -->
+  <div id="modal-form-home" class="hidden fixed top-0 bottom-0 left-0 right-0 justify-center items-center bg-black/80 z-40">
+    <div class="relative w-[90%] max-w-sm px-5 py-10 bg-white rounded-lg sm:px-10">
+      <form class="flex flex-col text-brown" autocomplete="off">
+        <p class="pb-5 text-center text-4xl font-medium text-secondary leading-8">Registro</p>
+        <p class="pb-5 text-center text-xl">Objetivo del Formulario</p>
+        <div class="pb-10 flex flex-col gap-5">
+          <div class="relative">
+            <label for="nombre">Nombre:</label>
+            <input class="w-full mt-1 border-b border-brown outline-none focus:border-primary peer" id="nombre" name="nombre" type="text">
+            <i class="fa-solid fa-user absolute left-2 bottom-2 text-grey peer-focus:text-primary"></i>
+          </div>
+          <div class="relative">
+            <label for="telefono">Número de Teléfono:</label>
+            <input class="w-full mt-1 border-b border-brown outline-none focus:border-primary peer" id="telefono" name="telefono" type="tel">
+            <i class="fa-solid fa-phone absolute left-2 bottom-2 text-grey peer-focus:text-primary"></i>
+          </div>
+          <div class="relative">
+            <label for="email">Correo Electrónico:</label>
+            <input class="w-full mt-1 border-b border-brown outline-none focus:border-primary peer" id="email" name="email" type="email">
+            <i class="fa-solid fa-envelope absolute left-2 bottom-2 text-grey peer-focus:text-primary"></i>
+          </div>
+          <div class="relative">
+            <label for="ciudad">Ciudad:</label>
+            <input class="w-full mt-1 border-b border-brown outline-none focus:border-primary peer" id="ciudad" name="ciudad" type="text">
+            <i class="fa-solid fa-earth-americas absolute left-2 bottom-2 text-grey peer-focus:text-primary"></i>
+          </div>
+        </div>
+        <button class="py-1 text-xl text-white bg-secondary rounded-full transition-all duration-300 hover:bg-secondary-soft focus-within:bg-secondary-soft" type="submit">Enviar</button>
+      </form>
+      <button class="close-modal-btn">
+        <i class="absolute top-5 right-5 fa-solid fa-xmark text-3xl text-brown"></i>
+      </button>
+    </div>
+  </div>
+
   <script src="./js/navbar.js"></script>
   <script src="./js/carruselHome.js"></script>
   <script src="./js/nowrapSlide.js"></script>
+  <script src="./js/abrirModal.js"></script>
 </body>
 </html>
