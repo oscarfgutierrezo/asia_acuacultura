@@ -22,6 +22,4 @@ const abrirModal = ( btnId, modalId ) => {
   })
 }
 
-if (window.location.pathname === '/') {
-  abrirModal("modal-form-home-btn", "modal-form-home");
-}
+abrirModal("modal-form-home-btn", "modal-form-home");
