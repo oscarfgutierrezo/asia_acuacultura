@@ -5,11 +5,13 @@
 @font-face {
   font-family: bebasNeue;
   src: url("../public/fonts/BebasNeue-Regular.ttf") format("opentype");
+  font-display: swap;
 }
 
 @font-face {
   font-family: foregen;
   src: url("../public/fonts/foregen.otf") format("opentype");
+  font-display: swap;
 }
 
 .hamburger-menu-item.active {
