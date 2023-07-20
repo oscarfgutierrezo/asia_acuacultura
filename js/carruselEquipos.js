@@ -41,6 +41,14 @@ const createCarousel = containerId => {
   nextBtn.addEventListener("click", nextSlide);
   carouselBtn.addEventListener("click", toggleCarousel);
   carouselIndicators.forEach((indicator, index) => indicator.addEventListener("click", () => showSlide(index)));
+
+  document.addEventListener('click', (event) => {
+    const isMenuClicked = container.contains(event.target) || container.contains(event.target);
+    if (!isMenuClicked) {
+      carousel.classList.remove('active');
+      
+    }
+  });
 }
 
 // Crear instancias de los carruseles
