@@ -20,18 +20,18 @@
       </button>
       <ul class="absolute hidden top-14 right-0 w-full h-0 flex-col p-4 font-medium rounded-lg bg-gray-50 sm:right-5 sm:w-80 lg:relative lg:p-0 lg:w-full lg:h-max lg:top-0 lg:flex lg:flex-row lg:justify-end lg:gap-5 lg:bg-transparent lg:border-none xl:justify-center" id="hamburguer-menu">
         <li>
-          <a href="/" class="hamburger-menu-item block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-grey/10 transition-all duration-300 lg:px-0 lg:py-2 lg:text-secondary-soft lg:hover:text-white lg:hover:bg-transparent">Home</a>
+          <a href="/" class="hamburger-menu-item block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-grey/10 transition-all duration-300 lg:px-0 lg:py-2 lg:text-secondary-soft lg:hover:text-white lg:hover:bg-transparent" aria-label="Ir al home de la página">Home</a>
         </li>
         <div class="hidden border border-secondary-soft lg:block"></div>
         <li>
-          <a href="/asesorias.html" class="hamburger-menu-item block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-grey/10 transition-all duration-300 lg:px-0 lg:py-2 lg:p-0 lg:text-secondary-soft lg:hover:text-white lg:hover:bg-transparent"">Asesorías y Proyectos</a>
+          <a href="/asesorias.html" class="hamburger-menu-item block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-grey/10 transition-all duration-300 lg:px-0 lg:py-2 lg:p-0 lg:text-secondary-soft lg:hover:text-white lg:hover:bg-transparent" aria-label="Ir al la sección de asesorías">Asesorías y Proyectos</a>
         </li>
         <div class="hidden border border-secondary-soft lg:block"></div>
         <li>
-          <a href="/equipos.html" class="hamburger-menu-item block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-grey/10 transition-all duration-300 lg:px-0 lg:py-2 lg:p-0 lg:text-secondary-soft lg:hover:text-white lg:hover:bg-transparent">Equipos, Accesorios e Insumos</a>
+          <a href="/equipos.html" class="hamburger-menu-item block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-grey/10 transition-all duration-300 lg:px-0 lg:py-2 lg:p-0 lg:text-secondary-soft lg:hover:text-white lg:hover:bg-transparent" aria-label="Ir a la sección de equipos e insumos">Equipos, Accesorios e Insumos</a>
         </li>
       </ul>
-      <a href="/">
+      <a href="/" aria-label="Ir al home de la página">
         <img class="hidden absolute top-4 h-40 lg:block lg:left-[3%] xl:left-[6%] 2xl:left-[10%]" src="./public/images/asia-logo.svg" alt="Logo Asia Acuacultura">
       </a>
     </nav>
@@ -41,7 +41,7 @@
       <div id="navbar-container" class="h-40 overflow-hidden bg-transparent">
         <div id="navbar" class="relative -top-48 -left-[5%] w-[110%] h-80 bg-secondary rounded-[50%] transition-all duration-300"></div>
       </div>
-      <a href="/">
+      <a href="/" aria-label="Ir al home de la página">
         <img id="logo-navbar" class="absolute h-40 w-40 top-[100px] left-1/2 -translate-x-1/2 -translate-y-1/2 transition-all duration-300" src="./public/images/asia-logo.svg" alt="Logo de Asia Acuacultura">
       </a>
     </section>
@@ -60,34 +60,34 @@
                 <source srcset="./public/images/carrusel_movil_01.jpg" media="(max-width: 425px)"/>
                 <source srcset="./public/images/carrusel_tablet_01.jpg" media="(min-width: 426px) and (max-width: 767px)"/>
                 <source srcset="./public/images/carrusel_desktop_01.jpg" media="(min-width: 768px)"/>
-                <img class="carousel-item absolute opacity-0 h-full w-full object-cover rounded-xl transition-all duration-700 lg:rounded-none lg:relative lg:min-w-[800px] lg:opacity-100 lg:border-2 active" src="./public/images/carrusel_desktop_01.jpg" alt="Imagen 1">
+                <img class="carousel-item absolute opacity-0 h-full w-full object-cover rounded-xl transition-all duration-700 lg:rounded-none lg:relative lg:min-w-[800px] lg:opacity-100 lg:border-2 active" src="./public/images/carrusel_desktop_01.jpg" alt="Vista aerea de campo de cultivo">
               </picture>
               <picture>
                 <source srcset="./public/images/carrusel_movil_02.jpg" media="(max-width: 425px)"/>
                 <source srcset="./public/images/carrusel_tablet_02.jpg" media="(min-width: 426px) and (max-width: 767px)"/>
                 <source srcset="./public/images/carrusel_desktop_02.jpg" media="(min-width: 768px)"/>
-                <img class="carousel-item absolute opacity-0 h-full w-full object-cover rounded-xl transition-all duration-700 lg:rounded-none lg:relative lg:min-w-[800px] lg:opacity-100 lg:border-2 active" src="./public/images/carrusel_desktop_02.jpg" alt="Imagen 2">
+                <img class="carousel-item absolute opacity-0 h-full w-full object-cover rounded-xl transition-all duration-700 lg:rounded-none lg:relative lg:min-w-[800px] lg:opacity-100 lg:border-2 active" src="./public/images/carrusel_desktop_02.jpg" alt="Vista aerea de campo de cultivo">
               </picture>
               <picture>
                 <source srcset="./public/images/carrusel_movil_03.jpg" media="(max-width: 425px)"/>
                 <source srcset="./public/images/carrusel_tablet_03.jpg" media="(min-width: 426px) and (max-width: 767px)"/>
                 <source srcset="./public/images/carrusel_desktop_03.jpg" media="(min-width: 768px)"/>
-                <img class="carousel-item absolute opacity-0 h-full w-full object-cover rounded-xl transition-all duration-700 lg:rounded-none lg:relative lg:min-w-[800px] lg:opacity-100 lg:border-2 active" src="./public/images/carrusel_desktop_03.jpg" alt="Imagen 3">
+                <img class="carousel-item absolute opacity-0 h-full w-full object-cover rounded-xl transition-all duration-700 lg:rounded-none lg:relative lg:min-w-[800px] lg:opacity-100 lg:border-2 active" src="./public/images/carrusel_desktop_03.jpg" alt="Vista aerea de campo de cultivo">
               </picture>
               <picture>
                 <source srcset="./public/images/carrusel_movil_04.jpg" media="(max-width: 425px)"/>
                 <source srcset="./public/images/carrusel_tablet_04.jpg" media="(min-width: 426px) and (max-width: 767px)"/>
                 <source srcset="./public/images/carrusel_desktop_04.jpg" media="(min-width: 768px)"/>
-                <img class="carousel-item absolute opacity-0 h-full w-full object-cover rounded-xl transition-all duration-700 lg:rounded-none lg:relative lg:min-w-[800px] lg:opacity-100 lg:border-2 lg:border-x-white active" src="./public/images/carrusel_desktop_04.jpg" alt="Imagen 4">
+                <img class="carousel-item absolute opacity-0 h-full w-full object-cover rounded-xl transition-all duration-700 lg:rounded-none lg:relative lg:min-w-[800px] lg:opacity-100 lg:border-2 lg:border-x-white active" src="./public/images/carrusel_desktop_04.jpg" alt="Vista aerea de campo de cultivo">
               </picture>
             </div>
             <!-- BOTONES -->
             <div class="absolute top-1/2 -translate-y-1/2 px-1 w-full flex justify-between sm:px-5 lg:px-10">
-              <button id="prevBtn" class="prev-btn w-9 disabled:opacity-50 md:w-12" disabled aria-label="siguiente-item">
-                <img height="36" width="36" src="./public/images/prev-btn.svg" alt="">
+              <button id="prevBtn" class="prev-btn disabled:opacity-50 " disabled aria-label="siguiente-item">
+                <img height="36" width="36" class="md:w-12" src="./public/images/prev-btn.svg" alt="Boton con flecha hacia la izquierda">
               </button>
               <button id="nextBtn" class="next-btn w-9 disabled:opacity-50 md:w-12" aria-label="anterior-item">
-                <img height="36" width="36" src="./public/images/next-btn.svg" alt="">
+                <img height="36" width="36" class="md:w-12" src="./public/images/next-btn.svg" alt="Boton con flecha hacia la derecha">
               </button>
             </div>
             <!-- INDICADORES -->
@@ -107,13 +107,13 @@
           </div>
           <div class="bg-brown overflow-hidden">
             <div class="max-w-7xl mx-auto flex justify-center text-3xl text-white leading-7">
-              <a class="group relative block w-1/3 pt-10 pb-5 text-center border-r border-white" href="/asesorias.html">Hasta ahora<br><span class="text-secondary-soft transition-all duration-300 group-hover:text-primary group-focus-within:text-primary">tengo la idea</span> y no sé<br>por dónde empezar.
+              <a class="group relative block w-1/3 pt-10 pb-5 text-center border-r border-white" href="/asesorias.html">Hasta ahora<br><span class="text-secondary-soft transition-all duration-300 group-hover:text-primary group-focus-within:text-primary" aria-label="Ir la página de asesorías">tengo la idea</span> y no sé<br>por dónde empezar.
                 <div class="absolute translate-x-1/2 right-1/2 -top-4 h-8 w-8 bg-primary rotate-45"></div>
               </a>
-              <a class="group relative block w-1/3 pt-10 pb-5 text-center border-r border-white" href="/equipos.html">Mi proyecto está<br>en construcción <br>y <span class="text-secondary-soft transition-all duration-300 group-hover:text-primary group-focus-within:text-primary">necesito equiparlo.</span>
+              <a class="group relative block w-1/3 pt-10 pb-5 text-center border-r border-white" href="/equipos.html">Mi proyecto está<br>en construcción <br>y <span class="text-secondary-soft transition-all duration-300 group-hover:text-primary group-focus-within:text-primary" aria-label="Ir a la sección de equipos en la página de equipos e insumos">necesito equiparlo.</span>
                 <div class="absolute translate-x-1/2 right-1/2 -top-4 h-8 w-8 bg-primary rotate-45"></div>
               </a>
-              <a class="group relative block w-1/3 pt-10 pb-5 text-center" href="/equipos.html#insumos">Ya tengo todo,<br> tan<span class="text-secondary-soft transition-all duration-300 group-hover:text-primary group-focus-within:text-primary"> solo necesito<br>insumos.</span>
+              <a class="group relative block w-1/3 pt-10 pb-5 text-center" href="/equipos.html#insumos" aria-label="Ir a la sección de insumos en la página de equipos e insumos">Ya tengo todo,<br> tan<span class="text-secondary-soft transition-all duration-300 group-hover:text-primary group-focus-within:text-primary"> solo necesito<br>insumos.</span>
                 <div class="absolute translate-x-1/2 right-1/2 -top-4 h-8 w-8 bg-primary rotate-45"></div>
               </a>
             </div>
@@ -123,21 +123,21 @@
         <section class="my-10 px-5 order-2 lg:px-10">
           <ul class="max-w-6xl mx-auto flex flex-col items-center gap-2 font-foregen text-xl tracking-wide md:flex-row md:gap-2 md:justify-between">
             <li class="w-full max-w-sm lg:max-w-[300px] xl:max-w-[350px]">
-              <a class="group block text-center text-white rounded-full shadow-gray-500 shadow-md overflow-hidden transition-all duration-300 hover:shadow-none focus-within:shadow-none md:rounded-lg md:shadow-none" href="./asesorias.html">
+              <a class="group block text-center text-white rounded-full shadow-gray-500 shadow-md overflow-hidden transition-all duration-300 hover:shadow-none focus-within:shadow-none md:rounded-lg md:shadow-none" href="./asesorias.html" aria-label="Ir a la página de asesorías">
                 <img class="hidden mx-auto w-44 h-52 md:block object-contain lg:w-52 lg:h-56" src="./public/images/trabajador-medio.png" alt="Trabajador industrial">
                 <p class="text-xl bg-secondary-soft transition-all duration-300 group-hover:bg-secondary group-focus-within:bg-secondary md:py-2 md:bg-brown md:rounded-t-lg md:group-focus-within:bg-secondary md:group-hover:bg-brown lg:text-3xl md:group-hover:text-primary md:group-focus-within:text-primary">Asesorías y Proyectos</p>
                 <p class="hidden py-2 px-3 min-h-[100px] bg-primary leading-5 transition-all duration-300 md:block">planeación, operación, diseño, construcción, supervisión, interventoría y capacitaciones.</p>
               </a>
             </li>
             <li class="w-full max-w-sm lg:max-w-[300px] xl:max-w-[350px]">
-              <a class="group block text-center text-white rounded-full shadow-gray-500 shadow-md overflow-hidden transition-all duration-300 hover:shadow-none focus-within:shadow-none md:rounded-lg md:shadow-none" href="./equipos.html">
+              <a class="group block text-center text-white rounded-full shadow-gray-500 shadow-md overflow-hidden transition-all duration-300 hover:shadow-none focus-within:shadow-none md:rounded-lg md:shadow-none" href="./equipos.html" aria-label="Ir a la sección de equipos en la página de equipos e insumos">
                 <img class="hidden mx-auto w-44 h-52 md:block object-contain lg:w-52 lg:h-56" src="./public/images/BlowerIndustrial.png" alt="Blower Industrial">
                 <p class="text-xl bg-secondary-soft transition-all duration-300 group-hover:bg-secondary group-focus-within:bg-secondary md:py-2 md:bg-brown md:rounded-t-lg md:group-focus-within:bg-secondary md:group-hover:bg-brown lg:text-3xl md:group-hover:text-primary md:group-focus-within:text-primary">Equipos y accesorios</p>
                 <p class="hidden py-2 px-3 min-h-[100px] bg-primary leading-5 transition-all duration-300 md:block">blowers, splash, filtros, difusores, conectores, alarmas de energía, tuberías y tratamiento de aguas.</p>
               </a>
             </li>
             <li class="w-full max-w-sm lg:max-w-[300px] xl:max-w-[350px]">
-              <a class="group block text-center text-white rounded-full shadow-gray-500 shadow-md overflow-hidden transition-all duration-300 hover:shadow-none focus-within:shadow-none md:rounded-lg md:shadow-none" href="./equipos.html#insumos">
+              <a class="group block text-center text-white rounded-full shadow-gray-500 shadow-md overflow-hidden transition-all duration-300 hover:shadow-none focus-within:shadow-none md:rounded-lg md:shadow-none" href="./equipos.html#insumos" aria-label="Ir a la sección de insumos en la página de equipos e insumos">
                 <img class="hidden mx-auto w-44 h-52 md:block object-contain lg:w-52 lg:h-56" src="./public/images/probioticos.png" alt="Recipientes de plástico que contienen antibióticos">
                 <p class="text-xl bg-secondary-soft transition-all duration-300 group-hover:bg-secondary group-focus-within:bg-secondary md:py-2 md:bg-brown md:rounded-t-lg md:group-focus-within:bg-secondary md:group-hover:bg-brown lg:text-3xl md:group-hover:text-primary md:group-focus-within:text-primary">Insumos</p>
                 <p class="hidden py-2 px-3 min-h-[100px] bg-primary leading-5 transition-all duration-300 md:block">blowers, splash, filtros, difusores, conectores, alarmas de energía, tuberías y tratamiento de aguas.</p>
@@ -147,7 +147,7 @@
         </section>
 
         <section class="relative w-full mt-10 px-5 flex flex-col items-center gap-3 order-3 lg:hidden">
-          <img height="256" width="256" class="h-52 sm:h-64" src="./public/images/pregunta-mejorar.png" alt="¿Desea crear o mejorar su proyecto acuicola?">
+          <img height="256" width="256" class="h-64 sm:h-64" src="./public/images/pregunta-mejorar.png" alt="¿Desea crear o mejorar su proyecto acuicola?">
           <img class="absolute -bottom-24 translate-x-1/2 right-1/2 h-52 mr-4 sm:-bottom-20 sm:mr-8" src="./public/images/pez.svg" alt="Pez">
         </section>
       </div>
@@ -160,13 +160,13 @@
       <section class="mb-10 lg:hidden">
         <ul class="flex flex-col gap-0.5 font-bebasNeue text-lg leading-5 sm:flex-row sm:text-2xl">
           <li class="sm:w-1/3">
-            <a class="h-14 px-5 flex justify-center items-center text-center text-white bg-secondary shadow-gray-500 shadow-md transition-all duration-300 hover:text-secondary-soft focus-within:text-secondary-soft sm:h-full sm:py-3" href="./asesorias.html">Hasta ahora tengo la idea y no sé por dónde empezar.</a>
+            <a class="h-14 px-5 flex justify-center items-center text-center text-white bg-secondary shadow-gray-500 shadow-md transition-all duration-300 hover:text-secondary-soft focus-within:text-secondary-soft sm:h-full sm:py-3" href="./asesorias.html" aria-label="Ir a la página de asesorías">Hasta ahora tengo la idea y no sé por dónde empezar.</a>
           </li>
           <li class="sm:w-1/3">
-            <a class="h-14 px-5 flex justify-center items-center text-center text-white bg-secondary shadow-gray-500 shadow-md transition-all duration-300 hover:text-secondary-soft focus-within:text-secondary-soft sm:h-full sm:py-3" href="./equipos.html">Mi proyecto está en construcción y necesito equiparlo.</a>
+            <a class="h-14 px-5 flex justify-center items-center text-center text-white bg-secondary shadow-gray-500 shadow-md transition-all duration-300 hover:text-secondary-soft focus-within:text-secondary-soft sm:h-full sm:py-3" href="./equipos.html" aria-label="Ir a la sección de equipos en la página de equipos e insumos">Mi proyecto está en construcción y necesito equiparlo.</a>
           </li>
           <li class="sm:w-1/3">
-            <a class="h-14 px-5 flex justify-center items-center text-center text-white bg-secondary shadow-gray-500 shadow-md transition-all duration-300 hover:text-secondary-soft focus-within:text-secondary-soft sm:h-full sm:py-3" href="./equipos.html#insumos">Ya tengo todo, tan solo necesito insumos.</a>
+            <a class="h-14 px-5 flex justify-center items-center text-center text-white bg-secondary shadow-gray-500 shadow-md transition-all duration-300 hover:text-secondary-soft focus-within:text-secondary-soft sm:h-full sm:py-3" href="./equipos.html#insumos" aria-label="Ir a la sección de insumos en la página de equipos e insumos">Ya tengo todo, tan solo necesito insumos.</a>
           </li>
         </ul>
       </section>
@@ -189,7 +189,7 @@
           <button class="modal-form-home-btn text-5xl text-white transition-all duration-300 hover:text-secondary-soft focus-within:text-secondary-soft">Descárguelo Aquí</button>
         </div>
         <div class="absolute translate-x-1/2 translate-y-1/2 right-1/2 bottom-1/2 h-60 w-60 bg-white rounded-full"></div>
-        <img width="224" height="268" class="absolute translate-x-1/2 translate-y-1/2 right-1/2 bottom-1/2 w-48" src="./public/images/catalogo.png" alt="">
+        <img width="224" height="268" class="absolute translate-x-1/2 translate-y-1/2 right-1/2 bottom-1/2 w-48" src="./public/images/catalogo.png" alt="Libro con titulo Todo Asia Acuacultura">
       </section>
     </div>
 
@@ -200,7 +200,7 @@
           <p class=" text-right text-4xl text-brown">No espere a tocar fondo,<br><span class="text-5xl text-secondary">El momento de<br>crece es ahora.</span></p>
         </div>
         <div class="relative flex items-end">
-          <a class="px-14 py-2 text-white text-5xl bg-secondary rounded-r-full shadow-brown transition-all duration-300 hover:text-secondary-soft focus-within::text-secondary-soft" href="mailto:ventas@asiaacuacultura.com" target="_blank">Contáctenos hoy</a>
+          <a class="px-14 py-2 text-white text-5xl bg-secondary rounded-r-full shadow-brown transition-all duration-300 hover:text-secondary-soft focus-within::text-secondary-soft" href="mailto:ventas@asiaacuacultura.com" target="_blank" aria-label="Ir a gestor de correo electrónico">Contáctenos hoy</a>
           <img class="absolute -top-24 -left-60 -rotate-[75deg]" src="./public/images/pez.svg" alt="Pez">
         </div>
       </section>
@@ -208,10 +208,10 @@
 
     <!-- Botón flotante Whatsapp -->
     <div class="fixed bottom-5 right-5">
-      <a class="md:hidden" href="whatsapp://send?phone=+573170439632&abid=+573170439632" target="_blank">
+      <a class="md:hidden" href="whatsapp://send?phone=+573170439632&abid=+573170439632" target="_blank" aria-label="Abrir aplicación de Whatsapp">
         <img height="64" width="64" class="h-16" src="./public/images/whatsapp.png" alt="Logo Whatsapp">
       </a>
-      <a class="hidden md:inline" href="http://web.whatsapp.com/send?phone=+573170439632&abid=+573170439632" target="_blank">
+      <a class="hidden md:inline" href="http://web.whatsapp.com/send?phone=+573170439632&abid=+573170439632" target="_blank" aria-label="Abrir Whatsapp web">
         <img height="64" width="64" class="h-16" src="./public/images/whatsapp.png" alt="Logo Whatsapp">
       </a>
     </div>
@@ -232,7 +232,7 @@
             </div>
             <div class="relative">
               <label for="telefono">Número de Teléfono:</label>
-              <input class="pl-10 w-full mt-1 border-b border-brown outline-none focus:border-primary peer" id="telefono" name="telefono" type="tel" required>
+              <input class="pl-10 w-full mt-1 border-b border-brown outline-none focus:border-primary peer" id="telefono" name="telefono" type="number" required>
               <i class="fa-solid fa-phone absolute left-2 bottom-2 text-grey peer-focus:text-primary"></i>
             </div>
             <div class="relative">
@@ -247,7 +247,7 @@
             </div>
           </div>
           <button name="submit" class="mb-2 py-1 text-xl text-white bg-secondary rounded-full transition-all duration-300 hover:bg-secondary-soft focus-within:bg-secondary-soft disabled:bg-secondary-soft" type="submit">Descargar Portafolio</button>
-          <a class="py-1 text-xl text-center text-secondary border border-secondary rounded-full transition-all duration-300 hover:bg-secondary focus-within:bg-secondary hover:text-white focus-within:text-white" href="/equipos.html">Ver Catalogo Online</a>
+          <a class="py-1 text-xl text-center text-secondary border border-secondary rounded-full transition-all duration-300 hover:bg-secondary focus-within:bg-secondary hover:text-white focus-within:text-white" href="/equipos.html" aria-label="Ir a la página de equipos e insumos">Ver Catálogo Online</a>
         </form>
         <button class="close-modal-btn">
           <i class="absolute top-5 right-5 fa-solid fa-xmark text-3xl text-brown"></i>
@@ -265,21 +265,21 @@
         <div class="h-1 w-full border-2 border-grey"></div>
       </div>
       <div class="flex flex-wrap justify-center gap-x-5 gap-y-2 font-bebasNeue text-xl">
-        <a class="group" href="https://www.youtube.com/@Asiaacuacultura" target="_blank">
+        <a class="group" href="https://www.youtube.com/@Asiaacuacultura" target="_blank" aria-label="Ir al canal de Youtube de Asia Acuacultura">
           <div class="h-12 flex items-center">
-            <img width="57" height="40" class="mx-auto h-10 group-hover:h-12 transition-all duration-300" src="./public/images/youtube.png" alt="Logo de Youtube">
+            <img width="57" height="40" class="mx-auto h-10 group-hover:h-12 group-hover:w-16 transition-all duration-300" src="./public/images/youtube.png" alt="Logo de Youtube">
           </div>
           <p>Asia_Acuacultura</p>
         </a>
-        <a class="group" href="https://instagram.com/asiaacuacultura?igshid=YzcxN2Q2NzY0OA==" target="_blank">
+        <a class="group" href="https://instagram.com/asiaacuacultura?igshid=YzcxN2Q2NzY0OA==" target="_blank" aria-label="Ir al perfil de Instagram de Asia Acuacultura">
           <div class="h-12 flex items-center">
-            <img width="40" height="40" class="mx-auto h-10 group-hover:h-12 transition-all duration-300" src="./public/images/Instagram.png" alt="Logo de Instagram">
+            <img width="40" height="40" class="mx-auto h-10 group-hover:h-12 group-hover:w-12 transition-all duration-300" src="./public/images/Instagram.png" alt="Logo de Instagram">
           </div>
           <p>Asia_Acuacultura</p>
         </a>
-        <a class="group" href="https://www.facebook.com/profile.php?id=100094075017343&mibextid=ZbWKwL" target="_blank">
+        <a class="group" href="https://www.facebook.com/profile.php?id=100094075017343&mibextid=ZbWKwL" target="_blank" aria-label="Ir a la página de Facebook de Asia Acuacultura">
           <div class="h-12 flex items-center">
-            <img width="40" height="40" class="mx-auto h-10 group-hover:h-12 transition-all duration-300" src="./public/images/facebook.png" alt="Logo de Facebook">
+            <img width="40" height="40" class="mx-auto h-10 group-hover:h-12 group-hover:w-12 transition-all duration-300" src="./public/images/facebook.png" alt="Logo de Facebook">
           </div>
           <p>Asia_Acuacultura</p>
         </a>
@@ -294,22 +294,22 @@
       <div class="flex flex-wrap justify-center gap-x-5 gap-y-2 font-bebasNeue text-xl">
 
         <!-- href whatsapp segun dispositivo -->
-        <a class="group md:hidden" href="whatsapp://send?phone=+573170439632&abid=+573170439632" target="_blank">
+        <a class="group md:hidden" href="whatsapp://send?phone=+573170439632&abid=+573170439632" target="_blank" aria-label="Abrir aplicación de Whatsapp">
           <div class="h-12 flex items-center">
-            <img width="40" height="40" class="mx-auto h-10 group-hover:h-12 transition-all duration-300" src="./public/images/whatsapp.png" alt="Logo de Whatsapp">
+            <img width="40" height="40" class="mx-auto h-10 group-hover:h-12 group-hover:w-12 transition-all duration-300" src="./public/images/whatsapp.png" alt="Logo de Whatsapp">
           </div>
           <p>317-043-9632</p>
         </a>
-        <a class="group hidden md:inline" href="http://web.whatsapp.com/send?phone=+573170439632&abid=+573170439632" target="_blank">
+        <a class="group hidden md:inline" href="http://web.whatsapp.com/send?phone=+573170439632&abid=+573170439632" target="_blank" aria-label="Abrir Whatsapp web">
           <div class="h-12 flex items-center">
-            <img width="40" height="40" class="mx-auto h-10 group-hover:h-12 transition-all duration-300" src="./public/images/whatsapp.png" alt="Logo de Whatsapp">
+            <img width="40" height="40" class="mx-auto h-10 group-hover:h-12 group-hover:w-12 transition-all duration-300" src="./public/images/whatsapp.png" alt="Logo de Whatsapp">
           </div>
           <p>317-043-9632</p>
         </a>
 
-        <a class="group" href="mailto:ventas@asiaacuacultura.com" target="_blank">
+        <a class="group" href="mailto:ventas@asiaacuacultura.com" target="_blank" aria-label="Abrir gestor de correo electrónico">
           <div class="h-12 flex items-center">
-            <img width="40" height="40" class="mx-auto h-10 group-hover:h-12 transition-all duration-300" src="./public/images/mail.png" alt="Icono de email">
+            <img width="40" height="40" class="mx-auto h-10 group-hover:h-12 group-hover:w-12 transition-all duration-300" src="./public/images/mail.png" alt="Icono de email">
           </div>
           <p>ventas@asiaacuacultura.com</p>
         </a>
