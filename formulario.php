@@ -8,8 +8,6 @@
         $ciudad = $_POST['ciudad'];
         $fecha = date('Y-m-d');
 
-        echo $nombre
-
         // Info catalogo
         $file = "./public/CatalogoAsia2023.pdf";
         $filename = "CatalogoAsiaAcuacultura.pdf";
