@@ -9,7 +9,9 @@ export const blowersIndustrial = [
     caudal: "68",
     cfm: "40",
     entrada: "1",
-    precio: "814.000"
+    precio: "814.000",
+    imagen: "./public/images/BlowerIndustrial.png",
+    alt: "Blower Industrial"
   },
   {
     ref: "2RB 110 7AV15",
@@ -21,7 +23,9 @@ export const blowersIndustrial = [
     caudal: "85",
     cfm: "50",
     entrada: "1",
-    precio: "870.000"
+    precio: "870.000",
+    imagen: "./public/images/BlowerIndustrial.png",
+    alt: "Blower Industrial"
   },
   {
     ref: "2RB 210 7AV15",
@@ -33,7 +37,9 @@ export const blowersIndustrial = [
     caudal: "96",
     cfm: "57",
     entrada: "1 1/4",
-    precio: "1.090.000"
+    precio: "1.090.000",
+    imagen: "./public/images/BlowerIndustrial.png",
+    alt: "Blower Industrial"
   },
   {
     ref: "2RB 230 7AV15",
@@ -45,7 +51,9 @@ export const blowersIndustrial = [
     caudal: "121",
     cfm: "71",
     entrada: "1 1/4",
-    precio: "1.150.000"
+    precio: "1.150.000",
+    imagen: "./public/images/BlowerIndustrial.png",
+    alt: "Blower Industrial"
   },
   {
     ref: "2RB 310 7AA11",
@@ -57,7 +65,9 @@ export const blowersIndustrial = [
     caudal: "120",
     cfm: "71",
     entrada: "1 1/4",
-    precio: "1.265.000"
+    precio: "1.265.000",
+    imagen: "./public/images/BlowerIndustrial.png",
+    alt: "Blower Industrial"
   },
   {
     ref: "2RB 410 7AV15",
@@ -69,7 +79,9 @@ export const blowersIndustrial = [
     caudal: "175",
     cfm: "103",
     entrada: "1 1/2",
-    precio: "1.650.000"
+    precio: "1.650.000",
+    imagen: "./public/images/BlowerIndustrial.png",
+    alt: "Blower Industrial"
   },
   {
     ref: "2RB 510 7AV15",
@@ -81,7 +93,9 @@ export const blowersIndustrial = [
     caudal: "255",
     cfm: "151",
     entrada: "2",
-    precio: "2.090.000"
+    precio: "2.090.000",
+    imagen: "./public/images/BlowerIndustrial.png",
+    alt: "Blower Industrial"
   },
   {
     ref: "2RB 410 7AV25",
@@ -93,7 +107,9 @@ export const blowersIndustrial = [
     caudal: "190",
     cfm: "112",
     entrada: "1 1/2",
-    precio: "1.850.000"
+    precio: "1.850.000",
+    imagen: "./public/images/BlowerIndustrial.png",
+    alt: "Blower Industrial"
   },
   {
     ref: "2RB 510 7AA11",
@@ -105,7 +121,9 @@ export const blowersIndustrial = [
     caudal: "255",
     cfm: "150",
     entrada: "2",
-    precio: "1.950.000"
+    precio: "1.950.000",
+    imagen: "./public/images/BlowerIndustrial.png",
+    alt: "Blower Industrial"
   },
   {
     ref: "2RB 510 7AV25",
@@ -117,7 +135,9 @@ export const blowersIndustrial = [
     caudal: "255",
     cfm: "150",
     entrada: "2",
-    precio: "2.810.000"
+    precio: "2.810.000",
+    imagen: "./public/images/BlowerIndustrial.png",
+    alt: "Blower Industrial"
   },
   {
     ref: "2RB 510 7AV26",
@@ -129,7 +149,9 @@ export const blowersIndustrial = [
     caudal: "255",
     cfm: "150",
     entrada: "2",
-    precio: "2.450.000"
+    precio: "2.450.000",
+    imagen: "./public/images/BlowerIndustrial.png",
+    alt: "Blower Industrial"
   },
   {
     ref: "2RB 710 7AA11",
@@ -141,7 +163,9 @@ export const blowersIndustrial = [
     caudal: "376",
     cfm: "221",
     entrada: "2",
-    precio: "3.675.000"
+    precio: "3.675.000",
+    imagen: "./public/images/BlowerIndustrial.png",
+    alt: "Blower Industrial"
   },
   {
     ref: "2RB 410 7AW16",
@@ -153,7 +177,9 @@ export const blowersIndustrial = [
     caudal: "175",
     cfm: "103",
     entrada: "1 1/2",
-    precio: "1.560.000"
+    precio: "1.560.000",
+    imagen: "./public/images/BlowerIndustrial.png",
+    alt: "Blower Industrial"
   },
   {
     ref: "2RB 410 7AW26",
@@ -165,7 +191,9 @@ export const blowersIndustrial = [
     caudal: "175",
     cfm: "103",
     entrada: "1 1/2",
-    precio: "1.800.000"
+    precio: "1.800.000",
+    imagen: "./public/images/BlowerIndustrial.png",
+    alt: "Blower Industrial"
   },
   {
     ref: "2RB 510 7AW26",
@@ -177,7 +205,9 @@ export const blowersIndustrial = [
     caudal: "255",
     cfm: "150",
     entrada: "2",
-    precio: "2.200.000"
+    precio: "2.200.000",
+    imagen: "./public/images/BlowerIndustrial.png",
+    alt: "Blower Industrial"
   },
   {
     ref: "2RB 610 7AW06",
@@ -189,7 +219,9 @@ export const blowersIndustrial = [
     caudal: "315",
     cfm: "185",
     entrada: "2",
-    precio: "2.680.000"
+    precio: "2.680.000",
+    imagen: "./public/images/BlowerIndustrial.png",
+    alt: "Blower Industrial"
   },
   {
     ref: "2RB 710 7AW16",
@@ -201,7 +233,9 @@ export const blowersIndustrial = [
     caudal: "376",
     cfm: "221",
     entrada: "2",
-    precio: "2.915.000"
+    precio: "2.915.000",
+    imagen: "./public/images/BlowerIndustrial.png",
+    alt: "Blower Industrial"
   },
   {
     ref: "2RB 630 7AW26",
@@ -213,7 +247,9 @@ export const blowersIndustrial = [
     caudal: "415",
     cfm: "244",
     entrada: "2",
-    precio: "3.542.000"
+    precio: "3.542.000",
+    imagen: "./public/images/BlowerIndustrial.png",
+    alt: "Blower Industrial"
   },
   {
     ref: "2RB 730 7AW36",
@@ -225,7 +261,9 @@ export const blowersIndustrial = [
     caudal: "500",
     cfm: "294",
     entrada: "2",
-    precio: "4.830.000"
+    precio: "4.830.000",
+    imagen: "./public/images/BlowerIndustrial.png",
+    alt: "Blower Industrial"
   },
   {
     ref: "2RB 910 7AW06",
@@ -237,6 +275,8 @@ export const blowersIndustrial = [
     caudal: "1250",
     cfm: "736",
     entrada: "4",
-    precio: "14.400.000"
+    precio: "14.400.000",
+    imagen: "./public/images/BlowerIndustrial.png",
+    alt: "Blower Industrial"
   }
 ]

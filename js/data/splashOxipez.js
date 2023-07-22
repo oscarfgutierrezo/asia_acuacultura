@@ -6,7 +6,9 @@ export const splashOxipez = [
     oxigeno: "1",
     ltr: "1.879",
     metros: "112",
-    precio: " 2.499.000"
+    precio: " 2.499.000",
+    imagen: "./public/images/SplashOxipez.png",
+    alt: "Splash Oxipez"
   },
   {
     ref: "Splash Oxipez",
@@ -15,7 +17,9 @@ export const splashOxipez = [
     oxigeno: "1.9",
     ltr: "4.012",
     metros: "240.7",
-    precio: "2.618.000"
+    precio: "2.618.000",
+    imagen: "./public/images/SplashOxipez.png",
+    alt: "Splash Oxipez"
   },
   {
     ref: "Splash Oxipez",
@@ -24,7 +28,9 @@ export const splashOxipez = [
     oxigeno: "3.19",
     ltr: "5.670",
     metros: "340",
-    precio: "2.856.000"
+    precio: "2.856.000",
+    imagen: "./public/images/SplashOxipez.png",
+    alt: "Splash Oxipez"
   },
   {
     ref: "Splash Oxipez",
@@ -33,7 +39,9 @@ export const splashOxipez = [
     oxigeno: "4.3",
     ltr: "7.331",
     metros: "439.8",
-    precio: "3.094.000"
+    precio: "3.094.000",
+    imagen: "./public/images/SplashOxipez.png",
+    alt: "Splash Oxipez"
   },
   {
     ref: "Splash Oxipez",
@@ -42,7 +50,9 @@ export const splashOxipez = [
     oxigeno: "1",
     ltr: "1.879",
     metros: "112",
-    precio: " 2.499.000"
+    precio: " 2.499.000",
+    imagen: "./public/images/SplashOxipez.png",
+    alt: "Splash Oxipez"
   },
   {
     ref: "Splash Oxipez",
@@ -51,7 +61,9 @@ export const splashOxipez = [
     oxigeno: "1.9",
     ltr: "4.012",
     metros: "240.7",
-    precio: "2.618.000"
+    precio: "2.618.000",
+    imagen: "./public/images/SplashOxipez.png",
+    alt: "Splash Oxipez"
   },
   {
     ref: "Splash Oxipez",
@@ -60,7 +72,9 @@ export const splashOxipez = [
     oxigeno: "3.19",
     ltr: "5.670",
     metros: "340",
-    precio: "2.856.000"
+    precio: "2.856.000",
+    imagen: "./public/images/SplashOxipez.png",
+    alt: "Splash Oxipez"
   },
   {
     ref: "Splash Oxipez",
@@ -69,7 +83,9 @@ export const splashOxipez = [
     oxigeno: "4.3",
     ltr: "7.331",
     metros: "439.8",
-    precio: "3.094.000"
+    precio: "3.094.000",
+    imagen: "./public/images/SplashOxipez.png",
+    alt: "Splash Oxipez"
   },
   
 ]

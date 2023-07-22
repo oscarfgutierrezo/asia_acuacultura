@@ -7,7 +7,9 @@ export const blowersEjelibre = [
     psi: "2.3",
     caudal: "150",
     entrada: "1 1/2",
-    precio: "1.220.000"
+    precio: "1.220.000",
+    imagen: "./public/images/BlowerEjeLibre.png",
+    alt: "Blower de eje libre"
   },
   {
     ref: "2rb 413 1WD99",
@@ -17,7 +19,9 @@ export const blowersEjelibre = [
     psi: "2.3",
     caudal: "180",
     entrada: "1 1/2",
-    precio: "1.220.000"
+    precio: "1.220.000",
+    imagen: "./public/images/BlowerEjeLibre.png",
+    alt: "Blower de eje libre"
   },
   {
     ref: "2rb 413 1WD99",
@@ -27,7 +31,9 @@ export const blowersEjelibre = [
     psi: "2.9",
     caudal: "150",
     entrada: "1 1/2",
-    precio: "1.220.000"
+    precio: "1.220.000",
+    imagen: "./public/images/BlowerEjeLibre.png",
+    alt: "Blower de eje libre"
   },
   {
     ref: "2rb 413 1WD99",
@@ -37,7 +43,9 @@ export const blowersEjelibre = [
     psi: "2.9",
     caudal: "180",
     entrada: "1 1/2",
-    precio: "1.220.000"
+    precio: "1.220.000",
+    imagen: "./public/images/BlowerEjeLibre.png",
+    alt: "Blower de eje libre"
   },
   {
     ref: "2rb 713 1WD99",
@@ -47,7 +55,9 @@ export const blowersEjelibre = [
     psi: "2.7",
     caudal: "320",
     entrada: "2",
-    precio: "2.530.000"
+    precio: "2.530.000",
+    imagen: "./public/images/BlowerEjeLibre.png",
+    alt: "Blower de eje libre"
   },
   {
     ref: "2rb 713 1WD99",
@@ -57,7 +67,9 @@ export const blowersEjelibre = [
     psi: "2.7",
     caudal: "380",
     entrada: "2",
-    precio: "2.530.000"
+    precio: "2.530.000",
+    imagen: "./public/images/BlowerEjeLibre.png",
+    alt: "Blower de eje libre"
   },
   {
     ref: "2rb 713 1WD99",
@@ -67,7 +79,9 @@ export const blowersEjelibre = [
     psi: "3.9",
     caudal: "320",
     entrada: "2",
-    precio: "2.530.000"
+    precio: "2.530.000",
+    imagen: "./public/images/BlowerEjeLibre.png",
+    alt: "Blower de eje libre"
   },
   {
     ref: "2rb 713 1WD99",
@@ -77,7 +91,9 @@ export const blowersEjelibre = [
     psi: "3.3",
     caudal: "380",
     entrada: "2",
-    precio: "2.530.000"
+    precio: "2.530.000",
+    imagen: "./public/images/BlowerEjeLibre.png",
+    alt: "Blower de eje libre"
   },
   {
     ref: "2rb 713 1WD99",
@@ -87,7 +103,9 @@ export const blowersEjelibre = [
     psi: "5.2",
     caudal: "320",
     entrada: "2",
-    precio: "2.530.000"
+    precio: "2.530.000",
+    imagen: "./public/images/BlowerEjeLibre.png",
+    alt: "Blower de eje libre"
   },
   {
     ref: "2rb 713 1WD99",
@@ -97,7 +115,9 @@ export const blowersEjelibre = [
     psi: "4.4",
     caudal: "380",
     entrada: "2",
-    precio: "2.530.000"
+    precio: "2.530.000",
+    imagen: "./public/images/BlowerEjeLibre.png",
+    alt: "Blower de eje libre"
   },
   {
     ref: "2rb 723 1WD99",
@@ -107,7 +127,9 @@ export const blowersEjelibre = [
     psi: "5.5",
     caudal: "320",
     entrada: "2",
-    precio: "4.400.000"
+    precio: "4.400.000",
+    imagen: "./public/images/BlowerEjeLibre.png",
+    alt: "Blower de eje libre"
   },
   {
     ref: "2rb 723 1WD99",
@@ -117,7 +139,9 @@ export const blowersEjelibre = [
     psi: "4.6",
     caudal: "380",
     entrada: "2",
-    precio: "4.400.000"
+    precio: "4.400.000",
+    imagen: "./public/images/BlowerEjeLibre.png",
+    alt: "Blower de eje libre"
   },
   {
     ref: "2rb 723 1WD99",
@@ -127,7 +151,9 @@ export const blowersEjelibre = [
     psi: "7.2",
     caudal: "320",
     entrada: "2",
-    precio: "4.400.000"
+    precio: "4.400.000",
+    imagen: "./public/images/BlowerEjeLibre.png",
+    alt: "Blower de eje libre"
   },
   {
     ref: "2rb 723 1WD99",
@@ -137,7 +163,9 @@ export const blowersEjelibre = [
     psi: "7.2",
     caudal: "380",
     entrada: "2",
-    precio: "4.400.000"
+    precio: "4.400.000",
+    imagen: "./public/images/BlowerEjeLibre.png",
+    alt: "Blower de eje libre"
   },
   {
     ref: "2rb 723 1WD99",
@@ -147,7 +175,9 @@ export const blowersEjelibre = [
     psi: "8.2",
     caudal: "320",
     entrada: "2",
-    precio: "4.400.000"
+    precio: "4.400.000",
+    imagen: "./public/images/BlowerEjeLibre.png",
+    alt: "Blower de eje libre"
   },
   {
     ref: "2rb 723 1WD99",
@@ -157,6 +187,8 @@ export const blowersEjelibre = [
     psi: "9.5",
     caudal: "380",
     entrada: "2",
-    precio: "4.400.000"
+    precio: "4.400.000",
+    imagen: "./public/images/BlowerEjeLibre.png",
+    alt: "Blower de eje libre"
   }
 ]

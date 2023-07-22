@@ -9,7 +9,9 @@ export const blowersIndustrialDobleTapa = [
     caudal: "103",
     cfm: "61",
     entrada: "1 1/4",
-    precio: "1.700.000"
+    precio: "1.700.000",
+    imagen: "./public/images/BlowerIndustrialDoble.png",
+    alt: "Blower Industrial de doble tapa"
   },
   {
     ref: "2RB 320 7WX35",
@@ -21,7 +23,9 @@ export const blowersIndustrialDobleTapa = [
     caudal: "145",
     cfm: "85",
     entrada: "1 1/4",
-    precio: "2.255.000"
+    precio: "2.255.000",
+    imagen: "./public/images/BlowerIndustrialDoble.png",
+    alt: "Blower Industrial de doble tapa"
   },
   {
     ref: "2RB 420 7AX45",
@@ -33,7 +37,9 @@ export const blowersIndustrialDobleTapa = [
     caudal: "190",
     cfm: "112",
     entrada: "1 1/2",
-    precio: "3.100.000"
+    precio: "3.100.000",
+    imagen: "./public/images/BlowerIndustrialDoble.png",
+    alt: "Blower Industrial de doble tapa"
   },
   {
     ref: "2RB 320 0AX75-7",
@@ -45,7 +51,9 @@ export const blowersIndustrialDobleTapa = [
     caudal: "76",
     cfm: "45",
     entrada: "1 1/2",
-    precio: "3.990.000"
+    precio: "3.990.000",
+    imagen: "./public/images/BlowerIndustrialDoble.png",
+    alt: "Blower Industrial de doble tapa"
   },
   {
     ref: "2RB 220 7AW26",
@@ -57,7 +65,9 @@ export const blowersIndustrialDobleTapa = [
     caudal: "102",
     cfm: "60",
     entrada: "1 1/4",
-    precio: "1.640.000"
+    precio: "1.640.000",
+    imagen: "./public/images/BlowerIndustrialDoble.png",
+    alt: "Blower Industrial de doble tapa"
   },
   {
     ref: "HG-1500 S",
@@ -69,7 +79,9 @@ export const blowersIndustrialDobleTapa = [
     caudal: "140",
     cfm: "82",
     entrada: "1",
-    precio: "2.714.000"
+    precio: "2.714.000",
+    imagen: "./public/images/BlowerIndustrialDoble.png",
+    alt: "Blower Industrial de doble tapa"
   },
   {
     ref: "2RB 320 7HH36",
@@ -81,7 +93,9 @@ export const blowersIndustrialDobleTapa = [
     caudal: "145",
     cfm: "85",
     entrada: "1 1/4",
-    precio: "2.490.000"
+    precio: "2.490.000",
+    imagen: "./public/images/BlowerIndustrialDoble.png",
+    alt: "Blower Industrial de doble tapa"
   },
   {
     ref: "4MF 320 0AW56-7",
@@ -93,7 +107,9 @@ export const blowersIndustrialDobleTapa = [
     caudal: "76",
     cfm: "45",
     entrada: "1 1/4",
-    precio: "4.000.000"
+    precio: "4.000.000",
+    imagen: "./public/images/BlowerIndustrialDoble.png",
+    alt: "Blower Industrial de doble tapa"
   },
   {
     ref: "2MF 420 7WW36",
@@ -105,7 +121,9 @@ export const blowersIndustrialDobleTapa = [
     caudal: "180",
     cfm: "106",
     entrada: "1 1/2",
-    precio: "2.650.000"
+    precio: "2.650.000",
+    imagen: "./public/images/BlowerIndustrialDoble.png",
+    alt: "Blower Industrial de doble tapa"
   },
   {
     ref: "2MF 420 7WW46",
@@ -117,6 +135,8 @@ export const blowersIndustrialDobleTapa = [
     caudal: "180",
     cfm: "106",
     entrada: "1 1/2",
-    precio: "2.998.000"
+    precio: "2.998.000",
+    imagen: "./public/images/BlowerIndustrialDoble.png",
+    alt: "Blower Industrial de doble tapa"
   },
 ]

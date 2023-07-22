@@ -8,7 +8,9 @@ export const blowersIndustrialHg = [
     caudal: "60",
     cfm: "35",
     entrada: "1 1/4",
-    precio: "1.005.000"
+    precio: "1.005.000",
+    imagen: "./public/images/BlowerAcuarios.png",
+    alt: "Blower Industrial"
   },
   {
     ref: "HG 550C",
@@ -19,7 +21,9 @@ export const blowersIndustrialHg = [
     caudal: "95",
     cfm: "56",
     entrada: "1 1/2",
-    precio: "1.250.000"
+    precio: "1.250.000",
+    imagen: "./public/images/BlowerAcuarios.png",
+    alt: "Blower Industrial"
   },
   {
     ref: "HG 750C2",
@@ -30,7 +34,9 @@ export const blowersIndustrialHg = [
     caudal: "110",
     cfm: "65",
     entrada: "1 1/2",
-    precio: "1.490.000"
+    precio: "1.490.000",
+    imagen: "./public/images/BlowerAcuarios.png",
+    alt: "Blower Industrial"
   },
   {
     ref: "HG 1100 C2",
@@ -41,7 +47,9 @@ export const blowersIndustrialHg = [
     caudal: "135",
     cfm: "79",
     entrada: "1 1/2",
-    precio: "1.850.000"
+    precio: "1.850.000",
+    imagen: "./public/images/BlowerAcuarios.png",
+    alt: "Blower Industrial"
   },
   {
     ref: "HG 1100 C2",
@@ -52,7 +60,9 @@ export const blowersIndustrialHg = [
     caudal: "135",
     cfm: "79",
     entrada: "1 1/2",
-    precio: "1.710.000"
+    precio: "1.710.000",
+    imagen: "./public/images/BlowerAcuarios.png",
+    alt: "Blower Industrial"
   },
   {
     ref: "HG 1500 C2",
@@ -63,7 +73,9 @@ export const blowersIndustrialHg = [
     caudal: "180",
     cfm: "106",
     entrada: "2",
-    precio: "2.050.000"
+    precio: "2.050.000",
+    imagen: "./public/images/BlowerAcuarios.png",
+    alt: "Blower Industrial"
   },
   {
     ref: "HG 2200 C2",
@@ -74,7 +86,9 @@ export const blowersIndustrialHg = [
     caudal: "240",
     cfm: "141",
     entrada: "2",
-    precio: "2.480.000"
+    precio: "2.480.000",
+    imagen: "./public/images/BlowerAcuarios.png",
+    alt: "Blower Industrial"
   },
   {
     ref: "HG 3000 C2",
@@ -85,6 +99,8 @@ export const blowersIndustrialHg = [
     caudal: "260",
     cfm: "153",
     entrada: "2",
-    precio: "2.990.000"
+    precio: "2.990.000",
+    imagen: "./public/images/BlowerAcuarios.png",
+    alt: "Blower Industrial"
   },
 ]

@@ -8,7 +8,9 @@ export const blowersAcuarios = [
     caudal: "21",
     cfm: "12",
     entrada: "1",
-    precio: "600.000"
+    precio: "600.000",
+    imagen: "./public/images/BlowerAcuarios.png",
+    alt: "Blower para acuario"
   },
   {
     ref: "HG 180C",
@@ -19,7 +21,9 @@ export const blowersAcuarios = [
     caudal: "26",
     cfm: "15",
     entrada: "1",
-    precio: "725.000"
+    precio: "725.000",
+    imagen: "./public/images/BlowerAcuarios.png",
+    alt: "Blower para acuario"
   },
   {
     ref: "HG 250C",
@@ -30,6 +34,8 @@ export const blowersAcuarios = [
     caudal: "35",
     cfm: "21",
     entrada: "1",
-    precio: "800.000"
+    precio: "800.000",
+    imagen: "./public/images/BlowerAcuarios.png",
+    alt: "Blower para acuario"
   },
 ]

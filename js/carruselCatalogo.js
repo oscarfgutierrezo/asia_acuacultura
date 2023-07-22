@@ -6,7 +6,7 @@ const blowersIndustrialContainerDOM = document.querySelector('#blowers-industria
 const blowersIndustrialIndicadoresDOM = document.querySelector('#blowers-industriales-indicadores')
 
 blowersIndustrial.forEach( (producto, index) => {
-  const {ref, potencia, voltajeMin, voltajeMax, kpa, psi, caudal, cfm, entrada, precio} = producto;
+  const {ref, potencia, voltajeMin, voltajeMax, kpa, psi, caudal, cfm, entrada, precio, imagen, alt} = producto;
   const productoContainer = document.createElement('div');
   /* Contenedor */
   productoContainer.classList.add('carousel-item', 'absolute', 'opacity-0', 'h-full', 'w-full', 'object-cover', 'rounded-xl', 'transition-all', 'duration-700');
@@ -17,8 +17,8 @@ blowersIndustrial.forEach( (producto, index) => {
   /* Imagen */
   const img = document.createElement('img');
   img.classList.add('mx-auto', 'h-44');
-  img.src = './public/images/BlowerIndustrial.png';
-  img.alt = 'Blower Industrial';
+  img.src = imagen;
+  img.alt = alt;
 
   /* Info Contenedor */
   const infoContainer = document.createElement('div');
@@ -85,7 +85,7 @@ blowersIndustrial.forEach( (producto, index) => {
 
   /* Agregar indicadores */
   const indicador = document.createElement('button');
-  indicador.classList.add('carousel-indicator', 'h-3', 'w-3', 'rounded-[50%]', 'bg-secondary-soft/50');
+  indicador.classList.add('carousel-indicator', 'h-3', 'w-3', 'rounded-[50%]', 'bg-secondary-soft', 'border', 'border-secondary-soft');
   if (index === 0) {
     indicador.classList.add('active');
   }
@@ -98,7 +98,7 @@ const blowersIndustrialDobleContainerDOM = document.querySelector('#blowers-indu
 const blowersIndustrialDobleIndicadoresDOM = document.querySelector('#blowers-industriales-dobletapa-indicadores')
 
 blowersIndustrialDobleTapa.forEach( (producto, index) => {
-  const {ref, potencia, voltajeMin, voltajeMax, kpa, psi, caudal, cfm, entrada, precio} = producto;
+  const {ref, potencia, voltajeMin, voltajeMax, kpa, psi, caudal, cfm, entrada, precio, imagen, alt} = producto;
   const productoContainer = document.createElement('div');
   /* Contenedor */
   productoContainer.classList.add('carousel-item', 'absolute', 'opacity-0', 'h-full', 'w-full', 'object-cover', 'rounded-xl', 'transition-all', 'duration-700');
@@ -109,8 +109,8 @@ blowersIndustrialDobleTapa.forEach( (producto, index) => {
   /* Imagen */
   const img = document.createElement('img');
   img.classList.add('mx-auto', 'h-44');
-  img.src = './public/images/BlowerIndustrialDoble.png';
-  img.alt = 'Blower Industrial Doble Tapa';
+  img.src = imagen;
+  img.alt = alt;
 
   /* Info Contenedor */
   const infoContainer = document.createElement('div');
@@ -177,7 +177,7 @@ blowersIndustrialDobleTapa.forEach( (producto, index) => {
 
   /* Agregar indicadores */
   const indicador = document.createElement('button');
-  indicador.classList.add('carousel-indicator', 'h-3', 'w-3', 'rounded-[50%]', 'bg-secondary-soft/50');
+  indicador.classList.add('carousel-indicator', 'h-3', 'w-3', 'rounded-[50%]', 'bg-secondary-soft', 'border', 'border-secondary-soft');
   if (index === 0) {
     indicador.classList.add('active');
   }
@@ -190,7 +190,7 @@ const blowersIndustrialEjelibreContainerDOM = document.querySelector('#blowers-e
 const blowersIndustrialEjelibreIndicadoresDOM = document.querySelector('#blowers-ejelibre-indicadores')
 
 blowersEjelibre.forEach( (producto, index) => {
-  const {ref, rpm, potencia, kpa, psi, caudal, entrada, precio} = producto;
+  const {ref, rpm, potencia, kpa, psi, caudal, entrada, precio, imagen, alt} = producto;
   const productoContainer = document.createElement('div');
   /* Contenedor */
   productoContainer.classList.add('carousel-item', 'absolute', 'opacity-0', 'h-full', 'w-full', 'object-cover', 'rounded-xl', 'transition-all', 'duration-700');
@@ -201,8 +201,8 @@ blowersEjelibre.forEach( (producto, index) => {
   /* Imagen */
   const img = document.createElement('img');
   img.classList.add('mx-auto', 'h-44');
-  img.src = './public/images/BlowerEjeLibre.png';
-  img.alt = 'Blower Eje Libre';
+  img.src = imagen;
+  img.alt = alt;
 
   /* Info Contenedor */
   const infoContainer = document.createElement('div');
@@ -269,7 +269,7 @@ blowersEjelibre.forEach( (producto, index) => {
 
   /* Agregar indicadores */
   const indicador = document.createElement('button');
-  indicador.classList.add('carousel-indicator', 'h-3', 'w-3', 'rounded-[50%]', 'bg-secondary-soft/50');
+  indicador.classList.add('carousel-indicator', 'h-3', 'w-3', 'rounded-[50%]', 'bg-secondary-soft', 'border', 'border-secondary-soft');
   if (index === 0) {
     indicador.classList.add('active');
   }
@@ -282,7 +282,7 @@ const blowersAcuariosContainerDOM = document.querySelector('#blowers-acuarios')
 const blowersAcuariosIndicadoresDOM = document.querySelector('#blowers-acuarios-indicadores')
 
 blowersAcuarios.forEach( (producto, index) => {
-  const {ref, potencia, voltaje, kpa, psi, caudal, cfm, entrada, precio} = producto;
+  const {ref, potencia, voltaje, kpa, psi, caudal, cfm, entrada, precio, imagen, alt} = producto;
   const productoContainer = document.createElement('div');
   /* Contenedor */
   productoContainer.classList.add('carousel-item', 'absolute', 'opacity-0', 'h-full', 'w-full', 'object-cover', 'rounded-xl', 'transition-all', 'duration-700');
@@ -293,8 +293,8 @@ blowersAcuarios.forEach( (producto, index) => {
   /* Imagen */
   const img = document.createElement('img');
   img.classList.add('mx-auto', 'h-44');
-  img.src = './public/images/BlowerAcuarios.png';
-  img.alt = 'Blower Acuarios';
+  img.src = imagen;
+  img.alt = alt;
 
   /* Info Contenedor */
   const infoContainer = document.createElement('div');
@@ -361,7 +361,7 @@ blowersAcuarios.forEach( (producto, index) => {
 
   /* Agregar indicadores */
   const indicador = document.createElement('button');
-  indicador.classList.add('carousel-indicator', 'h-3', 'w-3', 'rounded-[50%]', 'bg-secondary-soft/50');
+  indicador.classList.add('carousel-indicator', 'h-3', 'w-3', 'rounded-[50%]', 'bg-secondary-soft', 'border', 'border-secondary-soft');
   if (index === 0) {
     indicador.classList.add('active');
   }
@@ -374,7 +374,7 @@ const blowersIndustrialHGContainerDOM = document.querySelector('#blowers-industr
 const blowersIndustrialHGIndicadoresDOM = document.querySelector('#blowers-industrialesHG-indicadores')
 
 blowersIndustrialHg.forEach( (producto, index) => {
-  const {ref, potencia, voltaje, kpa, psi, caudal, cfm, entrada, precio} = producto;
+  const {ref, potencia, voltaje, kpa, psi, caudal, cfm, entrada, precio, imagen, alt} = producto;
   const productoContainer = document.createElement('div');
   /* Contenedor */
   productoContainer.classList.add('carousel-item', 'absolute', 'opacity-0', 'h-full', 'w-full', 'object-cover', 'rounded-xl', 'transition-all', 'duration-700');
@@ -385,8 +385,8 @@ blowersIndustrialHg.forEach( (producto, index) => {
   /* Imagen */
   const img = document.createElement('img');
   img.classList.add('mx-auto', 'h-44');
-  img.src = './public/images/BlowerAcuarios.png';
-  img.alt = 'Blower Acuarios';
+  img.src = imagen;
+  img.alt = alt;
 
   /* Info Contenedor */
   const infoContainer = document.createElement('div');
@@ -453,7 +453,7 @@ blowersIndustrialHg.forEach( (producto, index) => {
 
   /* Agregar indicadores */
   const indicador = document.createElement('button');
-  indicador.classList.add('carousel-indicator', 'h-3', 'w-3', 'rounded-[50%]', 'bg-secondary-soft/50');
+  indicador.classList.add('carousel-indicator', 'h-3', 'w-3', 'rounded-[50%]', 'bg-secondary-soft', 'border', 'border-secondary-soft');
   if (index === 0) {
     indicador.classList.add('active');
   }
@@ -466,7 +466,7 @@ const splashOxipezContainerDOM = document.querySelector('#splash-oxipez')
 const splashOxipezIndicadoresDOM = document.querySelector('#splash-oxipez-indicadores')
 
 splashOxipez.forEach( (producto, index) => {
-  const {ref, potencia, voltaje, oxigeno, ltr, metros, precio} = producto;
+  const {ref, potencia, voltaje, oxigeno, ltr, metros, precio, imagen, alt} = producto;
   const productoContainer = document.createElement('div');
   /* Contenedor */
   productoContainer.classList.add('carousel-item', 'absolute', 'opacity-0', 'h-full', 'w-full', 'object-cover', 'rounded-xl', 'transition-all', 'duration-700');
@@ -477,8 +477,8 @@ splashOxipez.forEach( (producto, index) => {
   /* Imagen */
   const img = document.createElement('img');
   img.classList.add('mx-auto', 'h-44');
-  img.src = './public/images/SplashOxipez.png';
-  img.alt = 'Blower Acuarios';
+  img.src = imagen;
+  img.alt = alt;
 
   /* Info Contenedor */
   const infoContainer = document.createElement('div');
@@ -535,7 +535,7 @@ splashOxipez.forEach( (producto, index) => {
 
   /* Agregar indicadores */
   const indicador = document.createElement('button');
-  indicador.classList.add('carousel-indicator', 'h-3', 'w-3', 'rounded-[50%]', 'bg-secondary-soft/50');
+  indicador.classList.add('carousel-indicator', 'h-3', 'w-3', 'rounded-[50%]', 'bg-secondary-soft', 'border', 'border-secondary-soft');
   if (index === 0) {
     indicador.classList.add('active');
   }
@@ -548,7 +548,7 @@ const filtrosContainerDOM = document.querySelector('#filtros')
 const filtrosIndicadoresDOM = document.querySelector('#filtros-indicadores')
 
 filtros.forEach( (producto, index) => {
-  const {ref, entrada, precio} = producto;
+  const {ref, entrada, precio, imagen, alt} = producto;
   const productoContainer = document.createElement('div');
   /* Contenedor */
   productoContainer.classList.add('carousel-item', 'absolute', 'opacity-0', 'h-full', 'w-full', 'object-cover', 'rounded-xl', 'transition-all', 'duration-700');
@@ -559,8 +559,8 @@ filtros.forEach( (producto, index) => {
   /* Imagen */
   const img = document.createElement('img');
   img.classList.add('mx-auto', 'h-44');
-  img.src = './public/images/filtros.png';
-  img.alt = 'Blower Acuarios';
+  img.src = imagen;
+  img.alt = alt;
 
   /* Info Contenedor */
   const infoContainer = document.createElement('div');
@@ -595,7 +595,7 @@ filtros.forEach( (producto, index) => {
 
   /* Agregar indicadores */
   const indicador = document.createElement('button');
-  indicador.classList.add('carousel-indicator', 'h-3', 'w-3', 'rounded-[50%]', 'bg-secondary-soft/50');
+  indicador.classList.add('carousel-indicator', 'h-3', 'w-3', 'rounded-[50%]', 'bg-secondary-soft', 'border', 'border-secondary-soft');
   if (index === 0) {
     indicador.classList.add('active');
   }
@@ -608,7 +608,7 @@ const discosContainerDOM = document.querySelector('#discos')
 const discosIndicadoresDOM = document.querySelector('#discos-indicadores')
 
 discos.forEach( (producto, index) => {
-  const {ref, diametro, flujo, oxigenacion, precio} = producto;
+  const {ref, diametro, flujo, oxigenacion, precio, imagen, alt} = producto;
   const productoContainer = document.createElement('div');
   /* Contenedor */
   productoContainer.classList.add('carousel-item', 'absolute', 'opacity-0', 'h-full', 'w-full', 'object-cover', 'rounded-xl', 'transition-all', 'duration-700');
@@ -619,8 +619,8 @@ discos.forEach( (producto, index) => {
   /* Imagen */
   const img = document.createElement('img');
   img.classList.add('mx-auto', 'h-44');
-  img.src = './public/images/discos.png';
-  img.alt = 'Blower Acuarios';
+  img.src = imagen;
+  img.alt = alt;
 
   /* Info Contenedor */
   const infoContainer = document.createElement('div');
@@ -671,7 +671,7 @@ discos.forEach( (producto, index) => {
 
   /* Agregar indicadores */
   const indicador = document.createElement('button');
-  indicador.classList.add('carousel-indicator', 'h-3', 'w-3', 'rounded-[50%]', 'bg-secondary-soft/50');
+  indicador.classList.add('carousel-indicator', 'h-3', 'w-3', 'rounded-[50%]', 'bg-secondary-soft', 'border', 'border-secondary-soft');
   if (index === 0) {
     indicador.classList.add('active');
   }
@@ -684,7 +684,7 @@ const alarmasContainerDOM = document.querySelector('#alarmas')
 const alarmasIndicadoresDOM = document.querySelector('#alarmas-indicadores')
 
 alarmas.forEach( (producto, index) => {
-  const {ref, descripcion, voltaje, precio} = producto;
+  const {ref, descripcion, voltaje, precio, imagen, alt} = producto;
   const productoContainer = document.createElement('div');
   /* Contenedor */
   productoContainer.classList.add('carousel-item', 'absolute', 'opacity-0', 'h-full', 'w-full', 'object-cover', 'rounded-xl', 'transition-all', 'duration-700');
@@ -695,8 +695,8 @@ alarmas.forEach( (producto, index) => {
   /* Imagen */
   const img = document.createElement('img');
   img.classList.add('mx-auto', 'h-44');
-  img.src = './public/images/alarmas.png';
-  img.alt = 'Alarma de corte de energía';
+  img.src = imagen;
+  img.alt = alt;
 
   /* Info Contenedor */
   const infoContainer = document.createElement('div');
@@ -737,20 +737,20 @@ alarmas.forEach( (producto, index) => {
 
   /* Agregar indicadores */
   const indicador = document.createElement('button');
-  indicador.classList.add('carousel-indicator', 'h-3', 'w-3', 'rounded-[50%]', 'bg-secondary-soft/50');
+  indicador.classList.add('carousel-indicator', 'h-3', 'w-3', 'rounded-[50%]', 'bg-secondary-soft', 'border', 'border-secondary-soft');
   if (index === 0) {
     indicador.classList.add('active');
   }
   alarmasIndicadoresDOM.appendChild(indicador);
 })
 
-/* Refractometros */
+/* Monitor Ph */
 
 const monitorPhContainerDOM = document.querySelector('#monitorPh')
 const monitorPhIndicadoresDOM = document.querySelector('#monitorPh-indicadores')
 
 monitorPh.forEach( (producto, index) => {
-  const {ref, descripcion, rango, precio} = producto;
+  const {ref, descripcion, rango, precio, imagen, alt} = producto;
   const productoContainer = document.createElement('div');
   /* Contenedor */
   productoContainer.classList.add('carousel-item', 'absolute', 'opacity-0', 'h-full', 'w-full', 'object-cover', 'rounded-xl', 'transition-all', 'duration-700');
@@ -761,8 +761,8 @@ monitorPh.forEach( (producto, index) => {
   /* Imagen */
   const img = document.createElement('img');
   img.classList.add('mx-auto', 'h-44');
-  img.src = './public/images/monitorPh.png';
-  img.alt = 'Alarma de corte de energía';
+  img.src = imagen;
+  img.alt = alt;
 
   /* Info Contenedor */
   const infoContainer = document.createElement('div');
@@ -803,7 +803,7 @@ monitorPh.forEach( (producto, index) => {
 
   /* Agregar indicadores */
   const indicador = document.createElement('button');
-  indicador.classList.add('carousel-indicator', 'h-3', 'w-3', 'rounded-[50%]', 'bg-secondary-soft/50');
+  indicador.classList.add('carousel-indicator', 'h-3', 'w-3', 'rounded-[50%]', 'bg-secondary-soft', 'border', 'border-secondary-soft');
   if (index === 0) {
     indicador.classList.add('active');
   }
@@ -816,7 +816,7 @@ const refractometrosContainerDOM = document.querySelector('#refractometros')
 const refractometrosIndicadoresDOM = document.querySelector('#refractometros-indicadores')
 
 refractometros.forEach( (producto, index) => {
-  const {ref, descripcion, material, rango, precio} = producto;
+  const {ref, descripcion, material, rango, precio, imagen, alt} = producto;
   const productoContainer = document.createElement('div');
   /* Contenedor */
   productoContainer.classList.add('carousel-item', 'absolute', 'opacity-0', 'h-full', 'w-full', 'object-cover', 'rounded-xl', 'transition-all', 'duration-700');
@@ -827,8 +827,8 @@ refractometros.forEach( (producto, index) => {
   /* Imagen */
   const img = document.createElement('img');
   img.classList.add('mx-auto', 'h-44');
-  img.src = './public/images/refractometros.png';
-  img.alt = 'Alarma de corte de energía';
+  img.src = imagen;
+  img.alt = alt;
 
   /* Info Contenedor */
   const infoContainer = document.createElement('div');
@@ -875,7 +875,7 @@ refractometros.forEach( (producto, index) => {
 
   /* Agregar indicadores */
   const indicador = document.createElement('button');
-  indicador.classList.add('carousel-indicator', 'h-3', 'w-3', 'rounded-[50%]', 'bg-secondary-soft/50');
+  indicador.classList.add('carousel-indicator', 'h-3', 'w-3', 'rounded-[50%]', 'bg-secondary-soft', 'border', 'border-secondary-soft');
   if (index === 0) {
     indicador.classList.add('active');
   }
@@ -888,7 +888,7 @@ const conosContainerDOM = document.querySelector('#conos')
 const conosIndicadoresDOM = document.querySelector('#conos-indicadores')
 
 conos.forEach( (producto, index) => {
-  const {ref, descripcion, material, rango, precio} = producto;
+  const {ref, descripcion, material, rango, precio, imagen, alt} = producto;
   const productoContainer = document.createElement('div');
   /* Contenedor */
   productoContainer.classList.add('carousel-item', 'absolute', 'opacity-0', 'h-full', 'w-full', 'object-cover', 'rounded-xl', 'transition-all', 'duration-700');
@@ -899,8 +899,8 @@ conos.forEach( (producto, index) => {
   /* Imagen */
   const img = document.createElement('img');
   img.classList.add('mx-auto', 'h-44');
-  img.src = './public/images/conos.png';
-  img.alt = 'Alarma de corte de energía';
+  img.src = imagen;
+  img.alt = alt;
 
   /* Info Contenedor */
   const infoContainer = document.createElement('div');
@@ -947,7 +947,7 @@ conos.forEach( (producto, index) => {
 
   /* Agregar indicadores */
   const indicador = document.createElement('button');
-  indicador.classList.add('carousel-indicator', 'h-3', 'w-3', 'rounded-[50%]', 'bg-secondary-soft/50');
+  indicador.classList.add('carousel-indicator', 'h-3', 'w-3', 'rounded-[50%]', 'bg-secondary-soft', 'border', 'border-secondary-soft');
   if (index === 0) {
     indicador.classList.add('active');
   }
@@ -960,7 +960,7 @@ const probioticosContainerDOM = document.querySelector('#probioticos')
 const probioticosIndicadoresDOM = document.querySelector('#probioticos-indicadores')
 
 probioticos.forEach( (producto, index) => {
-  const {ref, descripcion, cantidad, precio} = producto;
+  const {ref, descripcion, cantidad, precio, imagen, alt} = producto;
   const productoContainer = document.createElement('div');
   /* Contenedor */
   productoContainer.classList.add('carousel-item', 'absolute', 'opacity-0', 'h-full', 'w-full', 'object-cover', 'rounded-xl', 'transition-all', 'duration-700');
@@ -971,8 +971,8 @@ probioticos.forEach( (producto, index) => {
   /* Imagen */
   const img = document.createElement('img');
   img.classList.add('mx-auto', 'h-44');
-  img.src = './public/images/probioticos.png';
-  img.alt = 'Alarma de corte de energía';
+  img.src = imagen;
+  img.alt = alt;
 
   /* Info Contenedor */
   const infoContainer = document.createElement('div');
@@ -1013,7 +1013,7 @@ probioticos.forEach( (producto, index) => {
 
   /* Agregar indicadores */
   const indicador = document.createElement('button');
-  indicador.classList.add('carousel-indicator', 'h-3', 'w-3', 'rounded-[50%]', 'bg-secondary-soft/50');
+  indicador.classList.add('carousel-indicator', 'h-3', 'w-3', 'rounded-[50%]', 'bg-secondary-soft', 'border', 'border-secondary-soft');
   if (index === 0) {
     indicador.classList.add('active');
   }
@@ -1026,7 +1026,7 @@ const desinfectantesContainerDOM = document.querySelector('#desinfectantes')
 const desinfectantesIndicadoresDOM = document.querySelector('#desinfectantes-indicadores')
 
 desinfectantes.forEach( (producto, index) => {
-  const {ref, descripcion, cantidad, precio} = producto;
+  const {ref, descripcion, cantidad, precio, imagen, alt} = producto;
   const productoContainer = document.createElement('div');
   /* Contenedor */
   productoContainer.classList.add('carousel-item', 'absolute', 'opacity-0', 'h-full', 'w-full', 'object-cover', 'rounded-xl', 'transition-all', 'duration-700');
@@ -1037,8 +1037,8 @@ desinfectantes.forEach( (producto, index) => {
   /* Imagen */
   const img = document.createElement('img');
   img.classList.add('mx-auto', 'h-44');
-  img.src = './public/images/desinfectantes.png';
-  img.alt = 'Alarma de corte de energía';
+  img.src = imagen;
+  img.alt = alt;
 
   /* Info Contenedor */
   const infoContainer = document.createElement('div');
@@ -1079,7 +1079,7 @@ desinfectantes.forEach( (producto, index) => {
 
   /* Agregar indicadores */
   const indicador = document.createElement('button');
-  indicador.classList.add('carousel-indicator', 'h-3', 'w-3', 'rounded-[50%]', 'bg-secondary-soft/50');
+  indicador.classList.add('carousel-indicator', 'h-3', 'w-3', 'rounded-[50%]', 'bg-secondary-soft', 'border', 'border-secondary-soft');
   if (index === 0) {
     indicador.classList.add('active');
   }
@@ -1092,7 +1092,7 @@ const antibioticosContainerDOM = document.querySelector('#antibioticos')
 const antibioticosIndicadoresDOM = document.querySelector('#antibioticos-indicadores')
 
 antibioticos.forEach( (producto, index) => {
-  const {ref, descripcion, cantidad, precio} = producto;
+  const {ref, descripcion, cantidad, precio, imagen, alt} = producto;
   const productoContainer = document.createElement('div');
   /* Contenedor */
   productoContainer.classList.add('carousel-item', 'absolute', 'opacity-0', 'h-full', 'w-full', 'object-cover', 'rounded-xl', 'transition-all', 'duration-700');
@@ -1103,8 +1103,8 @@ antibioticos.forEach( (producto, index) => {
   /* Imagen */
   const img = document.createElement('img');
   img.classList.add('mx-auto', 'h-44');
-  img.src = './public/images/antibioticos.png';
-  img.alt = 'Alarma de corte de energía';
+  img.src = imagen;
+  img.alt = alt;
 
   /* Info Contenedor */
   const infoContainer = document.createElement('div');
@@ -1145,7 +1145,7 @@ antibioticos.forEach( (producto, index) => {
 
   /* Agregar indicadores */
   const indicador = document.createElement('button');
-  indicador.classList.add('carousel-indicator', 'h-3', 'w-3', 'rounded-[50%]', 'bg-secondary-soft/50');
+  indicador.classList.add('carousel-indicator', 'h-3', 'w-3', 'rounded-[50%]', 'bg-secondary-soft', 'border', 'border-secondary-soft');
   if (index === 0) {
     indicador.classList.add('active');
   }
@@ -1158,7 +1158,7 @@ const pruebasContainerDOM = document.querySelector('#pruebas')
 const pruebasIndicadoresDOM = document.querySelector('#pruebas-indicadores')
 
 pruebas.forEach( (producto, index) => {
-  const {ref, descripcion, parametros, cantidad, precio} = producto;
+  const {ref, descripcion, parametros, cantidad, precio, imagen, alt} = producto;
   const productoContainer = document.createElement('div');
   /* Contenedor */
   productoContainer.classList.add('carousel-item', 'absolute', 'opacity-0', 'h-full', 'w-full', 'object-cover', 'rounded-xl', 'transition-all', 'duration-700');
@@ -1169,8 +1169,8 @@ pruebas.forEach( (producto, index) => {
   /* Imagen */
   const img = document.createElement('img');
   img.classList.add('mx-auto', 'h-44');
-  img.src = './public/images/pruebas.png';
-  img.alt = 'Alarma de corte de energía';
+  img.src = imagen;
+  img.alt = alt;
 
   /* Info Contenedor */
   const infoContainer = document.createElement('div');
@@ -1217,7 +1217,7 @@ pruebas.forEach( (producto, index) => {
 
   /* Agregar indicadores */
   const indicador = document.createElement('button');
-  indicador.classList.add('carousel-indicator', 'h-3', 'w-3', 'rounded-[50%]', 'bg-secondary-soft/50');
+  indicador.classList.add('carousel-indicator', 'h-3', 'w-3', 'rounded-[50%]', 'bg-secondary-soft', 'border', 'border-secondary-soft');
   if (index === 0) {
     indicador.classList.add('active');
   }
