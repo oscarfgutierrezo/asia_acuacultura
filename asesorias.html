@@ -14,22 +14,22 @@
   <header>
     <nav class="fixed top-0 w-full px-5 h-14 flex justify-end items-center text-xl font-foregen bg-none z-40 lg:h-32 lg:px-10 lg:pt-5 lg:items-end lg:bg-secondary lg:text-2xl">
       <button id="hamburger-menu-btn" class="lg:hidden">
-        <img class="h-10" src="./public/images/hamburger.svg" alt="icono hamburger menu">
+        <img height="40" width="40" class="h-10 w-10" src="./public/images/hamburger.svg" alt="icono hamburger menu">
       </button>
-      <ul class="absolute hidden top-14 right-0 w-full h-0 flex-col p-4 font-medium rounded-lg bg-gray-50 sm:right-5 sm:w-80 lg:relative lg:p-0 lg:w-full lg:h-max lg:top-0 lg:flex lg:flex-row lg:justify-end lg:gap-5 lg:bg-transparent lg:border-none xl:justify-center" id="hamburguer-menu">
+      <ul class="absolute hidden top-14 right-0 w-full h-0 flex-col p-4 font-medium rounded-lg bg-gray-50 sm:right-5 sm:w-80 lg:relative lg:p-0 lg:pl-10 lg:w-full lg:h-max lg:top-0 lg:flex lg:flex-row lg:justify-center lg:gap-5 lg:bg-transparent lg:border-none" id="hamburguer-menu">
         <li>
-          <a href="/" class="hamburger-menu-item block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-grey/10 transition-all duration-300 lg:px-0 lg:py-2 lg:text-secondary-soft lg:hover:text-white lg:hover:bg-transparent">Home</a>
+          <a href="/" class="hamburger-menu-item block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-grey/10 transition-all duration-300 lg:px-0 lg:py-2 lg:text-secondary-soft lg:hover:text-white lg:hover:bg-transparent" aria-label="Ir al home de la página">Home</a>
         </li>
         <div class="hidden border border-secondary-soft lg:block"></div>
         <li>
-          <a href="/asesorias.html" class="hamburger-menu-item block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-grey/10 transition-all duration-300 lg:px-0 lg:py-2 lg:p-0 lg:text-secondary-soft lg:hover:text-white lg:hover:bg-transparent"">Asesorías y Proyectos</a>
+          <a href="/asesorias.html" class="hamburger-menu-item block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-grey/10 transition-all duration-300 lg:px-0 lg:py-2 lg:p-0 lg:text-secondary-soft lg:hover:text-white lg:hover:bg-transparent" aria-label="Ir al la sección de asesorías">Asesorías y Proyectos</a>
         </li>
         <div class="hidden border border-secondary-soft lg:block"></div>
         <li>
-          <a href="/equipos.html" class="hamburger-menu-item block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-grey/10 transition-all duration-300 lg:px-0 lg:py-2 lg:p-0 lg:text-secondary-soft lg:hover:text-white lg:hover:bg-transparent">Equipos, Accesorios e Insumos</a>
+          <a href="/equipos.html" class="hamburger-menu-item block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-grey/10 transition-all duration-300 lg:px-0 lg:py-2 lg:p-0 lg:text-secondary-soft lg:hover:text-white lg:hover:bg-transparent" aria-label="Ir a la sección de equipos e insumos">Equipos, Accesorios e Insumos</a>
         </li>
       </ul>
-      <a href="/">
+      <a href="/" aria-label="Ir al home de la página">
         <img class="hidden absolute top-4 h-40 lg:block lg:left-[3%] xl:left-[6%] 2xl:left-[10%]" src="./public/images/asia-logo.svg" alt="Logo Asia Acuacultura">
       </a>
     </nav>
@@ -88,8 +88,8 @@
             <p class="text-lg text-center text-brown leading-4">Para cultivos en tierra, geomembrana e iprs.</p>
           </div>
         </div>
-        <div class="max-w-sm mx-auto mb-5 pt-3 flex justify-center items-end z-20 md:absolute md:right-14 md:-top-8 md:max-w-[220px] md:flex-wrap md:gap-x-5">
-          <a class="group flex items-center md:w-24 md:h-24" href="./equipos.html">
+        <div class="max-w-sm mx-auto mb-5 pt-3 flex justify-center items-end z-20 md:hidden">
+          <a class="group flex items-center md:w- md:h-" href="./equipos.html">
             <img class="mx-auto group-hover:w-full transition-all duration-300 md:w-20" src="./public/images/pregunta-equipos.png" alt="Imagen con pregunta sobre asesoria en equipos">
           </a>
   
@@ -101,7 +101,7 @@
             <img class="mx-auto w-40" src="./public/images/pregunta-asesoria.png">
           </a>
   
-          <a class="group flex items-center md:w-24 md:h-24" href="./equipos.html#insumos">
+          <a class="group flex items-center md:w- md:h-" href="./equipos.html#insumos">
             <img class="mx-auto group-hover:w-full transition-all duration-300 md:w-20" src="./public/images/pregunta-insumos.png" alt="Imagen con pregunta sobre asesoria en equipos">
           </a>
         </div>
@@ -109,9 +109,9 @@
           <p class="w-full max-w-xs mx-auto px-7 pb-0.5 font-foregen text-center text-2xl text-white bg-secondary rounded-full md:relative md:-left-10 md:max-w-md md:mx-0 md:pl-10 md:pr-28 md:text-left md:text-3xl md:rounded-l-none">Diseño y produccion de</p>
           <p class="text-center text-4xl text-primary md:text-5xl md:text-left md:text-brown">Proyectos Acuícolas</p>
           <p class="text-xl text-center text-brown leading-6 md:text-2xl md:text-left">Construímos proyectos en geomembrana, estanques en tierra e iprs que se ajustan a las necesidades propias del proyecto, aumentando las probabilidades de éxito.</p>
-          <a class="mx-auto left-[350px] top-12 md:absolute" href="https://www.youtube.com/watch?v=GRGNZo_tiD4" target="_blank">
-            <div class="h-9 w-14 flex justify-center items-center">
-              <img class="w-12 transition-all duration-300 hover:w-14 focus-within:w-14" src="./public/images/youtube.png" alt="">
+          <a class="mx-auto md:mx-0" href="https://www.youtube.com/watch?v=GRGNZo_tiD4" target="_blank">
+            <div class="h-9 w-28 flex justify-center items-center md:w-32">
+              <img width="96" height="22" class="w- transition-all duration-300 md:w-28 hover:w-28 focus-within:w-28 md:hover:w-32 md:focus-within:w-32" src="./public/images/youtube-full.png" alt="Logo Youtube">
             </div>
           </a>
         </div>
@@ -120,19 +120,18 @@
           <div class="triangulo absolute translate-x-1/2 rotate-180 bottom-1 right-1/2 md:-bottom-[16px]"></div>
         </div>
       </section>
-      <div class="hidden absolute bottom-[216px] left-0 w-1/4 h-[38px] bg-secondary xl:block 2xl:w-1/3"></div>
+      <div class="hidden absolute top-10 left-0 w-1/4 h-[38px] bg-secondary xl:block 2xl:w-1/3"></div>
     </div>
 
     <!-- Carousel y slide de Fotografias -->
     <section class="py-3 px-3 md:bg-background-grey md:px-0 md:pt-5 md:pb-0 md:bg-white">
       <div id="slide-asesorias-fotos" class="relative bg-white">
-        <div class="slide-container flex flex-wrap gap-1 md:flex-nowrap md:overflow-x-scroll">
+        <div class="slide-container flex flex-wrap justify-center gap-1 md:flex-nowrap md:overflow-x-scroll">
           <img class="w-[49%] h-44 sm:h-52 object-cover md:h-64" src="./public/images/carrusel_movil_01.jpg" alt="">
           <img class="w-[49%] h-44 sm:h-52 object-cover md:h-64" src="./public/images/carrusel_movil_02.jpg" alt="">
           <img class="w-[49%] h-44 sm:h-52 object-cover md:h-64" src="./public/images/carrusel_movil_03.jpg" alt="">
           <img class="w-[49%] h-44 sm:h-52 object-cover md:h-64" src="./public/images/carrusel_movil_04.jpg" alt="">
           <img class="w-[49%] h-44 sm:h-52 object-cover md:h-64" src="./public/images/carrusel_movil_05.jpg" alt="">
-          <img class="w-[49%] h-44 sm:h-52 object-cover md:h-64" src="./public/images/carrusel_movil_01.jpg" alt="">
         </div>
         <div class="hidden absolute -translate-y-1/2 top-1/2 left-2 right-2 justify-between md:flex">
           <button class="prev-btn">
@@ -158,7 +157,26 @@
             <iframe class="w-full h-60" src="https://www.youtube.com/embed/VZdKwVkZbKU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
         </div>
-        <img class="mx-auto md:w-[400px] lg:w-[500px]" src="./public/images/experiencia.png" alt="30 años de experiencia">
+        <div class="md:flex md:justify-around">
+          <div class="hidden md:flex justify-center items-end z-20 md:max-w-[220px] md:flex-wrap md:gap-x-5">
+            <a class="group flex items-center md:w- md:h-" href="./equipos.html">
+              <img class="mx-auto group-hover:w-full transition-all duration-300 md:w-20" src="./public/images/pregunta-equipos.png" alt="Imagen con pregunta sobre asesoria en equipos">
+            </a>
+    
+            <!-- href whatsapp segun dispositivo -->
+            <a class="w-[60%] flex items-center md:hidden" href="whatsapp://send?phone=+573170439632&abid=+573170439632" target="_blank">
+              <img class="mx-auto" src="./public/images/pregunta-asesoria.png">
+            </a>
+            <a class="hidden w-full -order-1 md:block" href="http://web.whatsapp.com/send?phone=+573170439632&abid=+573170439632" target="_blank">
+              <img class="mx-auto w-40" src="./public/images/pregunta-asesoria.png">
+            </a>
+    
+            <a class="group flex items-center md:w- md:h-" href="./equipos.html#insumos">
+              <img class="mx-auto group-hover:w-full transition-all duration-300 md:w-20" src="./public/images/pregunta-insumos.png" alt="Imagen con pregunta sobre asesoria en equipos">
+            </a>
+          </div>
+          <img class="md:w-[400px] lg:w-[500px] object-contain" src="./public/images/experiencia.png" alt="30 años de experiencia">
+        </div>
       </section>
       <div class="hidden absolute top-10 left-0 w-1/4 h-[38px] bg-secondary xl:block 2xl:w-1/3"></div>
     </div>
@@ -172,7 +190,6 @@
         <img class="carousel-item absolute w-full opacity-0 transition-all duration-700" src="./public/images/testimonial_002.png" alt="Imagen 2">
         <img class="carousel-item absolute w-full opacity-0 transition-all duration-700" src="./public/images/testimonial_003.png" alt="Imagen 3">
         <img class="carousel-item absolute w-full opacity-0 transition-all duration-700" src="./public/images/testimonial_004.png" alt="Imagen 3">
-        <img class="carousel-item absolute w-full opacity-0 transition-all duration-700" src="./public/images/testimonial_005.png" alt="Imagen 3">
         <!-- BOTONES -->
         <div class="absolute top-1/2 -translate-y-1/2 -left-3 -right-3 flex justify-between">
           <button id="prevBtn" class="w-9 disabled:opacity-50" disabled>
@@ -184,23 +201,21 @@
         </div>
         <!-- INDICADORES -->
         <div class="absolute bottom-0 right-1/2 translate-x-1/2 flex justify-center gap-2">
-          <button class="carousel-indicator h-3 w-3 rounded-[50%] bg-secondary-soft/50 active"></button>
-          <button class="carousel-indicator h-3 w-3 rounded-[50%] bg-secondary-soft/50"></button>
-          <button class="carousel-indicator h-3 w-3 rounded-[50%] bg-secondary-soft/50"></button>
-          <button class="carousel-indicator h-3 w-3 rounded-[50%] bg-secondary-soft/50"></button>
-          <button class="carousel-indicator h-3 w-3 rounded-[50%] bg-secondary-soft/50"></button>
+          <button class="carousel-indicator h-3 w-3 rounded-[50%] bg-secondary border border-secondary active"></button>
+          <button class="carousel-indicator h-3 w-3 rounded-[50%] bg-secondary border border-secondary"></button>
+          <button class="carousel-indicator h-3 w-3 rounded-[50%] bg-secondary border border-secondary"></button>
+          <button class="carousel-indicator h-3 w-3 rounded-[50%] bg-secondary border border-secondary"></button>
         </div>
       </div>
     </section>
 
     <!-- Testimoniales slide para desktop -->
-    <section id="slide-asesorias-testimoniales" class="relative hidden md:block">
+    <section id="slide-asesorias-testimoniales" class="max-w-[1900px] mx-auto relative hidden md:block">
       <div class="slide-container py-5 px-10 gap-10 flex flex-nowrap bg-white overflow-x-scroll xl:px-16">
         <img class="h-64 object-cover" src="./public/images/testimonial_001.png" alt="">
         <img class="h-64 object-cover" src="./public/images/testimonial_002.png" alt="">
         <img class="h-64 object-cover" src="./public/images/testimonial_003.png" alt="">
         <img class="h-64 object-cover" src="./public/images/testimonial_004.png" alt="">
-        <img class="h-64 object-cover" src="./public/images/testimonial_005.png" alt="">
       </div>
       <div class="absolute -translate-y-1/2 top-1/2 left-2 right-2 flex justify-between">
         <button class="prev-btn">
@@ -213,12 +228,16 @@
     </section>
 
     <!-- Botón flotante Whatsapp -->
-    <div class="fixed bottom-5 right-5">
-      <a class="md:hidden" href="whatsapp://send?phone=+573170439632&abid=+573170439632" target="_blank">
-        <img class="h-16" src="./public/images/whatsapp.png" alt="Logo Whatsapp">
+    <div class="fixed bottom-5 right-5 z-50 lg:bottom-auto lg:top-5 lg:right-[3%] xl:right-[6%] 2xl:right-[10%]">
+      <a class="md:hidden" href="whatsapp://send?phone=+573170439632&abid=+573170439632" target="_blank" aria-label="Abrir aplicación de Whatsapp">
+        <img height="64" width="64" class="h-16" src="./public/images/whatsapp.png" alt="Logo Whatsapp">
       </a>
-      <a class="hidden md:inline" href="http://web.whatsapp.com/send?phone=+573170439632&abid=+573170439632" target="_blank">
-        <img class="h-16" src="./public/images/whatsapp.png" alt="Logo Whatsapp">
+      <a class="hidden md:inline" href="http://web.whatsapp.com/send?phone=+573170439632&abid=+573170439632" target="_blank" aria-label="Abrir Whatsapp web">
+        <picture>
+          <source srcset="./public/images/whatsapp.png" media="(max-width: 1023px)"/>
+          <source srcset="./public/images/cta.png" media="(min-width: 1024px)"/>
+          <img height="200" width="200" class="h-16 w-16 lg:h-40 lg:w-40" src="./public/images/whatsapp.png" alt="Logo Whatsapp">
+        </picture>
       </a>
     </div>
     
@@ -232,23 +251,23 @@
         <div class="h-1 w-full border-2 border-grey"></div>
       </div>
       <div class="flex flex-wrap justify-center gap-x-5 gap-y-2 font-bebasNeue text-xl">
-        <a class="group" href="https://www.youtube.com/@Asiaacuacultura" target="_blank">
+        <a class="group" href="https://www.youtube.com/@Asiaacuacultura" target="_blank" aria-label="Ir al canal de Youtube de Asia Acuacultura">
           <div class="h-12 flex items-center">
-            <img class="mx-auto h-10 group-hover:h-12 transition-all duration-300" src="./public/images/youtube.png" alt="Logo de Youtube">
+            <img width="57" height="40" class="mx-auto h-10 group-hover:h-12 group-hover:w-16 transition-all duration-300" src="./public/images/youtube.png" alt="Logo de Youtube">
           </div>
-          <p>Asia_Acuacultura</p>
+          <p>@Asiaacuacultura</p>
         </a>
-        <a class="group" href="https://instagram.com/asiaacuacultura?igshid=YzcxN2Q2NzY0OA==" target="_blank">
+        <a class="group" href="https://instagram.com/asiaacuacultura?igshid=YzcxN2Q2NzY0OA==" target="_blank" aria-label="Ir al perfil de Instagram de Asia Acuacultura">
           <div class="h-12 flex items-center">
-            <img class="mx-auto h-10 group-hover:h-12 transition-all duration-300" src="./public/images/Instagram.png" alt="Logo de Instagram">
+            <img width="40" height="40" class="mx-auto h-10 group-hover:h-12 group-hover:w-12 transition-all duration-300" src="./public/images/Instagram.png" alt="Logo de Instagram">
           </div>
-          <p>Asia_Acuacultura</p>
+          <p>asiaacuacultura</p>
         </a>
-        <a class="group" href="https://www.facebook.com/profile.php?id=100094075017343&mibextid=ZbWKwL" target="_blank">
+        <a class="group" href="https://www.facebook.com/profile.php?id=100094075017343&mibextid=ZbWKwL" target="_blank" aria-label="Ir a la página de Facebook de Asia Acuacultura">
           <div class="h-12 flex items-center">
-            <img class="mx-auto h-10 group-hover:h-12 transition-all duration-300" src="./public/images/facebook.png" alt="Logo de Facebook">
+            <img width="40" height="40" class="mx-auto h-10 group-hover:h-12 group-hover:w-12 transition-all duration-300" src="./public/images/facebook.png" alt="Logo de Facebook">
           </div>
-          <p>Asia_Acuacultura</p>
+          <p>Asia Acuacultura</p>
         </a>
       </div>
     </section>
