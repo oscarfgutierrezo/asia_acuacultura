@@ -1,13 +1,13 @@
 <?php
-    /* $host = "localhost";
-    $database = "asiaacua_clientes";
-    $name = "asiaacua_admin";
-    $password = "UKS7r@@=Au~Y"; */
-
     $host = "localhost";
     $database = "asiaacua_clientes";
+    $name = "asiaacua_admin";
+    $password = "UKS7r@@=Au~Y";
+
+    /* $host = "localhost";
+    $database = "asiaacua_clientes";
     $name = "baq";
-    $password = "Asiste.2021";
+    $password = "Asiste.2021"; */
 
     error_reporting(1);
 
