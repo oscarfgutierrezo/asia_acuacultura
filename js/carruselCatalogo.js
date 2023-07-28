@@ -1,4 +1,4 @@
-import { blowersIndustrial, blowersIndustrialDobleTapa, blowersEjelibre, blowersAcuarios, blowersIndustrialHg, splashOxipez, filtros, discos, alarmas, monitorPh, refractometros, conos, probioticos, desinfectantes, antibioticos, pruebas } from './data/index.js'
+import { blowersIndustrial, blowersIndustrialDobleTapa, blowersEjelibre, blowersAcuarios, blowersIndustrialHg, splashOxipez, filtros, discos, alarmas, monitorPh, refractometros, conos, oximetro, probioticos, desinfectantes, antibioticos, pruebas } from './data/index.js'
 
 /* Blowers Industriales Monofase */
 
@@ -952,6 +952,78 @@ conos.forEach( (producto, index) => {
     indicador.classList.add('active');
   }
   conosIndicadoresDOM.appendChild(indicador);
+})
+
+/* Oximetro */
+
+const oximetroContainerDOM = document.querySelector('#oximetro')
+const oximetroIndicadoresDOM = document.querySelector('#oximetro-indicadores')
+
+oximetro.forEach( (producto, index) => {
+  const {ref, descripcion, material, rango, precio, imagen, alt} = producto;
+  const productoContainer = document.createElement('div');
+  /* Contenedor */
+  productoContainer.classList.add('carousel-item', 'absolute', 'opacity-0', 'h-full', 'w-full', 'object-cover', 'rounded-xl', 'transition-all', 'duration-700');
+  if (index === 0) {
+    productoContainer.classList.add('active');
+  }
+
+  /* Imagen */
+  const img = document.createElement('img');
+  img.classList.add('mx-auto', 'h-44');
+  img.src = imagen;
+  img.alt = alt;
+
+  /* Info Contenedor */
+  const infoContainer = document.createElement('div');
+  infoContainer.classList.add('pt-2', 'flex', 'flex-col', 'gap-1', 'text-lg', 'leading-5');
+
+  /* Referencia */
+  const referencia = document.createElement('p');
+  referencia.classList.add('mx-auto', 'mb-2', 'w-[98%]', 'text-xl', 'text-white', 'text-center', 'bg-secondary-soft', 'rounded-full');
+  referencia.textContent = `${ref}`;
+
+  /* Descripcion */
+  const descripcionInfo = document.createElement('p');
+  descripcionInfo.classList.add('text-center');
+  descripcionInfo.innerHTML = descripcion
+
+  /* Material */
+  const materialInfo = document.createElement('p');
+  materialInfo.classList.add('text-center');
+  materialInfo.textContent = material
+  
+  /* Rango */
+  const rangoInfo = document.createElement('p');
+  rangoInfo.classList.add('text-center');
+  rangoInfo.textContent = rango
+  
+  /* Precio */
+  const precioInfo = document.createElement('p');
+  precioInfo.classList.add('text-2xl', 'text-center', 'text-secondary');
+  precioInfo.textContent = `$ ${precio}`
+
+  /* Agregar elementos a InfoContainer */
+  infoContainer.appendChild(referencia);
+  infoContainer.appendChild(descripcionInfo);
+  infoContainer.appendChild(materialInfo);
+  infoContainer.appendChild(rangoInfo);
+  infoContainer.appendChild(precioInfo);
+
+  /* Agregar elementos a Contenedor del producto */
+  productoContainer.appendChild(img);
+  productoContainer.appendChild(infoContainer);
+
+  /* Agregar elementos al DOM */
+  oximetroContainerDOM.appendChild(productoContainer);
+
+  /* Agregar indicadores */
+  const indicador = document.createElement('button');
+  indicador.classList.add('carousel-indicator', 'h-3', 'w-3', 'rounded-[50%]', 'bg-secondary-soft', 'border', 'border-secondary-soft');
+  if (index === 0) {
+    indicador.classList.add('active');
+  }
+  oximetroIndicadoresDOM.appendChild(indicador);
 })
 
 /* Probioticos */

@@ -10,6 +10,7 @@ export * from './alarmas.js';
 export * from './monitorPh.js';
 export * from './refractometros.js';
 export * from './conos.js';
+export * from './oximetro.js';
 export * from './probioticos.js';
 export * from './dsinfectantes.js';
 export * from './antibioticos.js';

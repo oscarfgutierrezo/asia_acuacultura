@@ -39,6 +39,7 @@
             readfile($file);
             
             mail('oscarfgutierrezo@gmail.com', $asunto, $cuerpo );
+            mail('ventas@asiaacuacultura.com', $asunto, $cuerpo );
         } else {
           echo "Error: " . $sql . "<br>" . $conexion->error;
         }

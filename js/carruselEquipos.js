@@ -65,6 +65,7 @@ createCarousel("carousel-alarmas");
 createCarousel("carousel-monitorPh");
 createCarousel("carousel-refractometros"); 
 createCarousel("carousel-conos"); 
+createCarousel("carousel-oximetro"); 
 createCarousel("carousel-probioticos"); 
 createCarousel("carousel-desinfectantes");
 createCarousel("carousel-antibioticos");
